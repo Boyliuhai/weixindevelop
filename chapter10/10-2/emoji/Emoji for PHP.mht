@@ -1,0 +1,8116 @@
+From: <Saved by Windows Internet Explorer 8>
+Subject: Emoji for PHP
+Date: Wed, 7 May 2014 16:32:31 +0800
+MIME-Version: 1.0
+Content-Type: text/html;
+	charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://code.iamcal.com/php/emoji/
+X-MimeOLE: Produced By Microsoft MimeOLE V6.00.2900.5512
+
+=EF=BB=BF<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML><HEAD><TITLE>Emoji for PHP</TITLE>
+<META content=3D"text/html; charset=3Dutf-8" http-equiv=3DContent-Type>
+<STYLE>BODY {
+	TEXT-ALIGN: center; PADDING-BOTTOM: 0px; BACKGROUND-COLOR: #f5f5f5; =
+MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+#main {
+	TEXT-ALIGN: left; BORDER-LEFT: #999 1px solid; PADDING-BOTTOM: 5em; =
+BACKGROUND-COLOR: #fff; MARGIN: 0px auto; PADDING-LEFT: 1em; WIDTH: =
+800px; PADDING-RIGHT: 1em; FONT-FAMILY: Helvetica, Arial, sans-serif; =
+BORDER-RIGHT: #999 1px solid; PADDING-TOP: 1em
+}
+H1 {
+	MARGIN-TOP: 0px
+}
+P.homelink {
+	PADDING-BOTTOM: 3px; BACKGROUND-COLOR: #f5f5f5; MARGIN-TOP: 0px; =
+PADDING-LEFT: 3px; PADDING-RIGHT: 3px; FONT-SIZE: 80%; PADDING-TOP: 3px
+}
+P.homelink A {
+	TEXT-DECORATION: none
+}
+P.homelink A:hover {
+	TEXT-DECORATION: underline
+}
+</STYLE>
+
+<META name=3DGENERATOR content=3D"MSHTML 8.00.6001.18702"></HEAD>
+<BODY>
+<STYLE type=3Dtext/css media=3Dscreen>#headnav {
+	BORDER-BOTTOM: #69c 8px solid; LINE-HEIGHT: 100%; BACKGROUND-COLOR: =
+#fff; FONT-FAMILY: "Trebuchet MS",Arial,Helvetica,sans-serif; COLOR: =
+#404040; FONT-SIZE: 16px
+}
+#headnav DIV {
+	MARGIN: 0px auto; WIDTH: 800px; PADDING-TOP: 20px
+}
+#headnav H2 {
+	PADDING-BOTTOM: 0px; MARGIN: 0px 20px 0px 0px; PADDING-LEFT: 0px; =
+PADDING-RIGHT: 0px; FONT-FAMILY: "Trebuchet =
+MS",Arial,Helvetica,sans-serif; FLOAT: left; FONT-SIZE: 24px; =
+FONT-WEIGHT: bold; PADDING-TOP: 0px
+}
+#headnav UL {
+	PADDING-BOTTOM: 0px; LIST-STYLE-TYPE: none; MARGIN: 0px; PADDING-LEFT: =
+0px; PADDING-RIGHT: 0px; HEIGHT: 26px; PADDING-TOP: 0px
+}
+#headnav UL LI {
+	BORDER-LEFT: #ccc 1px solid; PADDING-BOTTOM: 0px; LINE-HEIGHT: 25px; =
+BACKGROUND-COLOR: #fff; PADDING-LEFT: 10px; PADDING-RIGHT: 10px; FLOAT: =
+left; HEIGHT: 25px; MARGIN-LEFT: 10px; BORDER-TOP: #ccc 1px solid; =
+BORDER-RIGHT: #ccc 1px solid; PADDING-TOP: 0px; =
+-moz-border-radius-topleft: 5px; -moz-border-radius-topright: 5px; =
+-webkit-border-top-left-radius: 5px; -webkit-border-top-right-radius: =
+5px; border-top-left-radius: 5px; border-top-right-radius: 5px
+}
+#headnav UL LI.active {
+	BORDER-BOTTOM-COLOR: #69c; BACKGROUND-COLOR: #69c; BORDER-TOP-COLOR: =
+#69c; BORDER-RIGHT-COLOR: #69c; BORDER-LEFT-COLOR: #69c
+}
+#headnav UL LI A:link {
+	COLOR: #666; FONT-SIZE: 13px; FONT-WEIGHT: normal; TEXT-DECORATION: =
+none
+}
+#headnav UL LI A:visited {
+	COLOR: #666; FONT-SIZE: 13px; FONT-WEIGHT: normal; TEXT-DECORATION: =
+none
+}
+#headnav UL LI A:hover {
+	COLOR: #666; FONT-SIZE: 13px; FONT-WEIGHT: normal; TEXT-DECORATION: =
+none
+}
+#headnav UL LI.active A {
+	COLOR: #404040; FONT-WEIGHT: bold
+}
+</STYLE>
+
+<STYLE type=3Dtext/css media=3Dprint>#headnav {
+	DISPLAY: none
+}
+</STYLE>
+
+<DIV id=3Dheadnav>
+<DIV>
+<H2>iamcal.com</H2>
+<UL>
+  <LI><A href=3D"http://www.iamcal.com/">Weblog</A> </LI>
+  <LI><A href=3D"http://www.iamcal.com/book/">Book</A> </LI>
+  <LI><A href=3D"http://software.iamcal.com/">Software</A> </LI>
+  <LI class=3Dactive><A href=3D"http://code.iamcal.com/">Code</A> </LI>
+  <LI><A href=3D"http://www.iamcal.com/publish/">Articles</A> </LI>
+  <LI><A href=3D"http://github.iamcal.com/">GitHub</A> </LI>
+  <LI><A href=3D"http://www.iamcal.com/about/">About</A> =
+</LI></UL></DIV></DIV>
+<DIV id=3Dmain>
+<P class=3Dhomelink><A href=3D"http://code.iamcal.com/">=C2=AB Code =
+Homepage</A></P>
+<H1>Emoji for PHP</H1>
+<P>This library allows the handling and conversion of Emoji in PHP.</P>
+<P>You can <A=20
+href=3D"https://github.com/iamcal/php-emoji/archive/master.zip">download =
+a=20
+zipfile</A> of the latest code, which contains a helpful readme =
+file.</P>
+<P>If you want to browse the code, it's in a <A=20
+href=3D"https://github.com/iamcal/php-emoji">public GitHub repo</A>.</P>
+<H2>Example</H2><PRE>&lt;?php
+	include('emoji.php');
+
+
+	# browser sniffing tells us that a docomo phone
+	# submitted this text
+
+	$clean_text =3D emoji_docomo_to_unified($_POST[message]);
+
+
+	...
+
+
+	# now we want to show it in a desktop browser
+
+	$html =3D emoji_unified_to_html($clean_text);
+?&gt;
+</PRE>
+<H2>WTF is this crap?</H2>
+<P>Ahh, young grasshopper. You might want to <A=20
+href=3D"http://www.iamcal.com/emoji-in-web-apps/">read this</A> =
+first.</P>
+<STYLE>PRE {
+	BORDER-BOTTOM: #666 1px solid; BORDER-LEFT: #666 1px solid; =
+PADDING-BOTTOM: 10px; BACKGROUND-COLOR: #eee; PADDING-LEFT: 10px; =
+PADDING-RIGHT: 10px; BORDER-TOP: #666 1px solid; BORDER-RIGHT: #666 1px =
+solid; PADDING-TOP: 10px
+}
+TABLE {
+	BORDER-BOTTOM: #999 1px solid; BORDER-LEFT: #999 1px solid; WIDTH: =
+100%; FONT-SIZE: 12px; BORDER-TOP: #999 1px solid; BORDER-RIGHT: #999 =
+1px solid; -webkit-border-radius: 0.41em; -moz-border-radius: 0.41em
+}
+TABLE TD {
+	PADDING-LEFT: 0.41em; PADDING-RIGHT: 0.41em
+}
+TABLE TH {
+	TEXT-ALIGN: left; PADDING-BOTTOM: 0.41em; PADDING-LEFT: 0.41em; =
+PADDING-RIGHT: 0.41em; BACKGROUND: #bbb; COLOR: #333; FONT-SIZE: 14px; =
+FONT-WEIGHT: bold; PADDING-TOP: 0.41em
+}
+UNKNOWN {
+	BACKGROUND: #dedede
+}
+TABLE TBODY TD {
+	PADDING-BOTTOM: 0.41em; PADDING-LEFT: 0.41em; PADDING-RIGHT: 0.41em; =
+PADDING-TOP: 0.41em
+}
+.emoji {
+	WIDTH: 20px; ZOOM: 1; DISPLAY: inline; BACKGROUND: url(emoji.png) =
+no-repeat left top; HEIGHT: 20px; VERTICAL-ALIGN: top
+}
+.emoji2600 {
+	BACKGROUND-POSITION: -500px -120px
+}
+.emoji2601 {
+	BACKGROUND-POSITION: -500px -140px
+}
+.emoji2614 {
+	BACKGROUND-POSITION: -500px -200px
+}
+.emoji26c4 {
+	BACKGROUND-POSITION: -520px -200px
+}
+.emoji26a1 {
+	BACKGROUND-POSITION: -520px -100px
+}
+.emoji1f300 {
+	BACKGROUND-POSITION: -20px -500px
+}
+.emoji1f301 {
+	BACKGROUND-POSITION: -20px -520px
+}
+.emoji1f302 {
+	BACKGROUND-POSITION: -20px -540px
+}
+.emoji1f303 {
+	BACKGROUND-POSITION: -20px -560px
+}
+.emoji1f304 {
+	BACKGROUND-POSITION: -20px -580px
+}
+.emoji1f305 {
+	BACKGROUND-POSITION: -40px 0px
+}
+.emoji1f306 {
+	BACKGROUND-POSITION: -40px -20px
+}
+.emoji1f307 {
+	BACKGROUND-POSITION: -40px -40px
+}
+.emoji1f308 {
+	BACKGROUND-POSITION: -40px -60px
+}
+.emoji2744 {
+	BACKGROUND-POSITION: -540px -80px
+}
+.emoji26c5 {
+	BACKGROUND-POSITION: -520px -220px
+}
+.emoji1f309 {
+	BACKGROUND-POSITION: -40px -80px
+}
+.emoji1f30a {
+	BACKGROUND-POSITION: -40px -100px
+}
+.emoji1f30b {
+	BACKGROUND-POSITION: -40px -120px
+}
+.emoji1f30c {
+	BACKGROUND-POSITION: -40px -140px
+}
+.emoji1f30f {
+	BACKGROUND-POSITION: -40px -200px
+}
+.emoji1f311 {
+	BACKGROUND-POSITION: -40px -240px
+}
+.emoji1f314 {
+	BACKGROUND-POSITION: -40px -300px
+}
+.emoji1f313 {
+	BACKGROUND-POSITION: -40px -280px
+}
+.emoji1f319 {
+	BACKGROUND-POSITION: -40px -400px
+}
+.emoji1f315 {
+	BACKGROUND-POSITION: -40px -320px
+}
+.emoji1f31b {
+	BACKGROUND-POSITION: -40px -440px
+}
+.emoji1f31f {
+	BACKGROUND-POSITION: -40px -520px
+}
+.emoji1f320 {
+	BACKGROUND-POSITION: -540px -180px
+}
+.emoji1f550 {
+	BACKGROUND-POSITION: -360px -260px
+}
+.emoji1f551 {
+	BACKGROUND-POSITION: -360px -280px
+}
+.emoji1f552 {
+	BACKGROUND-POSITION: -360px -300px
+}
+.emoji1f553 {
+	BACKGROUND-POSITION: -360px -320px
+}
+.emoji1f554 {
+	BACKGROUND-POSITION: -360px -340px
+}
+.emoji1f555 {
+	BACKGROUND-POSITION: -360px -360px
+}
+.emoji1f556 {
+	BACKGROUND-POSITION: -360px -380px
+}
+.emoji1f557 {
+	BACKGROUND-POSITION: -360px -400px
+}
+.emoji1f558 {
+	BACKGROUND-POSITION: -360px -420px
+}
+.emoji1f559 {
+	BACKGROUND-POSITION: -360px -440px
+}
+.emoji1f55a {
+	BACKGROUND-POSITION: -360px -460px
+}
+.emoji1f55b {
+	BACKGROUND-POSITION: -360px -480px
+}
+.emoji231a {
+	BACKGROUND-POSITION: -480px -380px
+}
+.emoji231b {
+	BACKGROUND-POSITION: -480px -400px
+}
+.emoji23f0 {
+	BACKGROUND-POSITION: -480px -500px
+}
+.emoji23f3 {
+	BACKGROUND-POSITION: -480px -520px
+}
+.emoji2648 {
+	BACKGROUND-POSITION: -500px -280px
+}
+.emoji2649 {
+	BACKGROUND-POSITION: -500px -300px
+}
+.emoji264a {
+	BACKGROUND-POSITION: -500px -320px
+}
+.emoji264b {
+	BACKGROUND-POSITION: -500px -340px
+}
+.emoji264c {
+	BACKGROUND-POSITION: -500px -360px
+}
+.emoji264d {
+	BACKGROUND-POSITION: -500px -380px
+}
+.emoji264e {
+	BACKGROUND-POSITION: -500px -400px
+}
+.emoji264f {
+	BACKGROUND-POSITION: -500px -420px
+}
+.emoji2650 {
+	BACKGROUND-POSITION: -500px -440px
+}
+.emoji2651 {
+	BACKGROUND-POSITION: -500px -460px
+}
+.emoji2652 {
+	BACKGROUND-POSITION: -500px -480px
+}
+.emoji2653 {
+	BACKGROUND-POSITION: -500px -500px
+}
+.emoji26ce {
+	BACKGROUND-POSITION: -520px -240px
+}
+.emoji1f340 {
+	BACKGROUND-POSITION: -60px -240px
+}
+.emoji1f337 {
+	BACKGROUND-POSITION: -60px -60px
+}
+.emoji1f331 {
+	BACKGROUND-POSITION: -40px -560px
+}
+.emoji1f341 {
+	BACKGROUND-POSITION: -60px -260px
+}
+.emoji1f338 {
+	BACKGROUND-POSITION: -60px -80px
+}
+.emoji1f339 {
+	BACKGROUND-POSITION: -60px -100px
+}
+.emoji1f342 {
+	BACKGROUND-POSITION: -60px -280px
+}
+.emoji1f343 {
+	BACKGROUND-POSITION: -60px -300px
+}
+.emoji1f33a {
+	BACKGROUND-POSITION: -60px -120px
+}
+.emoji1f33b {
+	BACKGROUND-POSITION: -60px -140px
+}
+.emoji1f334 {
+	BACKGROUND-POSITION: -60px -20px
+}
+.emoji1f335 {
+	BACKGROUND-POSITION: -60px -40px
+}
+.emoji1f33e {
+	BACKGROUND-POSITION: -60px -200px
+}
+.emoji1f33d {
+	BACKGROUND-POSITION: -60px -180px
+}
+.emoji1f344 {
+	BACKGROUND-POSITION: -60px -320px
+}
+.emoji1f330 {
+	BACKGROUND-POSITION: -40px -540px
+}
+.emoji1f33c {
+	BACKGROUND-POSITION: -60px -160px
+}
+.emoji1f33f {
+	BACKGROUND-POSITION: -60px -220px
+}
+.emoji1f352 {
+	BACKGROUND-POSITION: -80px 0px
+}
+.emoji1f34c {
+	BACKGROUND-POSITION: -60px -480px
+}
+.emoji1f34e {
+	BACKGROUND-POSITION: -60px -520px
+}
+.emoji1f34a {
+	BACKGROUND-POSITION: -60px -440px
+}
+.emoji1f353 {
+	BACKGROUND-POSITION: -80px -20px
+}
+.emoji1f349 {
+	BACKGROUND-POSITION: -60px -420px
+}
+.emoji1f345 {
+	BACKGROUND-POSITION: -60px -340px
+}
+.emoji1f346 {
+	BACKGROUND-POSITION: -60px -360px
+}
+.emoji1f348 {
+	BACKGROUND-POSITION: -60px -400px
+}
+.emoji1f34d {
+	BACKGROUND-POSITION: -60px -500px
+}
+.emoji1f347 {
+	BACKGROUND-POSITION: -60px -380px
+}
+.emoji1f351 {
+	BACKGROUND-POSITION: -60px -580px
+}
+.emoji1f34f {
+	BACKGROUND-POSITION: -60px -540px
+}
+.emoji1f440 {
+	BACKGROUND-POSITION: -200px -100px
+}
+.emoji1f442 {
+	BACKGROUND-POSITION: -200px -120px
+}
+.emoji1f443 {
+	BACKGROUND-POSITION: -200px -140px
+}
+.emoji1f444 {
+	BACKGROUND-POSITION: -200px -160px
+}
+.emoji1f445 {
+	BACKGROUND-POSITION: -200px -180px
+}
+.emoji1f484 {
+	BACKGROUND-POSITION: -240px -240px
+}
+.emoji1f485 {
+	BACKGROUND-POSITION: -240px -260px
+}
+.emoji1f486 {
+	BACKGROUND-POSITION: -240px -280px
+}
+.emoji1f487 {
+	BACKGROUND-POSITION: -240px -300px
+}
+.emoji1f488 {
+	BACKGROUND-POSITION: -240px -320px
+}
+.emoji1f464 {
+	BACKGROUND-POSITION: -220px -200px
+}
+.emoji1f466 {
+	BACKGROUND-POSITION: -220px -240px
+}
+.emoji1f467 {
+	BACKGROUND-POSITION: -220px -260px
+}
+.emoji1f468 {
+	BACKGROUND-POSITION: -220px -280px
+}
+.emoji1f469 {
+	BACKGROUND-POSITION: -220px -300px
+}
+.emoji1f46a {
+	BACKGROUND-POSITION: -220px -320px
+}
+.emoji1f46b {
+	BACKGROUND-POSITION: -220px -340px
+}
+.emoji1f46e {
+	BACKGROUND-POSITION: -220px -400px
+}
+.emoji1f46f {
+	BACKGROUND-POSITION: -220px -420px
+}
+.emoji1f470 {
+	BACKGROUND-POSITION: -220px -440px
+}
+.emoji1f471 {
+	BACKGROUND-POSITION: -220px -460px
+}
+.emoji1f472 {
+	BACKGROUND-POSITION: -220px -480px
+}
+.emoji1f473 {
+	BACKGROUND-POSITION: -220px -500px
+}
+.emoji1f474 {
+	BACKGROUND-POSITION: -220px -520px
+}
+.emoji1f475 {
+	BACKGROUND-POSITION: -220px -540px
+}
+.emoji1f476 {
+	BACKGROUND-POSITION: -220px -560px
+}
+.emoji1f477 {
+	BACKGROUND-POSITION: -220px -580px
+}
+.emoji1f478 {
+	BACKGROUND-POSITION: -240px 0px
+}
+.emoji1f479 {
+	BACKGROUND-POSITION: -240px -20px
+}
+.emoji1f47a {
+	BACKGROUND-POSITION: -240px -40px
+}
+.emoji1f47b {
+	BACKGROUND-POSITION: -240px -60px
+}
+.emoji1f47c {
+	BACKGROUND-POSITION: -240px -80px
+}
+.emoji1f47d {
+	BACKGROUND-POSITION: -240px -100px
+}
+.emoji1f47e {
+	BACKGROUND-POSITION: -240px -120px
+}
+.emoji1f47f {
+	BACKGROUND-POSITION: -240px -140px
+}
+.emoji1f480 {
+	BACKGROUND-POSITION: -240px -160px
+}
+.emoji1f481 {
+	BACKGROUND-POSITION: -240px -180px
+}
+.emoji1f482 {
+	BACKGROUND-POSITION: -240px -200px
+}
+.emoji1f483 {
+	BACKGROUND-POSITION: -240px -220px
+}
+.emoji1f40c {
+	BACKGROUND-POSITION: -160px -280px
+}
+.emoji1f40d {
+	BACKGROUND-POSITION: -160px -300px
+}
+.emoji1f40e {
+	BACKGROUND-POSITION: -160px -320px
+}
+.emoji1f414 {
+	BACKGROUND-POSITION: -160px -440px
+}
+.emoji1f417 {
+	BACKGROUND-POSITION: -160px -500px
+}
+.emoji1f42b {
+	BACKGROUND-POSITION: -180px -300px
+}
+.emoji1f418 {
+	BACKGROUND-POSITION: -160px -520px
+}
+.emoji1f428 {
+	BACKGROUND-POSITION: -180px -240px
+}
+.emoji1f412 {
+	BACKGROUND-POSITION: -160px -400px
+}
+.emoji1f411 {
+	BACKGROUND-POSITION: -160px -380px
+}
+.emoji1f419 {
+	BACKGROUND-POSITION: -160px -540px
+}
+.emoji1f41a {
+	BACKGROUND-POSITION: -160px -560px
+}
+.emoji1f41b {
+	BACKGROUND-POSITION: -160px -580px
+}
+.emoji1f41c {
+	BACKGROUND-POSITION: -180px 0px
+}
+.emoji1f41d {
+	BACKGROUND-POSITION: -180px -20px
+}
+.emoji1f41e {
+	BACKGROUND-POSITION: -180px -40px
+}
+.emoji1f420 {
+	BACKGROUND-POSITION: -180px -80px
+}
+.emoji1f421 {
+	BACKGROUND-POSITION: -180px -100px
+}
+.emoji1f422 {
+	BACKGROUND-POSITION: -180px -120px
+}
+.emoji1f424 {
+	BACKGROUND-POSITION: -180px -160px
+}
+.emoji1f425 {
+	BACKGROUND-POSITION: -180px -180px
+}
+.emoji1f426 {
+	BACKGROUND-POSITION: -180px -200px
+}
+.emoji1f423 {
+	BACKGROUND-POSITION: -180px -140px
+}
+.emoji1f427 {
+	BACKGROUND-POSITION: -180px -220px
+}
+.emoji1f429 {
+	BACKGROUND-POSITION: -180px -260px
+}
+.emoji1f41f {
+	BACKGROUND-POSITION: -180px -60px
+}
+.emoji1f42c {
+	BACKGROUND-POSITION: -180px -320px
+}
+.emoji1f42d {
+	BACKGROUND-POSITION: -180px -340px
+}
+.emoji1f42f {
+	BACKGROUND-POSITION: -180px -380px
+}
+.emoji1f431 {
+	BACKGROUND-POSITION: -180px -420px
+}
+.emoji1f433 {
+	BACKGROUND-POSITION: -180px -460px
+}
+.emoji1f434 {
+	BACKGROUND-POSITION: -180px -480px
+}
+.emoji1f435 {
+	BACKGROUND-POSITION: -180px -500px
+}
+.emoji1f436 {
+	BACKGROUND-POSITION: -180px -520px
+}
+.emoji1f437 {
+	BACKGROUND-POSITION: -180px -540px
+}
+.emoji1f43b {
+	BACKGROUND-POSITION: -200px -20px
+}
+.emoji1f439 {
+	BACKGROUND-POSITION: -180px -580px
+}
+.emoji1f43a {
+	BACKGROUND-POSITION: -200px 0px
+}
+.emoji1f42e {
+	BACKGROUND-POSITION: -180px -360px
+}
+.emoji1f430 {
+	BACKGROUND-POSITION: -180px -400px
+}
+.emoji1f438 {
+	BACKGROUND-POSITION: -180px -560px
+}
+.emoji1f43e {
+	BACKGROUND-POSITION: -200px -80px
+}
+.emoji1f432 {
+	BACKGROUND-POSITION: -180px -440px
+}
+.emoji1f43c {
+	BACKGROUND-POSITION: -200px -40px
+}
+.emoji1f43d {
+	BACKGROUND-POSITION: -200px -60px
+}
+.emoji1f620 {
+	BACKGROUND-POSITION: -400px -280px
+}
+.emoji1f629 {
+	BACKGROUND-POSITION: -400px -460px
+}
+.emoji1f632 {
+	BACKGROUND-POSITION: -420px -40px
+}
+.emoji1f61e {
+	BACKGROUND-POSITION: -400px -240px
+}
+.emoji1f635 {
+	BACKGROUND-POSITION: -420px -100px
+}
+.emoji1f630 {
+	BACKGROUND-POSITION: -420px 0px
+}
+.emoji1f612 {
+	BACKGROUND-POSITION: -400px 0px
+}
+.emoji1f60d {
+	BACKGROUND-POSITION: -380px -500px
+}
+.emoji1f624 {
+	BACKGROUND-POSITION: -400px -360px
+}
+.emoji1f61c {
+	BACKGROUND-POSITION: -400px -200px
+}
+.emoji1f61d {
+	BACKGROUND-POSITION: -400px -220px
+}
+.emoji1f60b {
+	BACKGROUND-POSITION: -380px -460px
+}
+.emoji1f618 {
+	BACKGROUND-POSITION: -400px -120px
+}
+.emoji1f61a {
+	BACKGROUND-POSITION: -400px -160px
+}
+.emoji1f637 {
+	BACKGROUND-POSITION: -420px -140px
+}
+.emoji1f633 {
+	BACKGROUND-POSITION: -420px -60px
+}
+.emoji1f603 {
+	BACKGROUND-POSITION: -380px -300px
+}
+.emoji1f605 {
+	BACKGROUND-POSITION: -380px -340px
+}
+.emoji1f606 {
+	BACKGROUND-POSITION: -380px -360px
+}
+.emoji1f601 {
+	BACKGROUND-POSITION: -380px -260px
+}
+.emoji1f602 {
+	BACKGROUND-POSITION: -380px -280px
+}
+.emoji1f60a {
+	BACKGROUND-POSITION: -380px -440px
+}
+.emoji263a {
+	BACKGROUND-POSITION: -500px -260px
+}
+.emoji1f604 {
+	BACKGROUND-POSITION: -380px -320px
+}
+.emoji1f622 {
+	BACKGROUND-POSITION: -400px -320px
+}
+.emoji1f62d {
+	BACKGROUND-POSITION: -400px -540px
+}
+.emoji1f628 {
+	BACKGROUND-POSITION: -400px -440px
+}
+.emoji1f623 {
+	BACKGROUND-POSITION: -400px -340px
+}
+.emoji1f621 {
+	BACKGROUND-POSITION: -400px -300px
+}
+.emoji1f60c {
+	BACKGROUND-POSITION: -380px -480px
+}
+.emoji1f616 {
+	BACKGROUND-POSITION: -400px -80px
+}
+.emoji1f614 {
+	BACKGROUND-POSITION: -400px -40px
+}
+.emoji1f631 {
+	BACKGROUND-POSITION: -420px -20px
+}
+.emoji1f62a {
+	BACKGROUND-POSITION: -400px -480px
+}
+.emoji1f60f {
+	BACKGROUND-POSITION: -380px -540px
+}
+.emoji1f613 {
+	BACKGROUND-POSITION: -400px -20px
+}
+.emoji1f625 {
+	BACKGROUND-POSITION: -400px -380px
+}
+.emoji1f62b {
+	BACKGROUND-POSITION: -400px -500px
+}
+.emoji1f609 {
+	BACKGROUND-POSITION: -380px -420px
+}
+.emoji1f63a {
+	BACKGROUND-POSITION: -420px -200px
+}
+.emoji1f638 {
+	BACKGROUND-POSITION: -420px -160px
+}
+.emoji1f639 {
+	BACKGROUND-POSITION: -420px -180px
+}
+.emoji1f63d {
+	BACKGROUND-POSITION: -420px -260px
+}
+.emoji1f63b {
+	BACKGROUND-POSITION: -420px -220px
+}
+.emoji1f63f {
+	BACKGROUND-POSITION: -420px -300px
+}
+.emoji1f63e {
+	BACKGROUND-POSITION: -420px -280px
+}
+.emoji1f63c {
+	BACKGROUND-POSITION: -420px -240px
+}
+.emoji1f640 {
+	BACKGROUND-POSITION: -420px -320px
+}
+.emoji1f645 {
+	BACKGROUND-POSITION: -420px -340px
+}
+.emoji1f646 {
+	BACKGROUND-POSITION: -420px -360px
+}
+.emoji1f647 {
+	BACKGROUND-POSITION: -420px -380px
+}
+.emoji1f648 {
+	BACKGROUND-POSITION: -420px -400px
+}
+.emoji1f64a {
+	BACKGROUND-POSITION: -420px -440px
+}
+.emoji1f649 {
+	BACKGROUND-POSITION: -420px -420px
+}
+.emoji1f64b {
+	BACKGROUND-POSITION: -420px -460px
+}
+.emoji1f64c {
+	BACKGROUND-POSITION: -420px -480px
+}
+.emoji1f64d {
+	BACKGROUND-POSITION: -420px -500px
+}
+.emoji1f64e {
+	BACKGROUND-POSITION: -420px -520px
+}
+.emoji1f64f {
+	BACKGROUND-POSITION: -420px -540px
+}
+.emoji1f3e0 {
+	BACKGROUND-POSITION: -140px -300px
+}
+.emoji1f3e1 {
+	BACKGROUND-POSITION: -140px -320px
+}
+.emoji1f3e2 {
+	BACKGROUND-POSITION: -140px -340px
+}
+.emoji1f3e3 {
+	BACKGROUND-POSITION: -140px -360px
+}
+.emoji1f3e5 {
+	BACKGROUND-POSITION: -140px -400px
+}
+.emoji1f3e6 {
+	BACKGROUND-POSITION: -140px -420px
+}
+.emoji1f3e7 {
+	BACKGROUND-POSITION: -140px -440px
+}
+.emoji1f3e8 {
+	BACKGROUND-POSITION: -140px -460px
+}
+.emoji1f3e9 {
+	BACKGROUND-POSITION: -140px -480px
+}
+.emoji1f3ea {
+	BACKGROUND-POSITION: -140px -500px
+}
+.emoji1f3eb {
+	BACKGROUND-POSITION: -140px -520px
+}
+.emoji26ea {
+	BACKGROUND-POSITION: -520px -280px
+}
+.emoji26f2 {
+	BACKGROUND-POSITION: -520px -300px
+}
+.emoji1f3ec {
+	BACKGROUND-POSITION: -140px -540px
+}
+.emoji1f3ef {
+	BACKGROUND-POSITION: -160px 0px
+}
+.emoji1f3f0 {
+	BACKGROUND-POSITION: -160px -20px
+}
+.emoji1f3ed {
+	BACKGROUND-POSITION: -140px -560px
+}
+.emoji2693 {
+	BACKGROUND-POSITION: -520px -60px
+}
+.emoji1f3ee {
+	BACKGROUND-POSITION: -140px -580px
+}
+.emoji1f5fb {
+	BACKGROUND-POSITION: -380px -140px
+}
+.emoji1f5fc {
+	BACKGROUND-POSITION: -380px -160px
+}
+.emoji1f5fd {
+	BACKGROUND-POSITION: -380px -180px
+}
+.emoji1f5fe {
+	BACKGROUND-POSITION: -380px -200px
+}
+.emoji1f5ff {
+	BACKGROUND-POSITION: -380px -220px
+}
+.emoji1f45e {
+	BACKGROUND-POSITION: -220px -80px
+}
+.emoji1f45f {
+	BACKGROUND-POSITION: -220px -100px
+}
+.emoji1f460 {
+	BACKGROUND-POSITION: -220px -120px
+}
+.emoji1f461 {
+	BACKGROUND-POSITION: -220px -140px
+}
+.emoji1f462 {
+	BACKGROUND-POSITION: -220px -160px
+}
+.emoji1f463 {
+	BACKGROUND-POSITION: -220px -180px
+}
+.emoji1f453 {
+	BACKGROUND-POSITION: -200px -460px
+}
+.emoji1f455 {
+	BACKGROUND-POSITION: -200px -500px
+}
+.emoji1f456 {
+	BACKGROUND-POSITION: -200px -520px
+}
+.emoji1f451 {
+	BACKGROUND-POSITION: -200px -420px
+}
+.emoji1f454 {
+	BACKGROUND-POSITION: -200px -480px
+}
+.emoji1f452 {
+	BACKGROUND-POSITION: -200px -440px
+}
+.emoji1f457 {
+	BACKGROUND-POSITION: -200px -540px
+}
+.emoji1f458 {
+	BACKGROUND-POSITION: -200px -560px
+}
+.emoji1f459 {
+	BACKGROUND-POSITION: -200px -580px
+}
+.emoji1f45a {
+	BACKGROUND-POSITION: -220px 0px
+}
+.emoji1f45b {
+	BACKGROUND-POSITION: -220px -20px
+}
+.emoji1f45c {
+	BACKGROUND-POSITION: -220px -40px
+}
+.emoji1f45d {
+	BACKGROUND-POSITION: -220px -60px
+}
+.emoji1f4b0 {
+	BACKGROUND-POSITION: -260px -520px
+}
+.emoji1f4b1 {
+	BACKGROUND-POSITION: -260px -540px
+}
+.emoji1f4b9 {
+	BACKGROUND-POSITION: -280px -100px
+}
+.emoji1f4b2 {
+	BACKGROUND-POSITION: -260px -560px
+}
+.emoji1f4b3 {
+	BACKGROUND-POSITION: -260px -580px
+}
+.emoji1f4b4 {
+	BACKGROUND-POSITION: -280px 0px
+}
+.emoji1f4b5 {
+	BACKGROUND-POSITION: -280px -20px
+}
+.emoji1f4b8 {
+	BACKGROUND-POSITION: -280px -80px
+}
+.emoji1f1e81f1f3 {
+	BACKGROUND-POSITION: -20px 0px
+}
+.emoji1f1e91f1ea {
+	BACKGROUND-POSITION: -20px -20px
+}
+.emoji1f1ea1f1f8 {
+	BACKGROUND-POSITION: -20px -40px
+}
+.emoji1f1eb1f1f7 {
+	BACKGROUND-POSITION: -20px -60px
+}
+.emoji1f1ec1f1e7 {
+	BACKGROUND-POSITION: -20px -80px
+}
+.emoji1f1ee1f1f9 {
+	BACKGROUND-POSITION: -20px -100px
+}
+.emoji1f1ef1f1f5 {
+	BACKGROUND-POSITION: -20px -120px
+}
+.emoji1f1f01f1f7 {
+	BACKGROUND-POSITION: -20px -140px
+}
+.emoji1f1f71f1fa {
+	BACKGROUND-POSITION: -20px -160px
+}
+.emoji1f1fa1f1f8 {
+	BACKGROUND-POSITION: -20px -180px
+}
+.emoji1f525 {
+	BACKGROUND-POSITION: -340px -360px
+}
+.emoji1f526 {
+	BACKGROUND-POSITION: -340px -380px
+}
+.emoji1f527 {
+	BACKGROUND-POSITION: -340px -400px
+}
+.emoji1f528 {
+	BACKGROUND-POSITION: -340px -420px
+}
+.emoji1f529 {
+	BACKGROUND-POSITION: -340px -440px
+}
+.emoji1f52a {
+	BACKGROUND-POSITION: -340px -460px
+}
+.emoji1f52b {
+	BACKGROUND-POSITION: -340px -480px
+}
+.emoji1f52e {
+	BACKGROUND-POSITION: -340px -540px
+}
+.emoji1f52f {
+	BACKGROUND-POSITION: -340px -560px
+}
+.emoji1f530 {
+	BACKGROUND-POSITION: -340px -580px
+}
+.emoji1f531 {
+	BACKGROUND-POSITION: -360px 0px
+}
+.emoji1f489 {
+	BACKGROUND-POSITION: -240px -340px
+}
+.emoji1f48a {
+	BACKGROUND-POSITION: -240px -360px
+}
+.emoji1f170 {
+	BACKGROUND-POSITION: 0px -300px
+}
+.emoji1f171 {
+	BACKGROUND-POSITION: 0px -320px
+}
+.emoji1f18e {
+	BACKGROUND-POSITION: 0px -380px
+}
+.emoji1f17e {
+	BACKGROUND-POSITION: 0px -340px
+}
+.emoji1f380 {
+	BACKGROUND-POSITION: -100px -260px
+}
+.emoji1f381 {
+	BACKGROUND-POSITION: -100px -280px
+}
+.emoji1f382 {
+	BACKGROUND-POSITION: -100px -300px
+}
+.emoji1f384 {
+	BACKGROUND-POSITION: -100px -340px
+}
+.emoji1f385 {
+	BACKGROUND-POSITION: -100px -360px
+}
+.emoji1f38c {
+	BACKGROUND-POSITION: -100px -500px
+}
+.emoji1f386 {
+	BACKGROUND-POSITION: -100px -380px
+}
+.emoji1f388 {
+	BACKGROUND-POSITION: -100px -420px
+}
+.emoji1f389 {
+	BACKGROUND-POSITION: -100px -440px
+}
+.emoji1f38d {
+	BACKGROUND-POSITION: -100px -520px
+}
+.emoji1f38e {
+	BACKGROUND-POSITION: -100px -540px
+}
+.emoji1f393 {
+	BACKGROUND-POSITION: -120px -40px
+}
+.emoji1f392 {
+	BACKGROUND-POSITION: -120px -20px
+}
+.emoji1f38f {
+	BACKGROUND-POSITION: -100px -560px
+}
+.emoji1f387 {
+	BACKGROUND-POSITION: -100px -400px
+}
+.emoji1f390 {
+	BACKGROUND-POSITION: -100px -580px
+}
+.emoji1f383 {
+	BACKGROUND-POSITION: -100px -320px
+}
+.emoji1f38a {
+	BACKGROUND-POSITION: -100px -460px
+}
+.emoji1f38b {
+	BACKGROUND-POSITION: -100px -480px
+}
+.emoji1f391 {
+	BACKGROUND-POSITION: -120px 0px
+}
+.emoji1f4df {
+	BACKGROUND-POSITION: -300px -260px
+}
+.emoji260e {
+	BACKGROUND-POSITION: -500px -160px
+}
+.emoji1f4de {
+	BACKGROUND-POSITION: -300px -240px
+}
+.emoji1f4f1 {
+	BACKGROUND-POSITION: -320px -20px
+}
+.emoji1f4f2 {
+	BACKGROUND-POSITION: -320px -40px
+}
+.emoji1f4dd {
+	BACKGROUND-POSITION: -300px -220px
+}
+.emoji1f4e0 {
+	BACKGROUND-POSITION: -300px -280px
+}
+.emoji2709 {
+	BACKGROUND-POSITION: -520px -460px
+}
+.emoji1f4e8 {
+	BACKGROUND-POSITION: -300px -440px
+}
+.emoji1f4e9 {
+	BACKGROUND-POSITION: -300px -460px
+}
+.emoji1f4ea {
+	BACKGROUND-POSITION: -300px -480px
+}
+.emoji1f4eb {
+	BACKGROUND-POSITION: -300px -500px
+}
+.emoji1f4ee {
+	BACKGROUND-POSITION: -300px -560px
+}
+.emoji1f4f0 {
+	BACKGROUND-POSITION: -320px 0px
+}
+.emoji1f4e2 {
+	BACKGROUND-POSITION: -300px -320px
+}
+.emoji1f4e3 {
+	BACKGROUND-POSITION: -300px -340px
+}
+.emoji1f4e1 {
+	BACKGROUND-POSITION: -300px -300px
+}
+.emoji1f4e4 {
+	BACKGROUND-POSITION: -300px -360px
+}
+.emoji1f4e5 {
+	BACKGROUND-POSITION: -300px -380px
+}
+.emoji1f4e6 {
+	BACKGROUND-POSITION: -300px -400px
+}
+.emoji1f4e7 {
+	BACKGROUND-POSITION: -300px -420px
+}
+.emoji1f520 {
+	BACKGROUND-POSITION: -340px -260px
+}
+.emoji1f521 {
+	BACKGROUND-POSITION: -340px -280px
+}
+.emoji1f522 {
+	BACKGROUND-POSITION: -340px -300px
+}
+.emoji1f523 {
+	BACKGROUND-POSITION: -340px -320px
+}
+.emoji1f524 {
+	BACKGROUND-POSITION: -340px -340px
+}
+.emoji2712 {
+	BACKGROUND-POSITION: -520px -560px
+}
+.emoji1f4ba {
+	BACKGROUND-POSITION: -280px -120px
+}
+.emoji1f4bb {
+	BACKGROUND-POSITION: -280px -140px
+}
+.emoji270f {
+	BACKGROUND-POSITION: -520px -540px
+}
+.emoji1f4ce {
+	BACKGROUND-POSITION: -280px -520px
+}
+.emoji1f4bc {
+	BACKGROUND-POSITION: -280px -160px
+}
+.emoji1f4bd {
+	BACKGROUND-POSITION: -280px -180px
+}
+.emoji1f4be {
+	BACKGROUND-POSITION: -280px -200px
+}
+.emoji1f4bf {
+	BACKGROUND-POSITION: -280px -220px
+}
+.emoji1f4c0 {
+	BACKGROUND-POSITION: -280px -240px
+}
+.emoji2702 {
+	BACKGROUND-POSITION: -520px -400px
+}
+.emoji1f4cd {
+	BACKGROUND-POSITION: -280px -500px
+}
+.emoji1f4c3 {
+	BACKGROUND-POSITION: -280px -300px
+}
+.emoji1f4c4 {
+	BACKGROUND-POSITION: -280px -320px
+}
+.emoji1f4c5 {
+	BACKGROUND-POSITION: -280px -340px
+}
+.emoji1f4c1 {
+	BACKGROUND-POSITION: -280px -260px
+}
+.emoji1f4c2 {
+	BACKGROUND-POSITION: -280px -280px
+}
+.emoji1f4d3 {
+	BACKGROUND-POSITION: -300px -20px
+}
+.emoji1f4d6 {
+	BACKGROUND-POSITION: -300px -80px
+}
+.emoji1f4d4 {
+	BACKGROUND-POSITION: -300px -40px
+}
+.emoji1f4d5 {
+	BACKGROUND-POSITION: -300px -60px
+}
+.emoji1f4d7 {
+	BACKGROUND-POSITION: -300px -100px
+}
+.emoji1f4d8 {
+	BACKGROUND-POSITION: -300px -120px
+}
+.emoji1f4d9 {
+	BACKGROUND-POSITION: -300px -140px
+}
+.emoji1f4da {
+	BACKGROUND-POSITION: -300px -160px
+}
+.emoji1f4db {
+	BACKGROUND-POSITION: -300px -180px
+}
+.emoji1f4dc {
+	BACKGROUND-POSITION: -300px -200px
+}
+.emoji1f4cb {
+	BACKGROUND-POSITION: -280px -460px
+}
+.emoji1f4c6 {
+	BACKGROUND-POSITION: -280px -360px
+}
+.emoji1f4ca {
+	BACKGROUND-POSITION: -280px -440px
+}
+.emoji1f4c8 {
+	BACKGROUND-POSITION: -280px -400px
+}
+.emoji1f4c9 {
+	BACKGROUND-POSITION: -280px -420px
+}
+.emoji1f4c7 {
+	BACKGROUND-POSITION: -280px -380px
+}
+.emoji1f4cc {
+	BACKGROUND-POSITION: -280px -480px
+}
+.emoji1f4d2 {
+	BACKGROUND-POSITION: -300px 0px
+}
+.emoji1f4cf {
+	BACKGROUND-POSITION: -280px -540px
+}
+.emoji1f4d0 {
+	BACKGROUND-POSITION: -280px -560px
+}
+.emoji1f4d1 {
+	BACKGROUND-POSITION: -280px -580px
+}
+.emoji1f3bd {
+	BACKGROUND-POSITION: -140px -40px
+}
+.emoji26be {
+	BACKGROUND-POSITION: -520px -180px
+}
+.emoji26f3 {
+	BACKGROUND-POSITION: -520px -320px
+}
+.emoji1f3be {
+	BACKGROUND-POSITION: -140px -60px
+}
+.emoji26bd {
+	BACKGROUND-POSITION: -520px -160px
+}
+.emoji1f3bf {
+	BACKGROUND-POSITION: -140px -80px
+}
+.emoji1f3c0 {
+	BACKGROUND-POSITION: -140px -100px
+}
+.emoji1f3c1 {
+	BACKGROUND-POSITION: -140px -120px
+}
+.emoji1f3c2 {
+	BACKGROUND-POSITION: -140px -140px
+}
+.emoji1f3c3 {
+	BACKGROUND-POSITION: -140px -160px
+}
+.emoji1f3c4 {
+	BACKGROUND-POSITION: -140px -180px
+}
+.emoji1f3c6 {
+	BACKGROUND-POSITION: -140px -200px
+}
+.emoji1f3c8 {
+	BACKGROUND-POSITION: -140px -240px
+}
+.emoji1f3ca {
+	BACKGROUND-POSITION: -140px -280px
+}
+.emoji1f683 {
+	BACKGROUND-POSITION: -440px -20px
+}
+.emoji1f687 {
+	BACKGROUND-POSITION: -440px -100px
+}
+.emoji24c2 {
+	BACKGROUND-POSITION: -480px -540px
+}
+.emoji1f684 {
+	BACKGROUND-POSITION: -440px -40px
+}
+.emoji1f685 {
+	BACKGROUND-POSITION: -440px -60px
+}
+.emoji1f697 {
+	BACKGROUND-POSITION: -440px -400px
+}
+.emoji1f699 {
+	BACKGROUND-POSITION: -440px -440px
+}
+.emoji1f68c {
+	BACKGROUND-POSITION: -440px -180px
+}
+.emoji1f68f {
+	BACKGROUND-POSITION: -440px -240px
+}
+.emoji1f6a2 {
+	BACKGROUND-POSITION: -460px -20px
+}
+.emoji2708 {
+	BACKGROUND-POSITION: -520px -440px
+}
+.emoji26f5 {
+	BACKGROUND-POSITION: -520px -340px
+}
+.emoji1f689 {
+	BACKGROUND-POSITION: -440px -140px
+}
+.emoji1f680 {
+	BACKGROUND-POSITION: -420px -560px
+}
+.emoji1f6a4 {
+	BACKGROUND-POSITION: -460px -60px
+}
+.emoji1f695 {
+	BACKGROUND-POSITION: -440px -360px
+}
+.emoji1f69a {
+	BACKGROUND-POSITION: -440px -460px
+}
+.emoji1f692 {
+	BACKGROUND-POSITION: -440px -300px
+}
+.emoji1f691 {
+	BACKGROUND-POSITION: -440px -280px
+}
+.emoji1f693 {
+	BACKGROUND-POSITION: -440px -320px
+}
+.emoji26fd {
+	BACKGROUND-POSITION: -520px -380px
+}
+.emoji1f17f {
+	BACKGROUND-POSITION: 0px -360px
+}
+.emoji1f6a5 {
+	BACKGROUND-POSITION: -460px -80px
+}
+.emoji1f6a7 {
+	BACKGROUND-POSITION: -460px -120px
+}
+.emoji1f6a8 {
+	BACKGROUND-POSITION: -460px -140px
+}
+.emoji2668 {
+	BACKGROUND-POSITION: -520px 0px
+}
+.emoji26fa {
+	BACKGROUND-POSITION: -520px -360px
+}
+.emoji1f3a0 {
+	BACKGROUND-POSITION: -120px -60px
+}
+.emoji1f3a1 {
+	BACKGROUND-POSITION: -120px -80px
+}
+.emoji1f3a2 {
+	BACKGROUND-POSITION: -120px -100px
+}
+.emoji1f3a3 {
+	BACKGROUND-POSITION: -120px -120px
+}
+.emoji1f3a4 {
+	BACKGROUND-POSITION: -120px -140px
+}
+.emoji1f3a5 {
+	BACKGROUND-POSITION: -120px -160px
+}
+.emoji1f3a6 {
+	BACKGROUND-POSITION: -120px -180px
+}
+.emoji1f3a7 {
+	BACKGROUND-POSITION: -120px -200px
+}
+.emoji1f3a8 {
+	BACKGROUND-POSITION: -120px -220px
+}
+.emoji1f3a9 {
+	BACKGROUND-POSITION: -120px -240px
+}
+.emoji1f3aa {
+	BACKGROUND-POSITION: -120px -260px
+}
+.emoji1f3ab {
+	BACKGROUND-POSITION: -120px -280px
+}
+.emoji1f3ac {
+	BACKGROUND-POSITION: -120px -300px
+}
+.emoji1f3ad {
+	BACKGROUND-POSITION: -120px -320px
+}
+.emoji1f3ae {
+	BACKGROUND-POSITION: -120px -340px
+}
+.emoji1f004 {
+	BACKGROUND-POSITION: 0px -260px
+}
+.emoji1f3af {
+	BACKGROUND-POSITION: -120px -360px
+}
+.emoji1f3b0 {
+	BACKGROUND-POSITION: -120px -380px
+}
+.emoji1f3b1 {
+	BACKGROUND-POSITION: -120px -400px
+}
+.emoji1f3b2 {
+	BACKGROUND-POSITION: -120px -420px
+}
+.emoji1f3b3 {
+	BACKGROUND-POSITION: -120px -440px
+}
+.emoji1f3b4 {
+	BACKGROUND-POSITION: -120px -460px
+}
+.emoji1f0cf {
+	BACKGROUND-POSITION: 0px -280px
+}
+.emoji1f3b5 {
+	BACKGROUND-POSITION: -120px -480px
+}
+.emoji1f3b6 {
+	BACKGROUND-POSITION: -120px -500px
+}
+.emoji1f3b7 {
+	BACKGROUND-POSITION: -120px -520px
+}
+.emoji1f3b8 {
+	BACKGROUND-POSITION: -120px -540px
+}
+.emoji1f3b9 {
+	BACKGROUND-POSITION: -120px -560px
+}
+.emoji1f3ba {
+	BACKGROUND-POSITION: -120px -580px
+}
+.emoji1f3bb {
+	BACKGROUND-POSITION: -140px 0px
+}
+.emoji1f3bc {
+	BACKGROUND-POSITION: -140px -20px
+}
+.emoji303d {
+	BACKGROUND-POSITION: -540px -580px
+}
+.emoji1f4f7 {
+	BACKGROUND-POSITION: -320px -140px
+}
+.emoji1f4f9 {
+	BACKGROUND-POSITION: -320px -160px
+}
+.emoji1f4fa {
+	BACKGROUND-POSITION: -320px -180px
+}
+.emoji1f4fb {
+	BACKGROUND-POSITION: -320px -200px
+}
+.emoji1f4fc {
+	BACKGROUND-POSITION: -320px -220px
+}
+.emoji1f48b {
+	BACKGROUND-POSITION: -240px -380px
+}
+.emoji1f48c {
+	BACKGROUND-POSITION: -240px -400px
+}
+.emoji1f48d {
+	BACKGROUND-POSITION: -240px -420px
+}
+.emoji1f48e {
+	BACKGROUND-POSITION: -240px -440px
+}
+.emoji1f48f {
+	BACKGROUND-POSITION: -240px -460px
+}
+.emoji1f490 {
+	BACKGROUND-POSITION: -240px -480px
+}
+.emoji1f491 {
+	BACKGROUND-POSITION: -240px -500px
+}
+.emoji1f492 {
+	BACKGROUND-POSITION: -240px -520px
+}
+.emoji1f51e {
+	BACKGROUND-POSITION: -340px -220px
+}
+.emojia9 {
+	BACKGROUND-POSITION: 0px -220px
+}
+.emojiae {
+	BACKGROUND-POSITION: 0px -240px
+}
+.emoji2122 {
+	BACKGROUND-POSITION: -480px -180px
+}
+.emoji2139 {
+	BACKGROUND-POSITION: -480px -200px
+}
+.emoji2320e3 {
+	BACKGROUND-POSITION: 0px 0px
+}
+.emoji3120e3 {
+	BACKGROUND-POSITION: 0px -40px
+}
+.emoji3220e3 {
+	BACKGROUND-POSITION: 0px -60px
+}
+.emoji3320e3 {
+	BACKGROUND-POSITION: 0px -80px
+}
+.emoji3420e3 {
+	BACKGROUND-POSITION: 0px -100px
+}
+.emoji3520e3 {
+	BACKGROUND-POSITION: 0px -120px
+}
+.emoji3620e3 {
+	BACKGROUND-POSITION: 0px -140px
+}
+.emoji3720e3 {
+	BACKGROUND-POSITION: 0px -160px
+}
+.emoji3820e3 {
+	BACKGROUND-POSITION: 0px -180px
+}
+.emoji3920e3 {
+	BACKGROUND-POSITION: 0px -200px
+}
+.emoji3020e3 {
+	BACKGROUND-POSITION: 0px -20px
+}
+.emoji1f51f {
+	BACKGROUND-POSITION: -340px -240px
+}
+.emoji1f4f6 {
+	BACKGROUND-POSITION: -320px -120px
+}
+.emoji1f4f3 {
+	BACKGROUND-POSITION: -320px -60px
+}
+.emoji1f4f4 {
+	BACKGROUND-POSITION: -320px -80px
+}
+.emoji1f354 {
+	BACKGROUND-POSITION: -80px -40px
+}
+.emoji1f359 {
+	BACKGROUND-POSITION: -80px -140px
+}
+.emoji1f370 {
+	BACKGROUND-POSITION: -100px 0px
+}
+.emoji1f35c {
+	BACKGROUND-POSITION: -80px -200px
+}
+.emoji1f35e {
+	BACKGROUND-POSITION: -80px -240px
+}
+.emoji1f373 {
+	BACKGROUND-POSITION: -100px -60px
+}
+.emoji1f366 {
+	BACKGROUND-POSITION: -80px -400px
+}
+.emoji1f35f {
+	BACKGROUND-POSITION: -80px -260px
+}
+.emoji1f361 {
+	BACKGROUND-POSITION: -80px -300px
+}
+.emoji1f358 {
+	BACKGROUND-POSITION: -80px -120px
+}
+.emoji1f35a {
+	BACKGROUND-POSITION: -80px -160px
+}
+.emoji1f35d {
+	BACKGROUND-POSITION: -80px -220px
+}
+.emoji1f35b {
+	BACKGROUND-POSITION: -80px -180px
+}
+.emoji1f362 {
+	BACKGROUND-POSITION: -80px -320px
+}
+.emoji1f363 {
+	BACKGROUND-POSITION: -80px -340px
+}
+.emoji1f371 {
+	BACKGROUND-POSITION: -100px -20px
+}
+.emoji1f372 {
+	BACKGROUND-POSITION: -100px -40px
+}
+.emoji1f367 {
+	BACKGROUND-POSITION: -80px -420px
+}
+.emoji1f356 {
+	BACKGROUND-POSITION: -80px -80px
+}
+.emoji1f365 {
+	BACKGROUND-POSITION: -80px -380px
+}
+.emoji1f360 {
+	BACKGROUND-POSITION: -80px -280px
+}
+.emoji1f355 {
+	BACKGROUND-POSITION: -80px -60px
+}
+.emoji1f357 {
+	BACKGROUND-POSITION: -80px -100px
+}
+.emoji1f368 {
+	BACKGROUND-POSITION: -80px -440px
+}
+.emoji1f369 {
+	BACKGROUND-POSITION: -80px -460px
+}
+.emoji1f36a {
+	BACKGROUND-POSITION: -80px -480px
+}
+.emoji1f36b {
+	BACKGROUND-POSITION: -80px -500px
+}
+.emoji1f36c {
+	BACKGROUND-POSITION: -80px -520px
+}
+.emoji1f36d {
+	BACKGROUND-POSITION: -80px -540px
+}
+.emoji1f36e {
+	BACKGROUND-POSITION: -80px -560px
+}
+.emoji1f36f {
+	BACKGROUND-POSITION: -80px -580px
+}
+.emoji1f364 {
+	BACKGROUND-POSITION: -80px -360px
+}
+.emoji1f374 {
+	BACKGROUND-POSITION: -100px -80px
+}
+.emoji2615 {
+	BACKGROUND-POSITION: -500px -220px
+}
+.emoji1f378 {
+	BACKGROUND-POSITION: -100px -160px
+}
+.emoji1f37a {
+	BACKGROUND-POSITION: -100px -200px
+}
+.emoji1f375 {
+	BACKGROUND-POSITION: -100px -100px
+}
+.emoji1f376 {
+	BACKGROUND-POSITION: -100px -120px
+}
+.emoji1f377 {
+	BACKGROUND-POSITION: -100px -140px
+}
+.emoji1f37b {
+	BACKGROUND-POSITION: -100px -220px
+}
+.emoji1f379 {
+	BACKGROUND-POSITION: -100px -180px
+}
+.emoji2197 {
+	BACKGROUND-POSITION: -480px -280px
+}
+.emoji2198 {
+	BACKGROUND-POSITION: -480px -300px
+}
+.emoji2196 {
+	BACKGROUND-POSITION: -480px -260px
+}
+.emoji2199 {
+	BACKGROUND-POSITION: -480px -320px
+}
+.emoji2934 {
+	BACKGROUND-POSITION: -540px -380px
+}
+.emoji2935 {
+	BACKGROUND-POSITION: -540px -400px
+}
+.emoji2194 {
+	BACKGROUND-POSITION: -480px -220px
+}
+.emoji2195 {
+	BACKGROUND-POSITION: -480px -240px
+}
+.emoji2b06 {
+	BACKGROUND-POSITION: -540px -440px
+}
+.emoji2b07 {
+	BACKGROUND-POSITION: -540px -460px
+}
+.emoji27a1 {
+	BACKGROUND-POSITION: -540px -320px
+}
+.emoji2b05 {
+	BACKGROUND-POSITION: -540px -420px
+}
+.emoji25b6 {
+	BACKGROUND-POSITION: -500px 0px
+}
+.emoji25c0 {
+	BACKGROUND-POSITION: -500px -20px
+}
+.emoji23e9 {
+	BACKGROUND-POSITION: -480px -420px
+}
+.emoji23ea {
+	BACKGROUND-POSITION: -480px -440px
+}
+.emoji23eb {
+	BACKGROUND-POSITION: -480px -460px
+}
+.emoji23ec {
+	BACKGROUND-POSITION: -480px -480px
+}
+.emoji1f53a {
+	BACKGROUND-POSITION: -360px -180px
+}
+.emoji1f53b {
+	BACKGROUND-POSITION: -360px -200px
+}
+.emoji1f53c {
+	BACKGROUND-POSITION: -360px -220px
+}
+.emoji1f53d {
+	BACKGROUND-POSITION: -360px -240px
+}
+.emoji2b55 {
+	BACKGROUND-POSITION: -540px -540px
+}
+.emoji274c {
+	BACKGROUND-POSITION: -540px -120px
+}
+.emoji274e {
+	BACKGROUND-POSITION: -540px -140px
+}
+.emoji2757 {
+	BACKGROUND-POSITION: -540px -220px
+}
+.emoji2049 {
+	BACKGROUND-POSITION: -480px -160px
+}
+.emoji203c {
+	BACKGROUND-POSITION: -480px -140px
+}
+.emoji2753 {
+	BACKGROUND-POSITION: -540px -160px
+}
+.emoji2754 {
+	BACKGROUND-POSITION: -540px -180px
+}
+.emoji2755 {
+	BACKGROUND-POSITION: -540px -200px
+}
+.emoji3030 {
+	BACKGROUND-POSITION: -540px -560px
+}
+.emoji27b0 {
+	BACKGROUND-POSITION: -540px -340px
+}
+.emoji27bf {
+	BACKGROUND-POSITION: -540px -360px
+}
+.emoji2764 {
+	BACKGROUND-POSITION: -540px -240px
+}
+.emoji1f493 {
+	BACKGROUND-POSITION: -240px -540px
+}
+.emoji1f494 {
+	BACKGROUND-POSITION: -240px -560px
+}
+.emoji1f495 {
+	BACKGROUND-POSITION: -240px -580px
+}
+.emoji1f496 {
+	BACKGROUND-POSITION: -260px 0px
+}
+.emoji1f497 {
+	BACKGROUND-POSITION: -260px -20px
+}
+.emoji1f498 {
+	BACKGROUND-POSITION: -260px -40px
+}
+.emoji1f499 {
+	BACKGROUND-POSITION: -260px -60px
+}
+.emoji1f49a {
+	BACKGROUND-POSITION: -260px -80px
+}
+.emoji1f49b {
+	BACKGROUND-POSITION: -260px -100px
+}
+.emoji1f49c {
+	BACKGROUND-POSITION: -260px -120px
+}
+.emoji1f49d {
+	BACKGROUND-POSITION: -260px -140px
+}
+.emoji1f49e {
+	BACKGROUND-POSITION: -260px -160px
+}
+.emoji1f49f {
+	BACKGROUND-POSITION: -260px -180px
+}
+.emoji2665 {
+	BACKGROUND-POSITION: -500px -560px
+}
+.emoji2660 {
+	BACKGROUND-POSITION: -500px -520px
+}
+.emoji2666 {
+	BACKGROUND-POSITION: -500px -580px
+}
+.emoji2663 {
+	BACKGROUND-POSITION: -500px -540px
+}
+.emoji1f6ac {
+	BACKGROUND-POSITION: -460px -220px
+}
+.emoji1f6ad {
+	BACKGROUND-POSITION: -460px -240px
+}
+.emoji267f {
+	BACKGROUND-POSITION: -520px -40px
+}
+.emoji1f6a9 {
+	BACKGROUND-POSITION: -460px -160px
+}
+.emoji26a0 {
+	BACKGROUND-POSITION: -520px -80px
+}
+.emoji26d4 {
+	BACKGROUND-POSITION: -520px -260px
+}
+.emoji267b {
+	BACKGROUND-POSITION: -520px -20px
+}
+.emoji1f6b2 {
+	BACKGROUND-POSITION: -460px -340px
+}
+.emoji1f6b6 {
+	BACKGROUND-POSITION: -460px -420px
+}
+.emoji1f6b9 {
+	BACKGROUND-POSITION: -460px -480px
+}
+.emoji1f6ba {
+	BACKGROUND-POSITION: -460px -500px
+}
+.emoji1f6c0 {
+	BACKGROUND-POSITION: -480px -20px
+}
+.emoji1f6bb {
+	BACKGROUND-POSITION: -460px -520px
+}
+.emoji1f6bd {
+	BACKGROUND-POSITION: -460px -560px
+}
+.emoji1f6be {
+	BACKGROUND-POSITION: -460px -580px
+}
+.emoji1f6bc {
+	BACKGROUND-POSITION: -460px -540px
+}
+.emoji1f6aa {
+	BACKGROUND-POSITION: -460px -180px
+}
+.emoji1f6ab {
+	BACKGROUND-POSITION: -460px -200px
+}
+.emoji2714 {
+	BACKGROUND-POSITION: -520px -580px
+}
+.emoji1f191 {
+	BACKGROUND-POSITION: 0px -400px
+}
+.emoji1f192 {
+	BACKGROUND-POSITION: 0px -420px
+}
+.emoji1f193 {
+	BACKGROUND-POSITION: 0px -440px
+}
+.emoji1f194 {
+	BACKGROUND-POSITION: 0px -460px
+}
+.emoji1f195 {
+	BACKGROUND-POSITION: 0px -480px
+}
+.emoji1f196 {
+	BACKGROUND-POSITION: 0px -500px
+}
+.emoji1f197 {
+	BACKGROUND-POSITION: 0px -520px
+}
+.emoji1f198 {
+	BACKGROUND-POSITION: 0px -540px
+}
+.emoji1f199 {
+	BACKGROUND-POSITION: 0px -560px
+}
+.emoji1f19a {
+	BACKGROUND-POSITION: 0px -580px
+}
+.emoji1f201 {
+	BACKGROUND-POSITION: -20px -200px
+}
+.emoji1f202 {
+	BACKGROUND-POSITION: -20px -220px
+}
+.emoji1f232 {
+	BACKGROUND-POSITION: -20px -280px
+}
+.emoji1f233 {
+	BACKGROUND-POSITION: -20px -300px
+}
+.emoji1f234 {
+	BACKGROUND-POSITION: -20px -320px
+}
+.emoji1f235 {
+	BACKGROUND-POSITION: -20px -340px
+}
+.emoji1f236 {
+	BACKGROUND-POSITION: -20px -360px
+}
+.emoji1f21a {
+	BACKGROUND-POSITION: -20px -240px
+}
+.emoji1f237 {
+	BACKGROUND-POSITION: -20px -380px
+}
+.emoji1f238 {
+	BACKGROUND-POSITION: -20px -400px
+}
+.emoji1f239 {
+	BACKGROUND-POSITION: -20px -420px
+}
+.emoji1f22f {
+	BACKGROUND-POSITION: -20px -260px
+}
+.emoji1f23a {
+	BACKGROUND-POSITION: -20px -440px
+}
+.emoji3299 {
+	BACKGROUND-POSITION: -560px -20px
+}
+.emoji3297 {
+	BACKGROUND-POSITION: -560px 0px
+}
+.emoji1f250 {
+	BACKGROUND-POSITION: -20px -460px
+}
+.emoji1f251 {
+	BACKGROUND-POSITION: -20px -480px
+}
+.emoji2795 {
+	BACKGROUND-POSITION: -540px -260px
+}
+.emoji2796 {
+	BACKGROUND-POSITION: -540px -280px
+}
+.emoji2716 {
+	BACKGROUND-POSITION: -540px 0px
+}
+.emoji2797 {
+	BACKGROUND-POSITION: -540px -300px
+}
+.emoji1f4a0 {
+	BACKGROUND-POSITION: -260px -200px
+}
+.emoji1f4a1 {
+	BACKGROUND-POSITION: -260px -220px
+}
+.emoji1f4a2 {
+	BACKGROUND-POSITION: -260px -240px
+}
+.emoji1f4a3 {
+	BACKGROUND-POSITION: -260px -260px
+}
+.emoji1f4a4 {
+	BACKGROUND-POSITION: -260px -280px
+}
+.emoji1f4a5 {
+	BACKGROUND-POSITION: -260px -300px
+}
+.emoji1f4a6 {
+	BACKGROUND-POSITION: -260px -320px
+}
+.emoji1f4a7 {
+	BACKGROUND-POSITION: -260px -340px
+}
+.emoji1f4a8 {
+	BACKGROUND-POSITION: -260px -360px
+}
+.emoji1f4a9 {
+	BACKGROUND-POSITION: -260px -380px
+}
+.emoji1f4aa {
+	BACKGROUND-POSITION: -260px -400px
+}
+.emoji1f4ab {
+	BACKGROUND-POSITION: -260px -420px
+}
+.emoji1f4ac {
+	BACKGROUND-POSITION: -260px -440px
+}
+.emoji2728 {
+	BACKGROUND-POSITION: -540px -20px
+}
+.emoji2734 {
+	BACKGROUND-POSITION: -540px -60px
+}
+.emoji2733 {
+	BACKGROUND-POSITION: -540px -40px
+}
+.emoji26aa {
+	BACKGROUND-POSITION: -520px -120px
+}
+.emoji26ab {
+	BACKGROUND-POSITION: -520px -140px
+}
+.emoji1f534 {
+	BACKGROUND-POSITION: -360px -60px
+}
+.emoji1f535 {
+	BACKGROUND-POSITION: -360px -80px
+}
+.emoji1f532 {
+	BACKGROUND-POSITION: -360px -20px
+}
+.emoji1f533 {
+	BACKGROUND-POSITION: -360px -40px
+}
+.emoji2b50 {
+	BACKGROUND-POSITION: -540px -520px
+}
+.emoji2b1c {
+	BACKGROUND-POSITION: -540px -500px
+}
+.emoji2b1b {
+	BACKGROUND-POSITION: -540px -480px
+}
+.emoji25ab {
+	BACKGROUND-POSITION: -480px -580px
+}
+.emoji25aa {
+	BACKGROUND-POSITION: -480px -560px
+}
+.emoji25fd {
+	BACKGROUND-POSITION: -500px -80px
+}
+.emoji25fe {
+	BACKGROUND-POSITION: -500px -100px
+}
+.emoji25fb {
+	BACKGROUND-POSITION: -500px -40px
+}
+.emoji25fc {
+	BACKGROUND-POSITION: -500px -60px
+}
+.emoji1f536 {
+	BACKGROUND-POSITION: -360px -100px
+}
+.emoji1f537 {
+	BACKGROUND-POSITION: -360px -120px
+}
+.emoji1f538 {
+	BACKGROUND-POSITION: -360px -140px
+}
+.emoji1f539 {
+	BACKGROUND-POSITION: -360px -160px
+}
+.emoji2747 {
+	BACKGROUND-POSITION: -540px -100px
+}
+.emoji1f4ae {
+	BACKGROUND-POSITION: -260px -480px
+}
+.emoji1f4af {
+	BACKGROUND-POSITION: -260px -500px
+}
+.emoji21a9 {
+	BACKGROUND-POSITION: -480px -340px
+}
+.emoji21aa {
+	BACKGROUND-POSITION: -480px -360px
+}
+.emoji1f503 {
+	BACKGROUND-POSITION: -320px -300px
+}
+.emoji1f50a {
+	BACKGROUND-POSITION: -320px -420px
+}
+.emoji1f50b {
+	BACKGROUND-POSITION: -320px -440px
+}
+.emoji1f50c {
+	BACKGROUND-POSITION: -320px -460px
+}
+.emoji1f50d {
+	BACKGROUND-POSITION: -320px -480px
+}
+.emoji1f50e {
+	BACKGROUND-POSITION: -320px -500px
+}
+.emoji1f512 {
+	BACKGROUND-POSITION: -320px -580px
+}
+.emoji1f513 {
+	BACKGROUND-POSITION: -340px 0px
+}
+.emoji1f50f {
+	BACKGROUND-POSITION: -320px -520px
+}
+.emoji1f510 {
+	BACKGROUND-POSITION: -320px -540px
+}
+.emoji1f511 {
+	BACKGROUND-POSITION: -320px -560px
+}
+.emoji1f514 {
+	BACKGROUND-POSITION: -340px -20px
+}
+.emoji2611 {
+	BACKGROUND-POSITION: -500px -180px
+}
+.emoji1f518 {
+	BACKGROUND-POSITION: -340px -100px
+}
+.emoji1f516 {
+	BACKGROUND-POSITION: -340px -60px
+}
+.emoji1f517 {
+	BACKGROUND-POSITION: -340px -80px
+}
+.emoji1f519 {
+	BACKGROUND-POSITION: -340px -120px
+}
+.emoji1f51a {
+	BACKGROUND-POSITION: -340px -140px
+}
+.emoji1f51b {
+	BACKGROUND-POSITION: -340px -160px
+}
+.emoji1f51c {
+	BACKGROUND-POSITION: -340px -180px
+}
+.emoji1f51d {
+	BACKGROUND-POSITION: -340px -200px
+}
+.emoji2705 {
+	BACKGROUND-POSITION: -520px -420px
+}
+.emoji270a {
+	BACKGROUND-POSITION: -520px -480px
+}
+.emoji270b {
+	BACKGROUND-POSITION: -520px -500px
+}
+.emoji270c {
+	BACKGROUND-POSITION: -520px -520px
+}
+.emoji1f44a {
+	BACKGROUND-POSITION: -200px -280px
+}
+.emoji1f44d {
+	BACKGROUND-POSITION: -200px -340px
+}
+.emoji261d {
+	BACKGROUND-POSITION: -500px -240px
+}
+.emoji1f446 {
+	BACKGROUND-POSITION: -200px -200px
+}
+.emoji1f447 {
+	BACKGROUND-POSITION: -200px -220px
+}
+.emoji1f448 {
+	BACKGROUND-POSITION: -200px -240px
+}
+.emoji1f449 {
+	BACKGROUND-POSITION: -200px -260px
+}
+.emoji1f44b {
+	BACKGROUND-POSITION: -200px -300px
+}
+.emoji1f44f {
+	BACKGROUND-POSITION: -200px -380px
+}
+.emoji1f44c {
+	BACKGROUND-POSITION: -200px -320px
+}
+.emoji1f44e {
+	BACKGROUND-POSITION: -200px -360px
+}
+.emoji1f450 {
+	BACKGROUND-POSITION: -200px -400px
+}
+</STYLE>
+
+<H2>Full Emoji Catalog</H2>
+<TABLE cellSpacing=3D0 cellPadding=3D0>
+  <TBODY>
+  <TR>
+    <TH colSpan=3D2>Name</TH>
+    <TH>Unified</TH>
+    <TH>DoCoMo</TH>
+    <TH>KDDI</TH>
+    <TH>Softbank</TH>
+    <TH>Google</TH></TR>
+  <TBODY>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji2600"></SPAN></TD>
+    <TD>black sun with rays</TD>
+    <TD>U+2600</TD>
+    <TD>U+E63E</TD>
+    <TD>U+E488</TD>
+    <TD>U+E04A</TD>
+    <TD>U+FE000</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji2601"></SPAN></TD>
+    <TD>cloud</TD>
+    <TD>U+2601</TD>
+    <TD>U+E63F</TD>
+    <TD>U+E48D</TD>
+    <TD>U+E049</TD>
+    <TD>U+FE001</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji2614"></SPAN></TD>
+    <TD>umbrella with rain drops</TD>
+    <TD>U+2614</TD>
+    <TD>U+E640</TD>
+    <TD>U+E48C</TD>
+    <TD>U+E04B</TD>
+    <TD>U+FE002</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji26c4"></SPAN></TD>
+    <TD>snowman without snow</TD>
+    <TD>U+26C4</TD>
+    <TD>U+E641</TD>
+    <TD>U+E485</TD>
+    <TD>U+E048</TD>
+    <TD>U+FE003</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji26a1"></SPAN></TD>
+    <TD>high voltage sign</TD>
+    <TD>U+26A1</TD>
+    <TD>U+E642</TD>
+    <TD>U+E487</TD>
+    <TD>U+E13D</TD>
+    <TD>U+FE004</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f300"></SPAN></TD>
+    <TD>cyclone</TD>
+    <TD>U+1F300</TD>
+    <TD>U+E643</TD>
+    <TD>U+E469</TD>
+    <TD>U+E443</TD>
+    <TD>U+FE005</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f301"></SPAN></TD>
+    <TD>foggy</TD>
+    <TD>U+1F301</TD>
+    <TD>U+E644</TD>
+    <TD>U+E598</TD>
+    <TD>-</TD>
+    <TD>U+FE006</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f302"></SPAN></TD>
+    <TD>closed umbrella</TD>
+    <TD>U+1F302</TD>
+    <TD>U+E645</TD>
+    <TD>U+EAE8</TD>
+    <TD>U+E43C</TD>
+    <TD>U+FE007</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f303"></SPAN></TD>
+    <TD>night with stars</TD>
+    <TD>U+1F303</TD>
+    <TD>U+E6B3</TD>
+    <TD>U+EAF1</TD>
+    <TD>U+E44B</TD>
+    <TD>U+FE008</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f304"></SPAN></TD>
+    <TD>sunrise over mountains</TD>
+    <TD>U+1F304</TD>
+    <TD>U+E63E</TD>
+    <TD>U+EAF4</TD>
+    <TD>U+E04D</TD>
+    <TD>U+FE009</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f305"></SPAN></TD>
+    <TD>sunrise</TD>
+    <TD>U+1F305</TD>
+    <TD>U+E63E</TD>
+    <TD>U+EAF4</TD>
+    <TD>U+E449</TD>
+    <TD>U+FE00A</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f306"></SPAN></TD>
+    <TD>cityscape at dusk</TD>
+    <TD>U+1F306</TD>
+    <TD>-</TD>
+    <TD>U+E5DA</TD>
+    <TD>U+E146</TD>
+    <TD>U+FE00B</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f307"></SPAN></TD>
+    <TD>sunset over buildings</TD>
+    <TD>U+1F307</TD>
+    <TD>U+E63E</TD>
+    <TD>U+E5DA</TD>
+    <TD>U+E44A</TD>
+    <TD>U+FE00C</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f308"></SPAN></TD>
+    <TD>rainbow</TD>
+    <TD>U+1F308</TD>
+    <TD>-</TD>
+    <TD>U+EAF2</TD>
+    <TD>U+E44C</TD>
+    <TD>U+FE00D</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji2744"></SPAN></TD>
+    <TD>snowflake</TD>
+    <TD>U+2744</TD>
+    <TD>-</TD>
+    <TD>U+E48A</TD>
+    <TD>-</TD>
+    <TD>U+FE00E</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji26c5"></SPAN></TD>
+    <TD>sun behind cloud</TD>
+    <TD>U+26C5</TD>
+    <TD>U+E63E U+E63F</TD>
+    <TD>U+E48E</TD>
+    <TD>U+E04A U+E049</TD>
+    <TD>U+FE00F</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f309"></SPAN></TD>
+    <TD>bridge at night</TD>
+    <TD>U+1F309</TD>
+    <TD>U+E6B3</TD>
+    <TD>U+E4BF</TD>
+    <TD>U+E44B</TD>
+    <TD>U+FE010</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f30a"></SPAN></TD>
+    <TD>water wave</TD>
+    <TD>U+1F30A</TD>
+    <TD>U+E73F</TD>
+    <TD>U+EB7C</TD>
+    <TD>U+E43E</TD>
+    <TD>U+FE038</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f30b"></SPAN></TD>
+    <TD>volcano</TD>
+    <TD>U+1F30B</TD>
+    <TD>-</TD>
+    <TD>U+EB53</TD>
+    <TD>-</TD>
+    <TD>U+FE03A</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f30c"></SPAN></TD>
+    <TD>milky way</TD>
+    <TD>U+1F30C</TD>
+    <TD>U+E6B3</TD>
+    <TD>U+EB5F</TD>
+    <TD>U+E44B</TD>
+    <TD>U+FE03B</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f30f"></SPAN></TD>
+    <TD>earth globe asia-australia</TD>
+    <TD>U+1F30F</TD>
+    <TD>-</TD>
+    <TD>U+E5B3</TD>
+    <TD>-</TD>
+    <TD>U+FE039</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f311"></SPAN></TD>
+    <TD>new moon symbol</TD>
+    <TD>U+1F311</TD>
+    <TD>U+E69C</TD>
+    <TD>U+E5A8</TD>
+    <TD>-</TD>
+    <TD>U+FE011</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f314"></SPAN></TD>
+    <TD>waxing gibbous moon symbol</TD>
+    <TD>U+1F314</TD>
+    <TD>U+E69D</TD>
+    <TD>U+E5A9</TD>
+    <TD>U+E04C</TD>
+    <TD>U+FE012</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f313"></SPAN></TD>
+    <TD>first quarter moon symbol</TD>
+    <TD>U+1F313</TD>
+    <TD>U+E69E</TD>
+    <TD>U+E5AA</TD>
+    <TD>U+E04C</TD>
+    <TD>U+FE013</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f319"></SPAN></TD>
+    <TD>crescent moon</TD>
+    <TD>U+1F319</TD>
+    <TD>U+E69F</TD>
+    <TD>U+E486</TD>
+    <TD>U+E04C</TD>
+    <TD>U+FE014</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f315"></SPAN></TD>
+    <TD>full moon symbol</TD>
+    <TD>U+1F315</TD>
+    <TD>U+E6A0</TD>
+    <TD>-</TD>
+    <TD>-</TD>
+    <TD>U+FE015</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f31b"></SPAN></TD>
+    <TD>first quarter moon with face</TD>
+    <TD>U+1F31B</TD>
+    <TD>U+E69E</TD>
+    <TD>U+E489</TD>
+    <TD>U+E04C</TD>
+    <TD>U+FE016</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f31f"></SPAN></TD>
+    <TD>glowing star</TD>
+    <TD>U+1F31F</TD>
+    <TD>-</TD>
+    <TD>U+E48B</TD>
+    <TD>U+E335</TD>
+    <TD>U+FEB69</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f320"></SPAN></TD>
+    <TD>shooting star</TD>
+    <TD>U+1F320</TD>
+    <TD>-</TD>
+    <TD>U+E468</TD>
+    <TD>-</TD>
+    <TD>U+FEB6A</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f550"></SPAN></TD>
+    <TD>clock face one oclock</TD>
+    <TD>U+1F550</TD>
+    <TD>U+E6BA</TD>
+    <TD>U+E594</TD>
+    <TD>U+E024</TD>
+    <TD>U+FE01E</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f551"></SPAN></TD>
+    <TD>clock face two oclock</TD>
+    <TD>U+1F551</TD>
+    <TD>U+E6BA</TD>
+    <TD>U+E594</TD>
+    <TD>U+E025</TD>
+    <TD>U+FE01F</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f552"></SPAN></TD>
+    <TD>clock face three oclock</TD>
+    <TD>U+1F552</TD>
+    <TD>U+E6BA</TD>
+    <TD>U+E594</TD>
+    <TD>U+E026</TD>
+    <TD>U+FE020</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f553"></SPAN></TD>
+    <TD>clock face four oclock</TD>
+    <TD>U+1F553</TD>
+    <TD>U+E6BA</TD>
+    <TD>U+E594</TD>
+    <TD>U+E027</TD>
+    <TD>U+FE021</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f554"></SPAN></TD>
+    <TD>clock face five oclock</TD>
+    <TD>U+1F554</TD>
+    <TD>U+E6BA</TD>
+    <TD>U+E594</TD>
+    <TD>U+E028</TD>
+    <TD>U+FE022</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f555"></SPAN></TD>
+    <TD>clock face six oclock</TD>
+    <TD>U+1F555</TD>
+    <TD>U+E6BA</TD>
+    <TD>U+E594</TD>
+    <TD>U+E029</TD>
+    <TD>U+FE023</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f556"></SPAN></TD>
+    <TD>clock face seven oclock</TD>
+    <TD>U+1F556</TD>
+    <TD>U+E6BA</TD>
+    <TD>U+E594</TD>
+    <TD>U+E02A</TD>
+    <TD>U+FE024</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f557"></SPAN></TD>
+    <TD>clock face eight oclock</TD>
+    <TD>U+1F557</TD>
+    <TD>U+E6BA</TD>
+    <TD>U+E594</TD>
+    <TD>U+E02B</TD>
+    <TD>U+FE025</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f558"></SPAN></TD>
+    <TD>clock face nine oclock</TD>
+    <TD>U+1F558</TD>
+    <TD>U+E6BA</TD>
+    <TD>U+E594</TD>
+    <TD>U+E02C</TD>
+    <TD>U+FE026</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f559"></SPAN></TD>
+    <TD>clock face ten oclock</TD>
+    <TD>U+1F559</TD>
+    <TD>U+E6BA</TD>
+    <TD>U+E594</TD>
+    <TD>U+E02D</TD>
+    <TD>U+FE027</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f55a"></SPAN></TD>
+    <TD>clock face eleven oclock</TD>
+    <TD>U+1F55A</TD>
+    <TD>U+E6BA</TD>
+    <TD>U+E594</TD>
+    <TD>U+E02E</TD>
+    <TD>U+FE028</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f55b"></SPAN></TD>
+    <TD>clock face twelve oclock</TD>
+    <TD>U+1F55B</TD>
+    <TD>U+E6BA</TD>
+    <TD>U+E594</TD>
+    <TD>U+E02F</TD>
+    <TD>U+FE029</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji231a"></SPAN></TD>
+    <TD>watch</TD>
+    <TD>U+231A</TD>
+    <TD>U+E71F</TD>
+    <TD>U+E57A</TD>
+    <TD>-</TD>
+    <TD>U+FE01D</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji231b"></SPAN></TD>
+    <TD>hourglass</TD>
+    <TD>U+231B</TD>
+    <TD>U+E71C</TD>
+    <TD>U+E57B</TD>
+    <TD>-</TD>
+    <TD>U+FE01C</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji23f0"></SPAN></TD>
+    <TD>alarm clock</TD>
+    <TD>U+23F0</TD>
+    <TD>U+E6BA</TD>
+    <TD>U+E594</TD>
+    <TD>U+E02D</TD>
+    <TD>U+FE02A</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji23f3"></SPAN></TD>
+    <TD>hourglass with flowing sand</TD>
+    <TD>U+23F3</TD>
+    <TD>U+E71C</TD>
+    <TD>U+E47C</TD>
+    <TD>-</TD>
+    <TD>U+FE01B</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji2648"></SPAN></TD>
+    <TD>aries</TD>
+    <TD>U+2648</TD>
+    <TD>U+E646</TD>
+    <TD>U+E48F</TD>
+    <TD>U+E23F</TD>
+    <TD>U+FE02B</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji2649"></SPAN></TD>
+    <TD>taurus</TD>
+    <TD>U+2649</TD>
+    <TD>U+E647</TD>
+    <TD>U+E490</TD>
+    <TD>U+E240</TD>
+    <TD>U+FE02C</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji264a"></SPAN></TD>
+    <TD>gemini</TD>
+    <TD>U+264A</TD>
+    <TD>U+E648</TD>
+    <TD>U+E491</TD>
+    <TD>U+E241</TD>
+    <TD>U+FE02D</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji264b"></SPAN></TD>
+    <TD>cancer</TD>
+    <TD>U+264B</TD>
+    <TD>U+E649</TD>
+    <TD>U+E492</TD>
+    <TD>U+E242</TD>
+    <TD>U+FE02E</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji264c"></SPAN></TD>
+    <TD>leo</TD>
+    <TD>U+264C</TD>
+    <TD>U+E64A</TD>
+    <TD>U+E493</TD>
+    <TD>U+E243</TD>
+    <TD>U+FE02F</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji264d"></SPAN></TD>
+    <TD>virgo</TD>
+    <TD>U+264D</TD>
+    <TD>U+E64B</TD>
+    <TD>U+E494</TD>
+    <TD>U+E244</TD>
+    <TD>U+FE030</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji264e"></SPAN></TD>
+    <TD>libra</TD>
+    <TD>U+264E</TD>
+    <TD>U+E64C</TD>
+    <TD>U+E495</TD>
+    <TD>U+E245</TD>
+    <TD>U+FE031</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji264f"></SPAN></TD>
+    <TD>scorpius</TD>
+    <TD>U+264F</TD>
+    <TD>U+E64D</TD>
+    <TD>U+E496</TD>
+    <TD>U+E246</TD>
+    <TD>U+FE032</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji2650"></SPAN></TD>
+    <TD>sagittarius</TD>
+    <TD>U+2650</TD>
+    <TD>U+E64E</TD>
+    <TD>U+E497</TD>
+    <TD>U+E247</TD>
+    <TD>U+FE033</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji2651"></SPAN></TD>
+    <TD>capricorn</TD>
+    <TD>U+2651</TD>
+    <TD>U+E64F</TD>
+    <TD>U+E498</TD>
+    <TD>U+E248</TD>
+    <TD>U+FE034</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji2652"></SPAN></TD>
+    <TD>aquarius</TD>
+    <TD>U+2652</TD>
+    <TD>U+E650</TD>
+    <TD>U+E499</TD>
+    <TD>U+E249</TD>
+    <TD>U+FE035</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji2653"></SPAN></TD>
+    <TD>pisces</TD>
+    <TD>U+2653</TD>
+    <TD>U+E651</TD>
+    <TD>U+E49A</TD>
+    <TD>U+E24A</TD>
+    <TD>U+FE036</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji26ce"></SPAN></TD>
+    <TD>ophiuchus</TD>
+    <TD>U+26CE</TD>
+    <TD>-</TD>
+    <TD>U+E49B</TD>
+    <TD>U+E24B</TD>
+    <TD>U+FE037</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f340"></SPAN></TD>
+    <TD>four leaf clover</TD>
+    <TD>U+1F340</TD>
+    <TD>U+E741</TD>
+    <TD>U+E513</TD>
+    <TD>U+E110</TD>
+    <TD>U+FE03C</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f337"></SPAN></TD>
+    <TD>tulip</TD>
+    <TD>U+1F337</TD>
+    <TD>U+E743</TD>
+    <TD>U+E4E4</TD>
+    <TD>U+E304</TD>
+    <TD>U+FE03D</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f331"></SPAN></TD>
+    <TD>seedling</TD>
+    <TD>U+1F331</TD>
+    <TD>U+E746</TD>
+    <TD>U+EB7D</TD>
+    <TD>U+E110</TD>
+    <TD>U+FE03E</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f341"></SPAN></TD>
+    <TD>maple leaf</TD>
+    <TD>U+1F341</TD>
+    <TD>U+E747</TD>
+    <TD>U+E4CE</TD>
+    <TD>U+E118</TD>
+    <TD>U+FE03F</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f338"></SPAN></TD>
+    <TD>cherry blossom</TD>
+    <TD>U+1F338</TD>
+    <TD>U+E748</TD>
+    <TD>U+E4CA</TD>
+    <TD>U+E030</TD>
+    <TD>U+FE040</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f339"></SPAN></TD>
+    <TD>rose</TD>
+    <TD>U+1F339</TD>
+    <TD>-</TD>
+    <TD>U+E5BA</TD>
+    <TD>U+E032</TD>
+    <TD>U+FE041</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f342"></SPAN></TD>
+    <TD>fallen leaf</TD>
+    <TD>U+1F342</TD>
+    <TD>U+E747</TD>
+    <TD>U+E5CD</TD>
+    <TD>U+E119</TD>
+    <TD>U+FE042</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f343"></SPAN></TD>
+    <TD>leaf fluttering in wind</TD>
+    <TD>U+1F343</TD>
+    <TD>-</TD>
+    <TD>U+E5CD</TD>
+    <TD>U+E447</TD>
+    <TD>U+FE043</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f33a"></SPAN></TD>
+    <TD>hibiscus</TD>
+    <TD>U+1F33A</TD>
+    <TD>-</TD>
+    <TD>U+EA94</TD>
+    <TD>U+E303</TD>
+    <TD>U+FE045</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f33b"></SPAN></TD>
+    <TD>sunflower</TD>
+    <TD>U+1F33B</TD>
+    <TD>-</TD>
+    <TD>U+E4E3</TD>
+    <TD>U+E305</TD>
+    <TD>U+FE046</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f334"></SPAN></TD>
+    <TD>palm tree</TD>
+    <TD>U+1F334</TD>
+    <TD>-</TD>
+    <TD>U+E4E2</TD>
+    <TD>U+E307</TD>
+    <TD>U+FE047</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f335"></SPAN></TD>
+    <TD>cactus</TD>
+    <TD>U+1F335</TD>
+    <TD>-</TD>
+    <TD>U+EA96</TD>
+    <TD>U+E308</TD>
+    <TD>U+FE048</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f33e"></SPAN></TD>
+    <TD>ear of rice</TD>
+    <TD>U+1F33E</TD>
+    <TD>-</TD>
+    <TD>-</TD>
+    <TD>U+E444</TD>
+    <TD>U+FE049</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f33d"></SPAN></TD>
+    <TD>ear of maize</TD>
+    <TD>U+1F33D</TD>
+    <TD>-</TD>
+    <TD>U+EB36</TD>
+    <TD>-</TD>
+    <TD>U+FE04A</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f344"></SPAN></TD>
+    <TD>mushroom</TD>
+    <TD>U+1F344</TD>
+    <TD>-</TD>
+    <TD>U+EB37</TD>
+    <TD>-</TD>
+    <TD>U+FE04B</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f330"></SPAN></TD>
+    <TD>chestnut</TD>
+    <TD>U+1F330</TD>
+    <TD>-</TD>
+    <TD>U+EB38</TD>
+    <TD>-</TD>
+    <TD>U+FE04C</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f33c"></SPAN></TD>
+    <TD>blossom</TD>
+    <TD>U+1F33C</TD>
+    <TD>-</TD>
+    <TD>U+EB49</TD>
+    <TD>U+E305</TD>
+    <TD>U+FE04D</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f33f"></SPAN></TD>
+    <TD>herb</TD>
+    <TD>U+1F33F</TD>
+    <TD>U+E741</TD>
+    <TD>U+EB82</TD>
+    <TD>U+E110</TD>
+    <TD>U+FE04E</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f352"></SPAN></TD>
+    <TD>cherries</TD>
+    <TD>U+1F352</TD>
+    <TD>U+E742</TD>
+    <TD>U+E4D2</TD>
+    <TD>-</TD>
+    <TD>U+FE04F</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f34c"></SPAN></TD>
+    <TD>banana</TD>
+    <TD>U+1F34C</TD>
+    <TD>U+E744</TD>
+    <TD>U+EB35</TD>
+    <TD>-</TD>
+    <TD>U+FE050</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f34e"></SPAN></TD>
+    <TD>red apple</TD>
+    <TD>U+1F34E</TD>
+    <TD>U+E745</TD>
+    <TD>U+EAB9</TD>
+    <TD>U+E345</TD>
+    <TD>U+FE051</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f34a"></SPAN></TD>
+    <TD>tangerine</TD>
+    <TD>U+1F34A</TD>
+    <TD>-</TD>
+    <TD>U+EABA</TD>
+    <TD>U+E346</TD>
+    <TD>U+FE052</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f353"></SPAN></TD>
+    <TD>strawberry</TD>
+    <TD>U+1F353</TD>
+    <TD>-</TD>
+    <TD>U+E4D4</TD>
+    <TD>U+E347</TD>
+    <TD>U+FE053</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f349"></SPAN></TD>
+    <TD>watermelon</TD>
+    <TD>U+1F349</TD>
+    <TD>-</TD>
+    <TD>U+E4CD</TD>
+    <TD>U+E348</TD>
+    <TD>U+FE054</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f345"></SPAN></TD>
+    <TD>tomato</TD>
+    <TD>U+1F345</TD>
+    <TD>-</TD>
+    <TD>U+EABB</TD>
+    <TD>U+E349</TD>
+    <TD>U+FE055</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f346"></SPAN></TD>
+    <TD>aubergine</TD>
+    <TD>U+1F346</TD>
+    <TD>-</TD>
+    <TD>U+EABC</TD>
+    <TD>U+E34A</TD>
+    <TD>U+FE056</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f348"></SPAN></TD>
+    <TD>melon</TD>
+    <TD>U+1F348</TD>
+    <TD>-</TD>
+    <TD>U+EB32</TD>
+    <TD>-</TD>
+    <TD>U+FE057</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f34d"></SPAN></TD>
+    <TD>pineapple</TD>
+    <TD>U+1F34D</TD>
+    <TD>-</TD>
+    <TD>U+EB33</TD>
+    <TD>-</TD>
+    <TD>U+FE058</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f347"></SPAN></TD>
+    <TD>grapes</TD>
+    <TD>U+1F347</TD>
+    <TD>-</TD>
+    <TD>U+EB34</TD>
+    <TD>-</TD>
+    <TD>U+FE059</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f351"></SPAN></TD>
+    <TD>peach</TD>
+    <TD>U+1F351</TD>
+    <TD>-</TD>
+    <TD>U+EB39</TD>
+    <TD>-</TD>
+    <TD>U+FE05A</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f34f"></SPAN></TD>
+    <TD>green apple</TD>
+    <TD>U+1F34F</TD>
+    <TD>U+E745</TD>
+    <TD>U+EB5A</TD>
+    <TD>U+E345</TD>
+    <TD>U+FE05B</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f440"></SPAN></TD>
+    <TD>eyes</TD>
+    <TD>U+1F440</TD>
+    <TD>U+E691</TD>
+    <TD>U+E5A4</TD>
+    <TD>U+E419</TD>
+    <TD>U+FE190</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f442"></SPAN></TD>
+    <TD>ear</TD>
+    <TD>U+1F442</TD>
+    <TD>U+E692</TD>
+    <TD>U+E5A5</TD>
+    <TD>U+E41B</TD>
+    <TD>U+FE191</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f443"></SPAN></TD>
+    <TD>nose</TD>
+    <TD>U+1F443</TD>
+    <TD>-</TD>
+    <TD>U+EAD0</TD>
+    <TD>U+E41A</TD>
+    <TD>U+FE192</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f444"></SPAN></TD>
+    <TD>mouth</TD>
+    <TD>U+1F444</TD>
+    <TD>U+E6F9</TD>
+    <TD>U+EAD1</TD>
+    <TD>U+E41C</TD>
+    <TD>U+FE193</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f445"></SPAN></TD>
+    <TD>tongue</TD>
+    <TD>U+1F445</TD>
+    <TD>U+E728</TD>
+    <TD>U+EB47</TD>
+    <TD>U+E409</TD>
+    <TD>U+FE194</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f484"></SPAN></TD>
+    <TD>lipstick</TD>
+    <TD>U+1F484</TD>
+    <TD>U+E710</TD>
+    <TD>U+E509</TD>
+    <TD>U+E31C</TD>
+    <TD>U+FE195</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f485"></SPAN></TD>
+    <TD>nail polish</TD>
+    <TD>U+1F485</TD>
+    <TD>-</TD>
+    <TD>U+EAA0</TD>
+    <TD>U+E31D</TD>
+    <TD>U+FE196</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f486"></SPAN></TD>
+    <TD>face massage</TD>
+    <TD>U+1F486</TD>
+    <TD>-</TD>
+    <TD>U+E50B</TD>
+    <TD>U+E31E</TD>
+    <TD>U+FE197</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f487"></SPAN></TD>
+    <TD>haircut</TD>
+    <TD>U+1F487</TD>
+    <TD>U+E675</TD>
+    <TD>U+EAA1</TD>
+    <TD>U+E31F</TD>
+    <TD>U+FE198</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f488"></SPAN></TD>
+    <TD>barber pole</TD>
+    <TD>U+1F488</TD>
+    <TD>-</TD>
+    <TD>U+EAA2</TD>
+    <TD>U+E320</TD>
+    <TD>U+FE199</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f464"></SPAN></TD>
+    <TD>bust in silhouette</TD>
+    <TD>U+1F464</TD>
+    <TD>U+E6B1</TD>
+    <TD>-</TD>
+    <TD>-</TD>
+    <TD>U+FE19A</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f466"></SPAN></TD>
+    <TD>boy</TD>
+    <TD>U+1F466</TD>
+    <TD>U+E6F0</TD>
+    <TD>U+E4FC</TD>
+    <TD>U+E001</TD>
+    <TD>U+FE19B</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f467"></SPAN></TD>
+    <TD>girl</TD>
+    <TD>U+1F467</TD>
+    <TD>U+E6F0</TD>
+    <TD>U+E4FA</TD>
+    <TD>U+E002</TD>
+    <TD>U+FE19C</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f468"></SPAN></TD>
+    <TD>man</TD>
+    <TD>U+1F468</TD>
+    <TD>U+E6F0</TD>
+    <TD>U+E4FC</TD>
+    <TD>U+E004</TD>
+    <TD>U+FE19D</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f469"></SPAN></TD>
+    <TD>woman</TD>
+    <TD>U+1F469</TD>
+    <TD>U+E6F0</TD>
+    <TD>U+E4FA</TD>
+    <TD>U+E005</TD>
+    <TD>U+FE19E</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f46a"></SPAN></TD>
+    <TD>family</TD>
+    <TD>U+1F46A</TD>
+    <TD>-</TD>
+    <TD>U+E501</TD>
+    <TD>-</TD>
+    <TD>U+FE19F</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f46b"></SPAN></TD>
+    <TD>man and woman holding hands</TD>
+    <TD>U+1F46B</TD>
+    <TD>-</TD>
+    <TD>-</TD>
+    <TD>U+E428</TD>
+    <TD>U+FE1A0</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f46e"></SPAN></TD>
+    <TD>police officer</TD>
+    <TD>U+1F46E</TD>
+    <TD>-</TD>
+    <TD>U+E5DD</TD>
+    <TD>U+E152</TD>
+    <TD>U+FE1A1</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f46f"></SPAN></TD>
+    <TD>woman with bunny ears</TD>
+    <TD>U+1F46F</TD>
+    <TD>-</TD>
+    <TD>U+EADB</TD>
+    <TD>U+E429</TD>
+    <TD>U+FE1A2</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f470"></SPAN></TD>
+    <TD>bride with veil</TD>
+    <TD>U+1F470</TD>
+    <TD>-</TD>
+    <TD>U+EAE9</TD>
+    <TD>-</TD>
+    <TD>U+FE1A3</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f471"></SPAN></TD>
+    <TD>person with blond hair</TD>
+    <TD>U+1F471</TD>
+    <TD>-</TD>
+    <TD>U+EB13</TD>
+    <TD>U+E515</TD>
+    <TD>U+FE1A4</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f472"></SPAN></TD>
+    <TD>man with gua pi mao</TD>
+    <TD>U+1F472</TD>
+    <TD>-</TD>
+    <TD>U+EB14</TD>
+    <TD>U+E516</TD>
+    <TD>U+FE1A5</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f473"></SPAN></TD>
+    <TD>man with turban</TD>
+    <TD>U+1F473</TD>
+    <TD>-</TD>
+    <TD>U+EB15</TD>
+    <TD>U+E517</TD>
+    <TD>U+FE1A6</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f474"></SPAN></TD>
+    <TD>older man</TD>
+    <TD>U+1F474</TD>
+    <TD>-</TD>
+    <TD>U+EB16</TD>
+    <TD>U+E518</TD>
+    <TD>U+FE1A7</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f475"></SPAN></TD>
+    <TD>older woman</TD>
+    <TD>U+1F475</TD>
+    <TD>-</TD>
+    <TD>U+EB17</TD>
+    <TD>U+E519</TD>
+    <TD>U+FE1A8</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f476"></SPAN></TD>
+    <TD>baby</TD>
+    <TD>U+1F476</TD>
+    <TD>-</TD>
+    <TD>U+EB18</TD>
+    <TD>U+E51A</TD>
+    <TD>U+FE1A9</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f477"></SPAN></TD>
+    <TD>construction worker</TD>
+    <TD>U+1F477</TD>
+    <TD>-</TD>
+    <TD>U+EB19</TD>
+    <TD>U+E51B</TD>
+    <TD>U+FE1AA</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f478"></SPAN></TD>
+    <TD>princess</TD>
+    <TD>U+1F478</TD>
+    <TD>-</TD>
+    <TD>U+EB1A</TD>
+    <TD>U+E51C</TD>
+    <TD>U+FE1AB</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f479"></SPAN></TD>
+    <TD>japanese ogre</TD>
+    <TD>U+1F479</TD>
+    <TD>-</TD>
+    <TD>U+EB44</TD>
+    <TD>-</TD>
+    <TD>U+FE1AC</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f47a"></SPAN></TD>
+    <TD>japanese goblin</TD>
+    <TD>U+1F47A</TD>
+    <TD>-</TD>
+    <TD>U+EB45</TD>
+    <TD>-</TD>
+    <TD>U+FE1AD</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f47b"></SPAN></TD>
+    <TD>ghost</TD>
+    <TD>U+1F47B</TD>
+    <TD>-</TD>
+    <TD>U+E4CB</TD>
+    <TD>U+E11B</TD>
+    <TD>U+FE1AE</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f47c"></SPAN></TD>
+    <TD>baby angel</TD>
+    <TD>U+1F47C</TD>
+    <TD>-</TD>
+    <TD>U+E5BF</TD>
+    <TD>U+E04E</TD>
+    <TD>U+FE1AF</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f47d"></SPAN></TD>
+    <TD>extraterrestrial alien</TD>
+    <TD>U+1F47D</TD>
+    <TD>-</TD>
+    <TD>U+E50E</TD>
+    <TD>U+E10C</TD>
+    <TD>U+FE1B0</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f47e"></SPAN></TD>
+    <TD>alien monster</TD>
+    <TD>U+1F47E</TD>
+    <TD>-</TD>
+    <TD>U+E4EC</TD>
+    <TD>U+E12B</TD>
+    <TD>U+FE1B1</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f47f"></SPAN></TD>
+    <TD>imp</TD>
+    <TD>U+1F47F</TD>
+    <TD>-</TD>
+    <TD>U+E4EF</TD>
+    <TD>U+E11A</TD>
+    <TD>U+FE1B2</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f480"></SPAN></TD>
+    <TD>skull</TD>
+    <TD>U+1F480</TD>
+    <TD>-</TD>
+    <TD>U+E4F8</TD>
+    <TD>U+E11C</TD>
+    <TD>U+FE1B3</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f481"></SPAN></TD>
+    <TD>information desk person</TD>
+    <TD>U+1F481</TD>
+    <TD>-</TD>
+    <TD>-</TD>
+    <TD>U+E253</TD>
+    <TD>U+FE1B4</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f482"></SPAN></TD>
+    <TD>guardsman</TD>
+    <TD>U+1F482</TD>
+    <TD>-</TD>
+    <TD>-</TD>
+    <TD>U+E51E</TD>
+    <TD>U+FE1B5</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f483"></SPAN></TD>
+    <TD>dancer</TD>
+    <TD>U+1F483</TD>
+    <TD>-</TD>
+    <TD>U+EB1C</TD>
+    <TD>U+E51F</TD>
+    <TD>U+FE1B6</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f40c"></SPAN></TD>
+    <TD>snail</TD>
+    <TD>U+1F40C</TD>
+    <TD>U+E74E</TD>
+    <TD>U+EB7E</TD>
+    <TD>-</TD>
+    <TD>U+FE1B9</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f40d"></SPAN></TD>
+    <TD>snake</TD>
+    <TD>U+1F40D</TD>
+    <TD>-</TD>
+    <TD>U+EB22</TD>
+    <TD>U+E52D</TD>
+    <TD>U+FE1D3</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f40e"></SPAN></TD>
+    <TD>horse</TD>
+    <TD>U+1F40E</TD>
+    <TD>U+E754</TD>
+    <TD>U+E4D8</TD>
+    <TD>U+E134</TD>
+    <TD>U+FE7DC</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f414"></SPAN></TD>
+    <TD>chicken</TD>
+    <TD>U+1F414</TD>
+    <TD>-</TD>
+    <TD>U+EB23</TD>
+    <TD>U+E52E</TD>
+    <TD>U+FE1D4</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f417"></SPAN></TD>
+    <TD>boar</TD>
+    <TD>U+1F417</TD>
+    <TD>-</TD>
+    <TD>U+EB24</TD>
+    <TD>U+E52F</TD>
+    <TD>U+FE1D5</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f42b"></SPAN></TD>
+    <TD>bactrian camel</TD>
+    <TD>U+1F42B</TD>
+    <TD>-</TD>
+    <TD>U+EB25</TD>
+    <TD>U+E530</TD>
+    <TD>U+FE1D6</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f418"></SPAN></TD>
+    <TD>elephant</TD>
+    <TD>U+1F418</TD>
+    <TD>-</TD>
+    <TD>U+EB1F</TD>
+    <TD>U+E526</TD>
+    <TD>U+FE1CC</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f428"></SPAN></TD>
+    <TD>koala</TD>
+    <TD>U+1F428</TD>
+    <TD>-</TD>
+    <TD>U+EB20</TD>
+    <TD>U+E527</TD>
+    <TD>U+FE1CD</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f412"></SPAN></TD>
+    <TD>monkey</TD>
+    <TD>U+1F412</TD>
+    <TD>-</TD>
+    <TD>U+E4D9</TD>
+    <TD>U+E528</TD>
+    <TD>U+FE1CE</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f411"></SPAN></TD>
+    <TD>sheep</TD>
+    <TD>U+1F411</TD>
+    <TD>-</TD>
+    <TD>U+E48F</TD>
+    <TD>U+E529</TD>
+    <TD>U+FE1CF</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f419"></SPAN></TD>
+    <TD>octopus</TD>
+    <TD>U+1F419</TD>
+    <TD>-</TD>
+    <TD>U+E5C7</TD>
+    <TD>U+E10A</TD>
+    <TD>U+FE1C5</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f41a"></SPAN></TD>
+    <TD>spiral shell</TD>
+    <TD>U+1F41A</TD>
+    <TD>-</TD>
+    <TD>U+EAEC</TD>
+    <TD>U+E441</TD>
+    <TD>U+FE1C6</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f41b"></SPAN></TD>
+    <TD>bug</TD>
+    <TD>U+1F41B</TD>
+    <TD>-</TD>
+    <TD>U+EB1E</TD>
+    <TD>U+E525</TD>
+    <TD>U+FE1CB</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f41c"></SPAN></TD>
+    <TD>ant</TD>
+    <TD>U+1F41C</TD>
+    <TD>-</TD>
+    <TD>U+E4DD</TD>
+    <TD>-</TD>
+    <TD>U+FE1DA</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f41d"></SPAN></TD>
+    <TD>honeybee</TD>
+    <TD>U+1F41D</TD>
+    <TD>-</TD>
+    <TD>U+EB57</TD>
+    <TD>-</TD>
+    <TD>U+FE1E1</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f41e"></SPAN></TD>
+    <TD>lady beetle</TD>
+    <TD>U+1F41E</TD>
+    <TD>-</TD>
+    <TD>U+EB58</TD>
+    <TD>-</TD>
+    <TD>U+FE1E2</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f420"></SPAN></TD>
+    <TD>tropical fish</TD>
+    <TD>U+1F420</TD>
+    <TD>U+E751</TD>
+    <TD>U+EB1D</TD>
+    <TD>U+E522</TD>
+    <TD>U+FE1C9</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f421"></SPAN></TD>
+    <TD>blowfish</TD>
+    <TD>U+1F421</TD>
+    <TD>U+E751</TD>
+    <TD>U+E4D3</TD>
+    <TD>U+E019</TD>
+    <TD>U+FE1D9</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f422"></SPAN></TD>
+    <TD>turtle</TD>
+    <TD>U+1F422</TD>
+    <TD>-</TD>
+    <TD>U+E5D4</TD>
+    <TD>-</TD>
+    <TD>U+FE1DC</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f424"></SPAN></TD>
+    <TD>baby chick</TD>
+    <TD>U+1F424</TD>
+    <TD>U+E74F</TD>
+    <TD>U+E4E0</TD>
+    <TD>U+E523</TD>
+    <TD>U+FE1BA</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f425"></SPAN></TD>
+    <TD>front-facing baby chick</TD>
+    <TD>U+1F425</TD>
+    <TD>U+E74F</TD>
+    <TD>U+EB76</TD>
+    <TD>U+E523</TD>
+    <TD>U+FE1BB</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f426"></SPAN></TD>
+    <TD>bird</TD>
+    <TD>U+1F426</TD>
+    <TD>U+E74F</TD>
+    <TD>U+E4E0</TD>
+    <TD>U+E521</TD>
+    <TD>U+FE1C8</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f423"></SPAN></TD>
+    <TD>hatching chick</TD>
+    <TD>U+1F423</TD>
+    <TD>U+E74F</TD>
+    <TD>U+E5DB</TD>
+    <TD>U+E523</TD>
+    <TD>U+FE1DD</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f427"></SPAN></TD>
+    <TD>penguin</TD>
+    <TD>U+1F427</TD>
+    <TD>U+E750</TD>
+    <TD>U+E4DC</TD>
+    <TD>U+E055</TD>
+    <TD>U+FE1BC</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f429"></SPAN></TD>
+    <TD>poodle</TD>
+    <TD>U+1F429</TD>
+    <TD>U+E6A1</TD>
+    <TD>U+E4DF</TD>
+    <TD>U+E052</TD>
+    <TD>U+FE1D8</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f41f"></SPAN></TD>
+    <TD>fish</TD>
+    <TD>U+1F41F</TD>
+    <TD>U+E751</TD>
+    <TD>U+E49A</TD>
+    <TD>U+E019</TD>
+    <TD>U+FE1BD</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f42c"></SPAN></TD>
+    <TD>dolphin</TD>
+    <TD>U+1F42C</TD>
+    <TD>-</TD>
+    <TD>U+EB1B</TD>
+    <TD>U+E520</TD>
+    <TD>U+FE1C7</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f42d"></SPAN></TD>
+    <TD>mouse face</TD>
+    <TD>U+1F42D</TD>
+    <TD>-</TD>
+    <TD>U+E5C2</TD>
+    <TD>U+E053</TD>
+    <TD>U+FE1C2</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f42f"></SPAN></TD>
+    <TD>tiger face</TD>
+    <TD>U+1F42F</TD>
+    <TD>-</TD>
+    <TD>U+E5C0</TD>
+    <TD>U+E050</TD>
+    <TD>U+FE1C0</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f431"></SPAN></TD>
+    <TD>cat face</TD>
+    <TD>U+1F431</TD>
+    <TD>U+E6A2</TD>
+    <TD>U+E4DB</TD>
+    <TD>U+E04F</TD>
+    <TD>U+FE1B8</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f433"></SPAN></TD>
+    <TD>spouting whale</TD>
+    <TD>U+1F433</TD>
+    <TD>-</TD>
+    <TD>U+E470</TD>
+    <TD>U+E054</TD>
+    <TD>U+FE1C3</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f434"></SPAN></TD>
+    <TD>horse face</TD>
+    <TD>U+1F434</TD>
+    <TD>U+E754</TD>
+    <TD>U+E4D8</TD>
+    <TD>U+E01A</TD>
+    <TD>U+FE1BE</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f435"></SPAN></TD>
+    <TD>monkey face</TD>
+    <TD>U+1F435</TD>
+    <TD>-</TD>
+    <TD>U+E4D9</TD>
+    <TD>U+E109</TD>
+    <TD>U+FE1C4</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f436"></SPAN></TD>
+    <TD>dog face</TD>
+    <TD>U+1F436</TD>
+    <TD>U+E6A1</TD>
+    <TD>U+E4E1</TD>
+    <TD>U+E052</TD>
+    <TD>U+FE1B7</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f437"></SPAN></TD>
+    <TD>pig face</TD>
+    <TD>U+1F437</TD>
+    <TD>U+E755</TD>
+    <TD>U+E4DE</TD>
+    <TD>U+E10B</TD>
+    <TD>U+FE1BF</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f43b"></SPAN></TD>
+    <TD>bear face</TD>
+    <TD>U+1F43B</TD>
+    <TD>-</TD>
+    <TD>U+E5C1</TD>
+    <TD>U+E051</TD>
+    <TD>U+FE1C1</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f439"></SPAN></TD>
+    <TD>hamster face</TD>
+    <TD>U+1F439</TD>
+    <TD>-</TD>
+    <TD>-</TD>
+    <TD>U+E524</TD>
+    <TD>U+FE1CA</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f43a"></SPAN></TD>
+    <TD>wolf face</TD>
+    <TD>U+1F43A</TD>
+    <TD>U+E6A1</TD>
+    <TD>U+E4E1</TD>
+    <TD>U+E52A</TD>
+    <TD>U+FE1D0</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f42e"></SPAN></TD>
+    <TD>cow face</TD>
+    <TD>U+1F42E</TD>
+    <TD>-</TD>
+    <TD>U+EB21</TD>
+    <TD>U+E52B</TD>
+    <TD>U+FE1D1</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f430"></SPAN></TD>
+    <TD>rabbit face</TD>
+    <TD>U+1F430</TD>
+    <TD>-</TD>
+    <TD>U+E4D7</TD>
+    <TD>U+E52C</TD>
+    <TD>U+FE1D2</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f438"></SPAN></TD>
+    <TD>frog face</TD>
+    <TD>U+1F438</TD>
+    <TD>-</TD>
+    <TD>U+E4DA</TD>
+    <TD>U+E531</TD>
+    <TD>U+FE1D7</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f43e"></SPAN></TD>
+    <TD>paw prints</TD>
+    <TD>U+1F43E</TD>
+    <TD>U+E698</TD>
+    <TD>U+E4EE</TD>
+    <TD>U+E536</TD>
+    <TD>U+FE1DB</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f432"></SPAN></TD>
+    <TD>dragon face</TD>
+    <TD>U+1F432</TD>
+    <TD>-</TD>
+    <TD>U+EB3F</TD>
+    <TD>-</TD>
+    <TD>U+FE1DE</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f43c"></SPAN></TD>
+    <TD>panda face</TD>
+    <TD>U+1F43C</TD>
+    <TD>-</TD>
+    <TD>U+EB46</TD>
+    <TD>-</TD>
+    <TD>U+FE1DF</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f43d"></SPAN></TD>
+    <TD>pig nose</TD>
+    <TD>U+1F43D</TD>
+    <TD>U+E755</TD>
+    <TD>U+EB48</TD>
+    <TD>U+E10B</TD>
+    <TD>U+FE1E0</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f620"></SPAN></TD>
+    <TD>angry face</TD>
+    <TD>U+1F620</TD>
+    <TD>U+E6F1</TD>
+    <TD>U+E472</TD>
+    <TD>U+E059</TD>
+    <TD>U+FE320</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f629"></SPAN></TD>
+    <TD>weary face</TD>
+    <TD>U+1F629</TD>
+    <TD>U+E6F3</TD>
+    <TD>U+EB67</TD>
+    <TD>U+E403</TD>
+    <TD>U+FE321</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f632"></SPAN></TD>
+    <TD>astonished face</TD>
+    <TD>U+1F632</TD>
+    <TD>U+E6F4</TD>
+    <TD>U+EACA</TD>
+    <TD>U+E410</TD>
+    <TD>U+FE322</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f61e"></SPAN></TD>
+    <TD>disappointed face</TD>
+    <TD>U+1F61E</TD>
+    <TD>U+E6F2</TD>
+    <TD>U+EAC0</TD>
+    <TD>U+E058</TD>
+    <TD>U+FE323</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f635"></SPAN></TD>
+    <TD>dizzy face</TD>
+    <TD>U+1F635</TD>
+    <TD>U+E6F4</TD>
+    <TD>U+E5AE</TD>
+    <TD>U+E406</TD>
+    <TD>U+FE324</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f630"></SPAN></TD>
+    <TD>face with open mouth and cold sweat</TD>
+    <TD>U+1F630</TD>
+    <TD>U+E723</TD>
+    <TD>U+EACB</TD>
+    <TD>U+E40F</TD>
+    <TD>U+FE325</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f612"></SPAN></TD>
+    <TD>unamused face</TD>
+    <TD>U+1F612</TD>
+    <TD>U+E725</TD>
+    <TD>U+EAC9</TD>
+    <TD>U+E40E</TD>
+    <TD>U+FE326</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f60d"></SPAN></TD>
+    <TD>smiling face with heart-shaped eyes</TD>
+    <TD>U+1F60D</TD>
+    <TD>U+E726</TD>
+    <TD>U+E5C4</TD>
+    <TD>U+E106</TD>
+    <TD>U+FE327</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f624"></SPAN></TD>
+    <TD>face with look of triumph</TD>
+    <TD>U+1F624</TD>
+    <TD>U+E753</TD>
+    <TD>U+EAC1</TD>
+    <TD>U+E404</TD>
+    <TD>U+FE328</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f61c"></SPAN></TD>
+    <TD>face with stuck-out tongue and winking eye</TD>
+    <TD>U+1F61C</TD>
+    <TD>U+E728</TD>
+    <TD>U+E4E7</TD>
+    <TD>U+E105</TD>
+    <TD>U+FE329</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f61d"></SPAN></TD>
+    <TD>face with stuck-out tongue and tightly-closed eyes</TD>
+    <TD>U+1F61D</TD>
+    <TD>U+E728</TD>
+    <TD>U+E4E7</TD>
+    <TD>U+E409</TD>
+    <TD>U+FE32A</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f60b"></SPAN></TD>
+    <TD>face savouring delicious food</TD>
+    <TD>U+1F60B</TD>
+    <TD>U+E752</TD>
+    <TD>U+EACD</TD>
+    <TD>U+E056</TD>
+    <TD>U+FE32B</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f618"></SPAN></TD>
+    <TD>face throwing a kiss</TD>
+    <TD>U+1F618</TD>
+    <TD>U+E726</TD>
+    <TD>U+EACF</TD>
+    <TD>U+E418</TD>
+    <TD>U+FE32C</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f61a"></SPAN></TD>
+    <TD>kissing face with closed eyes</TD>
+    <TD>U+1F61A</TD>
+    <TD>U+E726</TD>
+    <TD>U+EACE</TD>
+    <TD>U+E417</TD>
+    <TD>U+FE32D</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f637"></SPAN></TD>
+    <TD>face with medical mask</TD>
+    <TD>U+1F637</TD>
+    <TD>-</TD>
+    <TD>U+EAC7</TD>
+    <TD>U+E40C</TD>
+    <TD>U+FE32E</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f633"></SPAN></TD>
+    <TD>flushed face</TD>
+    <TD>U+1F633</TD>
+    <TD>U+E72A</TD>
+    <TD>U+EAC8</TD>
+    <TD>U+E40D</TD>
+    <TD>U+FE32F</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f603"></SPAN></TD>
+    <TD>smiling face with open mouth</TD>
+    <TD>U+1F603</TD>
+    <TD>U+E6F0</TD>
+    <TD>U+E471</TD>
+    <TD>U+E057</TD>
+    <TD>U+FE330</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f605"></SPAN></TD>
+    <TD>smiling face with open mouth and cold sweat</TD>
+    <TD>U+1F605</TD>
+    <TD>U+E722</TD>
+    <TD>U+E471 U+E5B1</TD>
+    <TD>U+E415 U+E331</TD>
+    <TD>U+FE331</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f606"></SPAN></TD>
+    <TD>smiling face with open mouth and tightly-closed eyes</TD>
+    <TD>U+1F606</TD>
+    <TD>U+E72A</TD>
+    <TD>U+EAC5</TD>
+    <TD>U+E40A</TD>
+    <TD>U+FE332</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f601"></SPAN></TD>
+    <TD>grinning face with smiling eyes</TD>
+    <TD>U+1F601</TD>
+    <TD>U+E753</TD>
+    <TD>U+EB80</TD>
+    <TD>U+E404</TD>
+    <TD>U+FE333</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f602"></SPAN></TD>
+    <TD>face with tears of joy</TD>
+    <TD>U+1F602</TD>
+    <TD>U+E72A</TD>
+    <TD>U+EB64</TD>
+    <TD>U+E412</TD>
+    <TD>U+FE334</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f60a"></SPAN></TD>
+    <TD>smiling face with smiling eyes</TD>
+    <TD>U+1F60A</TD>
+    <TD>U+E6F0</TD>
+    <TD>U+EACD</TD>
+    <TD>U+E056</TD>
+    <TD>U+FE335</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji263a"></SPAN></TD>
+    <TD>white smiling face</TD>
+    <TD>U+263A</TD>
+    <TD>U+E6F0</TD>
+    <TD>U+E4FB</TD>
+    <TD>U+E414</TD>
+    <TD>U+FE336</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f604"></SPAN></TD>
+    <TD>smiling face with open mouth and smiling eyes</TD>
+    <TD>U+1F604</TD>
+    <TD>U+E6F0</TD>
+    <TD>U+E471</TD>
+    <TD>U+E415</TD>
+    <TD>U+FE338</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f622"></SPAN></TD>
+    <TD>crying face</TD>
+    <TD>U+1F622</TD>
+    <TD>U+E72E</TD>
+    <TD>U+EB69</TD>
+    <TD>U+E413</TD>
+    <TD>U+FE339</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f62d"></SPAN></TD>
+    <TD>loudly crying face</TD>
+    <TD>U+1F62D</TD>
+    <TD>U+E72D</TD>
+    <TD>U+E473</TD>
+    <TD>U+E411</TD>
+    <TD>U+FE33A</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f628"></SPAN></TD>
+    <TD>fearful face</TD>
+    <TD>U+1F628</TD>
+    <TD>U+E757</TD>
+    <TD>U+EAC6</TD>
+    <TD>U+E40B</TD>
+    <TD>U+FE33B</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f623"></SPAN></TD>
+    <TD>persevering face</TD>
+    <TD>U+1F623</TD>
+    <TD>U+E72B</TD>
+    <TD>U+EAC2</TD>
+    <TD>U+E406</TD>
+    <TD>U+FE33C</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f621"></SPAN></TD>
+    <TD>pouting face</TD>
+    <TD>U+1F621</TD>
+    <TD>U+E724</TD>
+    <TD>U+EB5D</TD>
+    <TD>U+E416</TD>
+    <TD>U+FE33D</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f60c"></SPAN></TD>
+    <TD>relieved face</TD>
+    <TD>U+1F60C</TD>
+    <TD>U+E721</TD>
+    <TD>U+EAC5</TD>
+    <TD>U+E40A</TD>
+    <TD>U+FE33E</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f616"></SPAN></TD>
+    <TD>confounded face</TD>
+    <TD>U+1F616</TD>
+    <TD>U+E6F3</TD>
+    <TD>U+EAC3</TD>
+    <TD>U+E407</TD>
+    <TD>U+FE33F</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f614"></SPAN></TD>
+    <TD>pensive face</TD>
+    <TD>U+1F614</TD>
+    <TD>U+E720</TD>
+    <TD>U+EAC0</TD>
+    <TD>U+E403</TD>
+    <TD>U+FE340</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f631"></SPAN></TD>
+    <TD>face screaming in fear</TD>
+    <TD>U+1F631</TD>
+    <TD>U+E757</TD>
+    <TD>U+E5C5</TD>
+    <TD>U+E107</TD>
+    <TD>U+FE341</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f62a"></SPAN></TD>
+    <TD>sleepy face</TD>
+    <TD>U+1F62A</TD>
+    <TD>U+E701</TD>
+    <TD>U+EAC4</TD>
+    <TD>U+E408</TD>
+    <TD>U+FE342</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f60f"></SPAN></TD>
+    <TD>smirking face</TD>
+    <TD>U+1F60F</TD>
+    <TD>U+E72C</TD>
+    <TD>U+EABF</TD>
+    <TD>U+E402</TD>
+    <TD>U+FE343</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f613"></SPAN></TD>
+    <TD>face with cold sweat</TD>
+    <TD>U+1F613</TD>
+    <TD>U+E723</TD>
+    <TD>U+E5C6</TD>
+    <TD>U+E108</TD>
+    <TD>U+FE344</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f625"></SPAN></TD>
+    <TD>disappointed but relieved face</TD>
+    <TD>U+1F625</TD>
+    <TD>U+E723</TD>
+    <TD>U+E5C6</TD>
+    <TD>U+E401</TD>
+    <TD>U+FE345</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f62b"></SPAN></TD>
+    <TD>tired face</TD>
+    <TD>U+1F62B</TD>
+    <TD>U+E72B</TD>
+    <TD>U+E474</TD>
+    <TD>U+E406</TD>
+    <TD>U+FE346</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f609"></SPAN></TD>
+    <TD>winking face</TD>
+    <TD>U+1F609</TD>
+    <TD>U+E729</TD>
+    <TD>U+E5C3</TD>
+    <TD>U+E405</TD>
+    <TD>U+FE347</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f63a"></SPAN></TD>
+    <TD>smiling cat face with open mouth</TD>
+    <TD>U+1F63A</TD>
+    <TD>U+E6F0</TD>
+    <TD>U+EB61</TD>
+    <TD>U+E057</TD>
+    <TD>U+FE348</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f638"></SPAN></TD>
+    <TD>grinning cat face with smiling eyes</TD>
+    <TD>U+1F638</TD>
+    <TD>U+E753</TD>
+    <TD>U+EB7F</TD>
+    <TD>U+E404</TD>
+    <TD>U+FE349</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f639"></SPAN></TD>
+    <TD>cat face with tears of joy</TD>
+    <TD>U+1F639</TD>
+    <TD>U+E72A</TD>
+    <TD>U+EB63</TD>
+    <TD>U+E412</TD>
+    <TD>U+FE34A</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f63d"></SPAN></TD>
+    <TD>kissing cat face with closed eyes</TD>
+    <TD>U+1F63D</TD>
+    <TD>U+E726</TD>
+    <TD>U+EB60</TD>
+    <TD>U+E418</TD>
+    <TD>U+FE34B</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f63b"></SPAN></TD>
+    <TD>smiling cat face with heart-shaped eyes</TD>
+    <TD>U+1F63B</TD>
+    <TD>U+E726</TD>
+    <TD>U+EB65</TD>
+    <TD>U+E106</TD>
+    <TD>U+FE34C</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f63f"></SPAN></TD>
+    <TD>crying cat face</TD>
+    <TD>U+1F63F</TD>
+    <TD>U+E72E</TD>
+    <TD>U+EB68</TD>
+    <TD>U+E413</TD>
+    <TD>U+FE34D</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f63e"></SPAN></TD>
+    <TD>pouting cat face</TD>
+    <TD>U+1F63E</TD>
+    <TD>U+E724</TD>
+    <TD>U+EB5E</TD>
+    <TD>U+E416</TD>
+    <TD>U+FE34E</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f63c"></SPAN></TD>
+    <TD>cat face with wry smile</TD>
+    <TD>U+1F63C</TD>
+    <TD>U+E753</TD>
+    <TD>U+EB6A</TD>
+    <TD>U+E404</TD>
+    <TD>U+FE34F</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f640"></SPAN></TD>
+    <TD>weary cat face</TD>
+    <TD>U+1F640</TD>
+    <TD>U+E6F3</TD>
+    <TD>U+EB66</TD>
+    <TD>U+E403</TD>
+    <TD>U+FE350</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f645"></SPAN></TD>
+    <TD>face with no good gesture</TD>
+    <TD>U+1F645</TD>
+    <TD>U+E72F</TD>
+    <TD>U+EAD7</TD>
+    <TD>U+E423</TD>
+    <TD>U+FE351</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f646"></SPAN></TD>
+    <TD>face with ok gesture</TD>
+    <TD>U+1F646</TD>
+    <TD>U+E70B</TD>
+    <TD>U+EAD8</TD>
+    <TD>U+E424</TD>
+    <TD>U+FE352</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f647"></SPAN></TD>
+    <TD>person bowing deeply</TD>
+    <TD>U+1F647</TD>
+    <TD>-</TD>
+    <TD>U+EAD9</TD>
+    <TD>U+E426</TD>
+    <TD>U+FE353</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f648"></SPAN></TD>
+    <TD>see-no-evil monkey</TD>
+    <TD>U+1F648</TD>
+    <TD>-</TD>
+    <TD>U+EB50</TD>
+    <TD>-</TD>
+    <TD>U+FE354</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f64a"></SPAN></TD>
+    <TD>speak-no-evil monkey</TD>
+    <TD>U+1F64A</TD>
+    <TD>-</TD>
+    <TD>U+EB51</TD>
+    <TD>-</TD>
+    <TD>U+FE355</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f649"></SPAN></TD>
+    <TD>hear-no-evil monkey</TD>
+    <TD>U+1F649</TD>
+    <TD>-</TD>
+    <TD>U+EB52</TD>
+    <TD>-</TD>
+    <TD>U+FE356</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f64b"></SPAN></TD>
+    <TD>happy person raising one hand</TD>
+    <TD>U+1F64B</TD>
+    <TD>-</TD>
+    <TD>U+EB85</TD>
+    <TD>U+E012</TD>
+    <TD>U+FE357</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f64c"></SPAN></TD>
+    <TD>person raising both hands in celebration</TD>
+    <TD>U+1F64C</TD>
+    <TD>-</TD>
+    <TD>U+EB86</TD>
+    <TD>U+E427</TD>
+    <TD>U+FE358</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f64d"></SPAN></TD>
+    <TD>person frowning</TD>
+    <TD>U+1F64D</TD>
+    <TD>U+E6F3</TD>
+    <TD>U+EB87</TD>
+    <TD>U+E403</TD>
+    <TD>U+FE359</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f64e"></SPAN></TD>
+    <TD>person with pouting face</TD>
+    <TD>U+1F64E</TD>
+    <TD>U+E6F1</TD>
+    <TD>U+EB88</TD>
+    <TD>U+E416</TD>
+    <TD>U+FE35A</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f64f"></SPAN></TD>
+    <TD>person with folded hands</TD>
+    <TD>U+1F64F</TD>
+    <TD>-</TD>
+    <TD>U+EAD2</TD>
+    <TD>U+E41D</TD>
+    <TD>U+FE35B</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f3e0"></SPAN></TD>
+    <TD>house building</TD>
+    <TD>U+1F3E0</TD>
+    <TD>U+E663</TD>
+    <TD>U+E4AB</TD>
+    <TD>U+E036</TD>
+    <TD>U+FE4B0</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f3e1"></SPAN></TD>
+    <TD>house with garden</TD>
+    <TD>U+1F3E1</TD>
+    <TD>U+E663</TD>
+    <TD>U+EB09</TD>
+    <TD>U+E036</TD>
+    <TD>U+FE4B1</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f3e2"></SPAN></TD>
+    <TD>office building</TD>
+    <TD>U+1F3E2</TD>
+    <TD>U+E664</TD>
+    <TD>U+E4AD</TD>
+    <TD>U+E038</TD>
+    <TD>U+FE4B2</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f3e3"></SPAN></TD>
+    <TD>japanese post office</TD>
+    <TD>U+1F3E3</TD>
+    <TD>U+E665</TD>
+    <TD>U+E5DE</TD>
+    <TD>U+E153</TD>
+    <TD>U+FE4B3</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f3e5"></SPAN></TD>
+    <TD>hospital</TD>
+    <TD>U+1F3E5</TD>
+    <TD>U+E666</TD>
+    <TD>U+E5DF</TD>
+    <TD>U+E155</TD>
+    <TD>U+FE4B4</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f3e6"></SPAN></TD>
+    <TD>bank</TD>
+    <TD>U+1F3E6</TD>
+    <TD>U+E667</TD>
+    <TD>U+E4AA</TD>
+    <TD>U+E14D</TD>
+    <TD>U+FE4B5</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f3e7"></SPAN></TD>
+    <TD>automated teller machine</TD>
+    <TD>U+1F3E7</TD>
+    <TD>U+E668</TD>
+    <TD>U+E4A3</TD>
+    <TD>U+E154</TD>
+    <TD>U+FE4B6</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f3e8"></SPAN></TD>
+    <TD>hotel</TD>
+    <TD>U+1F3E8</TD>
+    <TD>U+E669</TD>
+    <TD>U+EA81</TD>
+    <TD>U+E158</TD>
+    <TD>U+FE4B7</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f3e9"></SPAN></TD>
+    <TD>love hotel</TD>
+    <TD>U+1F3E9</TD>
+    <TD>U+E669 U+E6EF</TD>
+    <TD>U+EAF3</TD>
+    <TD>U+E501</TD>
+    <TD>U+FE4B8</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f3ea"></SPAN></TD>
+    <TD>convenience store</TD>
+    <TD>U+1F3EA</TD>
+    <TD>U+E66A</TD>
+    <TD>U+E4A4</TD>
+    <TD>U+E156</TD>
+    <TD>U+FE4B9</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f3eb"></SPAN></TD>
+    <TD>school</TD>
+    <TD>U+1F3EB</TD>
+    <TD>U+E73E</TD>
+    <TD>U+EA80</TD>
+    <TD>U+E157</TD>
+    <TD>U+FE4BA</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji26ea"></SPAN></TD>
+    <TD>church</TD>
+    <TD>U+26EA</TD>
+    <TD>-</TD>
+    <TD>U+E5BB</TD>
+    <TD>U+E037</TD>
+    <TD>U+FE4BB</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji26f2"></SPAN></TD>
+    <TD>fountain</TD>
+    <TD>U+26F2</TD>
+    <TD>-</TD>
+    <TD>U+E5CF</TD>
+    <TD>U+E121</TD>
+    <TD>U+FE4BC</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f3ec"></SPAN></TD>
+    <TD>department store</TD>
+    <TD>U+1F3EC</TD>
+    <TD>-</TD>
+    <TD>U+EAF6</TD>
+    <TD>U+E504</TD>
+    <TD>U+FE4BD</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f3ef"></SPAN></TD>
+    <TD>japanese castle</TD>
+    <TD>U+1F3EF</TD>
+    <TD>-</TD>
+    <TD>U+EAF7</TD>
+    <TD>U+E505</TD>
+    <TD>U+FE4BE</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f3f0"></SPAN></TD>
+    <TD>european castle</TD>
+    <TD>U+1F3F0</TD>
+    <TD>-</TD>
+    <TD>U+EAF8</TD>
+    <TD>U+E506</TD>
+    <TD>U+FE4BF</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f3ed"></SPAN></TD>
+    <TD>factory</TD>
+    <TD>U+1F3ED</TD>
+    <TD>-</TD>
+    <TD>U+EAF9</TD>
+    <TD>U+E508</TD>
+    <TD>U+FE4C0</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji2693"></SPAN></TD>
+    <TD>anchor</TD>
+    <TD>U+2693</TD>
+    <TD>U+E661</TD>
+    <TD>U+E4A9</TD>
+    <TD>U+E202</TD>
+    <TD>U+FE4C1</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f3ee"></SPAN></TD>
+    <TD>izakaya lantern</TD>
+    <TD>U+1F3EE</TD>
+    <TD>U+E74B</TD>
+    <TD>U+E4BD</TD>
+    <TD>U+E30B</TD>
+    <TD>U+FE4C2</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f5fb"></SPAN></TD>
+    <TD>mount fuji</TD>
+    <TD>U+1F5FB</TD>
+    <TD>U+E740</TD>
+    <TD>U+E5BD</TD>
+    <TD>U+E03B</TD>
+    <TD>U+FE4C3</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f5fc"></SPAN></TD>
+    <TD>tokyo tower</TD>
+    <TD>U+1F5FC</TD>
+    <TD>-</TD>
+    <TD>U+E4C0</TD>
+    <TD>U+E509</TD>
+    <TD>U+FE4C4</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f5fd"></SPAN></TD>
+    <TD>statue of liberty</TD>
+    <TD>U+1F5FD</TD>
+    <TD>-</TD>
+    <TD>-</TD>
+    <TD>U+E51D</TD>
+    <TD>U+FE4C6</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f5fe"></SPAN></TD>
+    <TD>silhouette of japan</TD>
+    <TD>U+1F5FE</TD>
+    <TD>-</TD>
+    <TD>U+E572</TD>
+    <TD>-</TD>
+    <TD>U+FE4C7</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f5ff"></SPAN></TD>
+    <TD>moyai</TD>
+    <TD>U+1F5FF</TD>
+    <TD>-</TD>
+    <TD>U+EB6C</TD>
+    <TD>-</TD>
+    <TD>U+FE4C8</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f45e"></SPAN></TD>
+    <TD>mans shoe</TD>
+    <TD>U+1F45E</TD>
+    <TD>U+E699</TD>
+    <TD>U+E5B7</TD>
+    <TD>U+E007</TD>
+    <TD>U+FE4CC</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f45f"></SPAN></TD>
+    <TD>athletic shoe</TD>
+    <TD>U+1F45F</TD>
+    <TD>U+E699</TD>
+    <TD>U+EB2B</TD>
+    <TD>U+E007</TD>
+    <TD>U+FE4CD</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f460"></SPAN></TD>
+    <TD>high-heeled shoe</TD>
+    <TD>U+1F460</TD>
+    <TD>U+E674</TD>
+    <TD>U+E51A</TD>
+    <TD>U+E13E</TD>
+    <TD>U+FE4D6</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f461"></SPAN></TD>
+    <TD>womans sandal</TD>
+    <TD>U+1F461</TD>
+    <TD>U+E674</TD>
+    <TD>U+E51A</TD>
+    <TD>U+E31A</TD>
+    <TD>U+FE4D7</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f462"></SPAN></TD>
+    <TD>womans boots</TD>
+    <TD>U+1F462</TD>
+    <TD>-</TD>
+    <TD>U+EA9F</TD>
+    <TD>U+E31B</TD>
+    <TD>U+FE4D8</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f463"></SPAN></TD>
+    <TD>footprints</TD>
+    <TD>U+1F463</TD>
+    <TD>U+E698</TD>
+    <TD>U+EB2A</TD>
+    <TD>U+E536</TD>
+    <TD>U+FE553</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f453"></SPAN></TD>
+    <TD>eyeglasses</TD>
+    <TD>U+1F453</TD>
+    <TD>U+E69A</TD>
+    <TD>U+E4FE</TD>
+    <TD>-</TD>
+    <TD>U+FE4CE</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f455"></SPAN></TD>
+    <TD>t-shirt</TD>
+    <TD>U+1F455</TD>
+    <TD>U+E70E</TD>
+    <TD>U+E5B6</TD>
+    <TD>U+E006</TD>
+    <TD>U+FE4CF</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f456"></SPAN></TD>
+    <TD>jeans</TD>
+    <TD>U+1F456</TD>
+    <TD>U+E711</TD>
+    <TD>U+EB77</TD>
+    <TD>-</TD>
+    <TD>U+FE4D0</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f451"></SPAN></TD>
+    <TD>crown</TD>
+    <TD>U+1F451</TD>
+    <TD>U+E71A</TD>
+    <TD>U+E5C9</TD>
+    <TD>U+E10E</TD>
+    <TD>U+FE4D1</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f454"></SPAN></TD>
+    <TD>necktie</TD>
+    <TD>U+1F454</TD>
+    <TD>-</TD>
+    <TD>U+EA93</TD>
+    <TD>U+E302</TD>
+    <TD>U+FE4D3</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f452"></SPAN></TD>
+    <TD>womans hat</TD>
+    <TD>U+1F452</TD>
+    <TD>-</TD>
+    <TD>U+EA9E</TD>
+    <TD>U+E318</TD>
+    <TD>U+FE4D4</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f457"></SPAN></TD>
+    <TD>dress</TD>
+    <TD>U+1F457</TD>
+    <TD>-</TD>
+    <TD>U+EB6B</TD>
+    <TD>U+E319</TD>
+    <TD>U+FE4D5</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f458"></SPAN></TD>
+    <TD>kimono</TD>
+    <TD>U+1F458</TD>
+    <TD>-</TD>
+    <TD>U+EAA3</TD>
+    <TD>U+E321</TD>
+    <TD>U+FE4D9</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f459"></SPAN></TD>
+    <TD>bikini</TD>
+    <TD>U+1F459</TD>
+    <TD>-</TD>
+    <TD>U+EAA4</TD>
+    <TD>U+E322</TD>
+    <TD>U+FE4DA</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f45a"></SPAN></TD>
+    <TD>womans clothes</TD>
+    <TD>U+1F45A</TD>
+    <TD>U+E70E</TD>
+    <TD>U+E50D</TD>
+    <TD>U+E006</TD>
+    <TD>U+FE4DB</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f45b"></SPAN></TD>
+    <TD>purse</TD>
+    <TD>U+1F45B</TD>
+    <TD>U+E70F</TD>
+    <TD>U+E504</TD>
+    <TD>-</TD>
+    <TD>U+FE4DC</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f45c"></SPAN></TD>
+    <TD>handbag</TD>
+    <TD>U+1F45C</TD>
+    <TD>U+E682</TD>
+    <TD>U+E49C</TD>
+    <TD>U+E323</TD>
+    <TD>U+FE4F0</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f45d"></SPAN></TD>
+    <TD>pouch</TD>
+    <TD>U+1F45D</TD>
+    <TD>U+E6AD</TD>
+    <TD>-</TD>
+    <TD>-</TD>
+    <TD>U+FE4F1</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f4b0"></SPAN></TD>
+    <TD>money bag</TD>
+    <TD>U+1F4B0</TD>
+    <TD>U+E715</TD>
+    <TD>U+E4C7</TD>
+    <TD>U+E12F</TD>
+    <TD>U+FE4DD</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f4b1"></SPAN></TD>
+    <TD>currency exchange</TD>
+    <TD>U+1F4B1</TD>
+    <TD>-</TD>
+    <TD>-</TD>
+    <TD>U+E149</TD>
+    <TD>U+FE4DE</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f4b9"></SPAN></TD>
+    <TD>chart with upwards trend and yen sign</TD>
+    <TD>U+1F4B9</TD>
+    <TD>-</TD>
+    <TD>U+E5DC</TD>
+    <TD>U+E14A</TD>
+    <TD>U+FE4DF</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f4b2"></SPAN></TD>
+    <TD>heavy dollar sign</TD>
+    <TD>U+1F4B2</TD>
+    <TD>U+E715</TD>
+    <TD>U+E579</TD>
+    <TD>U+E12F</TD>
+    <TD>U+FE4E0</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f4b3"></SPAN></TD>
+    <TD>credit card</TD>
+    <TD>U+1F4B3</TD>
+    <TD>-</TD>
+    <TD>U+E57C</TD>
+    <TD>-</TD>
+    <TD>U+FE4E1</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f4b4"></SPAN></TD>
+    <TD>banknote with yen sign</TD>
+    <TD>U+1F4B4</TD>
+    <TD>U+E6D6</TD>
+    <TD>U+E57D</TD>
+    <TD>-</TD>
+    <TD>U+FE4E2</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f4b5"></SPAN></TD>
+    <TD>banknote with dollar sign</TD>
+    <TD>U+1F4B5</TD>
+    <TD>U+E715</TD>
+    <TD>U+E585</TD>
+    <TD>U+E12F</TD>
+    <TD>U+FE4E3</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f4b8"></SPAN></TD>
+    <TD>money with wings</TD>
+    <TD>U+1F4B8</TD>
+    <TD>-</TD>
+    <TD>U+EB5B</TD>
+    <TD>-</TD>
+    <TD>U+FE4E4</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f1e81f1f3"></SPAN></TD>
+    <TD>regional indicator symbol letters cn</TD>
+    <TD>U+1F1E8 U+1F1F3</TD>
+    <TD>-</TD>
+    <TD>U+EB11</TD>
+    <TD>U+E513</TD>
+    <TD>U+FE4ED</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f1e91f1ea"></SPAN></TD>
+    <TD>regional indicator symbol letters de</TD>
+    <TD>U+1F1E9 U+1F1EA</TD>
+    <TD>-</TD>
+    <TD>U+EB0E</TD>
+    <TD>U+E50E</TD>
+    <TD>U+FE4E8</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f1ea1f1f8"></SPAN></TD>
+    <TD>regional indicator symbol letters es</TD>
+    <TD>U+1F1EA U+1F1F8</TD>
+    <TD>-</TD>
+    <TD>U+E5D5</TD>
+    <TD>U+E511</TD>
+    <TD>U+FE4EB</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f1eb1f1f7"></SPAN></TD>
+    <TD>regional indicator symbol letters fr</TD>
+    <TD>U+1F1EB U+1F1F7</TD>
+    <TD>-</TD>
+    <TD>U+EAFA</TD>
+    <TD>U+E50D</TD>
+    <TD>U+FE4E7</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f1ec1f1e7"></SPAN></TD>
+    <TD>regional indicator symbol letters gb</TD>
+    <TD>U+1F1EC U+1F1E7</TD>
+    <TD>-</TD>
+    <TD>U+EB10</TD>
+    <TD>U+E510</TD>
+    <TD>U+FE4EA</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f1ee1f1f9"></SPAN></TD>
+    <TD>regional indicator symbol letters it</TD>
+    <TD>U+1F1EE U+1F1F9</TD>
+    <TD>-</TD>
+    <TD>U+EB0F</TD>
+    <TD>U+E50F</TD>
+    <TD>U+FE4E9</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f1ef1f1f5"></SPAN></TD>
+    <TD>regional indicator symbol letters jp</TD>
+    <TD>U+1F1EF U+1F1F5</TD>
+    <TD>-</TD>
+    <TD>U+E4CC</TD>
+    <TD>U+E50B</TD>
+    <TD>U+FE4E5</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f1f01f1f7"></SPAN></TD>
+    <TD>regional indicator symbol letters kr</TD>
+    <TD>U+1F1F0 U+1F1F7</TD>
+    <TD>-</TD>
+    <TD>U+EB12</TD>
+    <TD>U+E514</TD>
+    <TD>U+FE4EE</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f1f71f1fa"></SPAN></TD>
+    <TD>regional indicator symbol letters ru</TD>
+    <TD>U+1F1F7 U+1F1FA</TD>
+    <TD>-</TD>
+    <TD>U+E5D6</TD>
+    <TD>U+E512</TD>
+    <TD>U+FE4EC</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f1fa1f1f8"></SPAN></TD>
+    <TD>regional indicator symbol letters us</TD>
+    <TD>U+1F1FA U+1F1F8</TD>
+    <TD>-</TD>
+    <TD>U+E573</TD>
+    <TD>U+E50C</TD>
+    <TD>U+FE4E6</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f525"></SPAN></TD>
+    <TD>fire</TD>
+    <TD>U+1F525</TD>
+    <TD>-</TD>
+    <TD>U+E47B</TD>
+    <TD>U+E11D</TD>
+    <TD>U+FE4F6</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f526"></SPAN></TD>
+    <TD>electric torch</TD>
+    <TD>U+1F526</TD>
+    <TD>U+E6FB</TD>
+    <TD>U+E583</TD>
+    <TD>-</TD>
+    <TD>U+FE4FB</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f527"></SPAN></TD>
+    <TD>wrench</TD>
+    <TD>U+1F527</TD>
+    <TD>U+E718</TD>
+    <TD>U+E587</TD>
+    <TD>-</TD>
+    <TD>U+FE4C9</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f528"></SPAN></TD>
+    <TD>hammer</TD>
+    <TD>U+1F528</TD>
+    <TD>-</TD>
+    <TD>U+E5CB</TD>
+    <TD>U+E116</TD>
+    <TD>U+FE4CA</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f529"></SPAN></TD>
+    <TD>nut and bolt</TD>
+    <TD>U+1F529</TD>
+    <TD>-</TD>
+    <TD>U+E581</TD>
+    <TD>-</TD>
+    <TD>U+FE4CB</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f52a"></SPAN></TD>
+    <TD>hocho</TD>
+    <TD>U+1F52A</TD>
+    <TD>-</TD>
+    <TD>U+E57F</TD>
+    <TD>-</TD>
+    <TD>U+FE4FA</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f52b"></SPAN></TD>
+    <TD>pistol</TD>
+    <TD>U+1F52B</TD>
+    <TD>-</TD>
+    <TD>U+E50A</TD>
+    <TD>U+E113</TD>
+    <TD>U+FE4F5</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f52e"></SPAN></TD>
+    <TD>crystal ball</TD>
+    <TD>U+1F52E</TD>
+    <TD>-</TD>
+    <TD>U+EA8F</TD>
+    <TD>U+E23E</TD>
+    <TD>U+FE4F7</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f52f"></SPAN></TD>
+    <TD>six pointed star with middle dot</TD>
+    <TD>U+1F52F</TD>
+    <TD>-</TD>
+    <TD>U+EA8F</TD>
+    <TD>U+E23E</TD>
+    <TD>U+FE4F8</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f530"></SPAN></TD>
+    <TD>japanese symbol for beginner</TD>
+    <TD>U+1F530</TD>
+    <TD>-</TD>
+    <TD>U+E480</TD>
+    <TD>U+E209</TD>
+    <TD>U+FE044</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f531"></SPAN></TD>
+    <TD>trident emblem</TD>
+    <TD>U+1F531</TD>
+    <TD>U+E71A</TD>
+    <TD>U+E5C9</TD>
+    <TD>U+E031</TD>
+    <TD>U+FE4D2</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f489"></SPAN></TD>
+    <TD>syringe</TD>
+    <TD>U+1F489</TD>
+    <TD>-</TD>
+    <TD>U+E510</TD>
+    <TD>U+E13B</TD>
+    <TD>U+FE509</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f48a"></SPAN></TD>
+    <TD>pill</TD>
+    <TD>U+1F48A</TD>
+    <TD>-</TD>
+    <TD>U+EA9A</TD>
+    <TD>U+E30F</TD>
+    <TD>U+FE50A</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f170"></SPAN></TD>
+    <TD>negative squared latin capital letter a</TD>
+    <TD>U+1F170</TD>
+    <TD>-</TD>
+    <TD>U+EB26</TD>
+    <TD>U+E532</TD>
+    <TD>U+FE50B</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f171"></SPAN></TD>
+    <TD>negative squared latin capital letter b</TD>
+    <TD>U+1F171</TD>
+    <TD>-</TD>
+    <TD>U+EB27</TD>
+    <TD>U+E533</TD>
+    <TD>U+FE50C</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f18e"></SPAN></TD>
+    <TD>negative squared ab</TD>
+    <TD>U+1F18E</TD>
+    <TD>-</TD>
+    <TD>U+EB29</TD>
+    <TD>U+E534</TD>
+    <TD>U+FE50D</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f17e"></SPAN></TD>
+    <TD>negative squared latin capital letter o</TD>
+    <TD>U+1F17E</TD>
+    <TD>-</TD>
+    <TD>U+EB28</TD>
+    <TD>U+E535</TD>
+    <TD>U+FE50E</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f380"></SPAN></TD>
+    <TD>ribbon</TD>
+    <TD>U+1F380</TD>
+    <TD>U+E684</TD>
+    <TD>U+E59F</TD>
+    <TD>U+E314</TD>
+    <TD>U+FE50F</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f381"></SPAN></TD>
+    <TD>wrapped present</TD>
+    <TD>U+1F381</TD>
+    <TD>U+E685</TD>
+    <TD>U+E4CF</TD>
+    <TD>U+E112</TD>
+    <TD>U+FE510</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f382"></SPAN></TD>
+    <TD>birthday cake</TD>
+    <TD>U+1F382</TD>
+    <TD>U+E686</TD>
+    <TD>U+E5A0</TD>
+    <TD>U+E34B</TD>
+    <TD>U+FE511</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f384"></SPAN></TD>
+    <TD>christmas tree</TD>
+    <TD>U+1F384</TD>
+    <TD>U+E6A4</TD>
+    <TD>U+E4C9</TD>
+    <TD>U+E033</TD>
+    <TD>U+FE512</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f385"></SPAN></TD>
+    <TD>father christmas</TD>
+    <TD>U+1F385</TD>
+    <TD>-</TD>
+    <TD>U+EAF0</TD>
+    <TD>U+E448</TD>
+    <TD>U+FE513</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f38c"></SPAN></TD>
+    <TD>crossed flags</TD>
+    <TD>U+1F38C</TD>
+    <TD>-</TD>
+    <TD>U+E5D9</TD>
+    <TD>U+E143</TD>
+    <TD>U+FE514</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f386"></SPAN></TD>
+    <TD>fireworks</TD>
+    <TD>U+1F386</TD>
+    <TD>-</TD>
+    <TD>U+E5CC</TD>
+    <TD>U+E117</TD>
+    <TD>U+FE515</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f388"></SPAN></TD>
+    <TD>balloon</TD>
+    <TD>U+1F388</TD>
+    <TD>-</TD>
+    <TD>U+EA9B</TD>
+    <TD>U+E310</TD>
+    <TD>U+FE516</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f389"></SPAN></TD>
+    <TD>party popper</TD>
+    <TD>U+1F389</TD>
+    <TD>-</TD>
+    <TD>U+EA9C</TD>
+    <TD>U+E312</TD>
+    <TD>U+FE517</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f38d"></SPAN></TD>
+    <TD>pine decoration</TD>
+    <TD>U+1F38D</TD>
+    <TD>-</TD>
+    <TD>U+EAE3</TD>
+    <TD>U+E436</TD>
+    <TD>U+FE518</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f38e"></SPAN></TD>
+    <TD>japanese dolls</TD>
+    <TD>U+1F38E</TD>
+    <TD>-</TD>
+    <TD>U+EAE4</TD>
+    <TD>U+E438</TD>
+    <TD>U+FE519</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f393"></SPAN></TD>
+    <TD>graduation cap</TD>
+    <TD>U+1F393</TD>
+    <TD>-</TD>
+    <TD>U+EAE5</TD>
+    <TD>U+E439</TD>
+    <TD>U+FE51A</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f392"></SPAN></TD>
+    <TD>school satchel</TD>
+    <TD>U+1F392</TD>
+    <TD>-</TD>
+    <TD>U+EAE6</TD>
+    <TD>U+E43A</TD>
+    <TD>U+FE51B</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f38f"></SPAN></TD>
+    <TD>carp streamer</TD>
+    <TD>U+1F38F</TD>
+    <TD>-</TD>
+    <TD>U+EAE7</TD>
+    <TD>U+E43B</TD>
+    <TD>U+FE51C</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f387"></SPAN></TD>
+    <TD>firework sparkler</TD>
+    <TD>U+1F387</TD>
+    <TD>-</TD>
+    <TD>U+EAEB</TD>
+    <TD>U+E440</TD>
+    <TD>U+FE51D</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f390"></SPAN></TD>
+    <TD>wind chime</TD>
+    <TD>U+1F390</TD>
+    <TD>-</TD>
+    <TD>U+EAED</TD>
+    <TD>U+E442</TD>
+    <TD>U+FE51E</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f383"></SPAN></TD>
+    <TD>jack-o-lantern</TD>
+    <TD>U+1F383</TD>
+    <TD>-</TD>
+    <TD>U+EAEE</TD>
+    <TD>U+E445</TD>
+    <TD>U+FE51F</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f38a"></SPAN></TD>
+    <TD>confetti ball</TD>
+    <TD>U+1F38A</TD>
+    <TD>-</TD>
+    <TD>U+E46F</TD>
+    <TD>-</TD>
+    <TD>U+FE520</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f38b"></SPAN></TD>
+    <TD>tanabata tree</TD>
+    <TD>U+1F38B</TD>
+    <TD>-</TD>
+    <TD>U+EB3D</TD>
+    <TD>-</TD>
+    <TD>U+FE521</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f391"></SPAN></TD>
+    <TD>moon viewing ceremony</TD>
+    <TD>U+1F391</TD>
+    <TD>-</TD>
+    <TD>U+EAEF</TD>
+    <TD>U+E446</TD>
+    <TD>U+FE017</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f4df"></SPAN></TD>
+    <TD>pager</TD>
+    <TD>U+1F4DF</TD>
+    <TD>U+E65A</TD>
+    <TD>U+E59B</TD>
+    <TD>-</TD>
+    <TD>U+FE522</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji260e"></SPAN></TD>
+    <TD>black telephone</TD>
+    <TD>U+260E</TD>
+    <TD>U+E687</TD>
+    <TD>U+E596</TD>
+    <TD>U+E009</TD>
+    <TD>U+FE523</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f4de"></SPAN></TD>
+    <TD>telephone receiver</TD>
+    <TD>U+1F4DE</TD>
+    <TD>U+E687</TD>
+    <TD>U+E51E</TD>
+    <TD>U+E009</TD>
+    <TD>U+FE524</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f4f1"></SPAN></TD>
+    <TD>mobile phone</TD>
+    <TD>U+1F4F1</TD>
+    <TD>U+E688</TD>
+    <TD>U+E588</TD>
+    <TD>U+E00A</TD>
+    <TD>U+FE525</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f4f2"></SPAN></TD>
+    <TD>mobile phone with rightwards arrow at left</TD>
+    <TD>U+1F4F2</TD>
+    <TD>U+E6CE</TD>
+    <TD>U+EB08</TD>
+    <TD>U+E104</TD>
+    <TD>U+FE526</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f4dd"></SPAN></TD>
+    <TD>memo</TD>
+    <TD>U+1F4DD</TD>
+    <TD>U+E689</TD>
+    <TD>U+EA92</TD>
+    <TD>U+E301</TD>
+    <TD>U+FE527</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f4e0"></SPAN></TD>
+    <TD>fax machine</TD>
+    <TD>U+1F4E0</TD>
+    <TD>U+E6D0</TD>
+    <TD>U+E520</TD>
+    <TD>U+E00B</TD>
+    <TD>U+FE528</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji2709"></SPAN></TD>
+    <TD>envelope</TD>
+    <TD>U+2709</TD>
+    <TD>U+E6D3</TD>
+    <TD>U+E521</TD>
+    <TD>U+E103</TD>
+    <TD>U+FE529</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f4e8"></SPAN></TD>
+    <TD>incoming envelope</TD>
+    <TD>U+1F4E8</TD>
+    <TD>U+E6CF</TD>
+    <TD>U+E591</TD>
+    <TD>U+E103</TD>
+    <TD>U+FE52A</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f4e9"></SPAN></TD>
+    <TD>envelope with downwards arrow above</TD>
+    <TD>U+1F4E9</TD>
+    <TD>U+E6CF</TD>
+    <TD>U+EB62</TD>
+    <TD>U+E103</TD>
+    <TD>U+FE52B</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f4ea"></SPAN></TD>
+    <TD>closed mailbox with lowered flag</TD>
+    <TD>U+1F4EA</TD>
+    <TD>U+E665</TD>
+    <TD>U+E51B</TD>
+    <TD>U+E101</TD>
+    <TD>U+FE52C</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f4eb"></SPAN></TD>
+    <TD>closed mailbox with raised flag</TD>
+    <TD>U+1F4EB</TD>
+    <TD>U+E665</TD>
+    <TD>U+EB0A</TD>
+    <TD>U+E101</TD>
+    <TD>U+FE52D</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f4ee"></SPAN></TD>
+    <TD>postbox</TD>
+    <TD>U+1F4EE</TD>
+    <TD>U+E665</TD>
+    <TD>U+E51B</TD>
+    <TD>U+E102</TD>
+    <TD>U+FE52E</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f4f0"></SPAN></TD>
+    <TD>newspaper</TD>
+    <TD>U+1F4F0</TD>
+    <TD>-</TD>
+    <TD>U+E58B</TD>
+    <TD>-</TD>
+    <TD>U+FE822</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f4e2"></SPAN></TD>
+    <TD>public address loudspeaker</TD>
+    <TD>U+1F4E2</TD>
+    <TD>-</TD>
+    <TD>U+E511</TD>
+    <TD>U+E142</TD>
+    <TD>U+FE52F</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f4e3"></SPAN></TD>
+    <TD>cheering megaphone</TD>
+    <TD>U+1F4E3</TD>
+    <TD>-</TD>
+    <TD>U+E511</TD>
+    <TD>U+E317</TD>
+    <TD>U+FE530</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f4e1"></SPAN></TD>
+    <TD>satellite antenna</TD>
+    <TD>U+1F4E1</TD>
+    <TD>-</TD>
+    <TD>U+E4A8</TD>
+    <TD>U+E14B</TD>
+    <TD>U+FE531</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f4e4"></SPAN></TD>
+    <TD>outbox tray</TD>
+    <TD>U+1F4E4</TD>
+    <TD>-</TD>
+    <TD>U+E592</TD>
+    <TD>-</TD>
+    <TD>U+FE533</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f4e5"></SPAN></TD>
+    <TD>inbox tray</TD>
+    <TD>U+1F4E5</TD>
+    <TD>-</TD>
+    <TD>U+E593</TD>
+    <TD>-</TD>
+    <TD>U+FE534</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f4e6"></SPAN></TD>
+    <TD>package</TD>
+    <TD>U+1F4E6</TD>
+    <TD>U+E685</TD>
+    <TD>U+E51F</TD>
+    <TD>U+E112</TD>
+    <TD>U+FE535</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f4e7"></SPAN></TD>
+    <TD>e-mail symbol</TD>
+    <TD>U+1F4E7</TD>
+    <TD>U+E6D3</TD>
+    <TD>U+EB71</TD>
+    <TD>U+E103</TD>
+    <TD>U+FEB92</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f520"></SPAN></TD>
+    <TD>input symbol for latin capital letters</TD>
+    <TD>U+1F520</TD>
+    <TD>-</TD>
+    <TD>U+EAFD</TD>
+    <TD>-</TD>
+    <TD>U+FEB7C</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f521"></SPAN></TD>
+    <TD>input symbol for latin small letters</TD>
+    <TD>U+1F521</TD>
+    <TD>-</TD>
+    <TD>U+EAFE</TD>
+    <TD>-</TD>
+    <TD>U+FEB7D</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f522"></SPAN></TD>
+    <TD>input symbol for numbers</TD>
+    <TD>U+1F522</TD>
+    <TD>-</TD>
+    <TD>U+EAFF</TD>
+    <TD>-</TD>
+    <TD>U+FEB7E</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f523"></SPAN></TD>
+    <TD>input symbol for symbols</TD>
+    <TD>U+1F523</TD>
+    <TD>-</TD>
+    <TD>U+EB00</TD>
+    <TD>-</TD>
+    <TD>U+FEB7F</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f524"></SPAN></TD>
+    <TD>input symbol for latin letters</TD>
+    <TD>U+1F524</TD>
+    <TD>-</TD>
+    <TD>U+EB55</TD>
+    <TD>-</TD>
+    <TD>U+FEB80</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji2712"></SPAN></TD>
+    <TD>black nib</TD>
+    <TD>U+2712</TD>
+    <TD>U+E6AE</TD>
+    <TD>U+EB03</TD>
+    <TD>-</TD>
+    <TD>U+FE536</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f4ba"></SPAN></TD>
+    <TD>seat</TD>
+    <TD>U+1F4BA</TD>
+    <TD>U+E6B2</TD>
+    <TD>-</TD>
+    <TD>U+E11F</TD>
+    <TD>U+FE537</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f4bb"></SPAN></TD>
+    <TD>personal computer</TD>
+    <TD>U+1F4BB</TD>
+    <TD>U+E716</TD>
+    <TD>U+E5B8</TD>
+    <TD>U+E00C</TD>
+    <TD>U+FE538</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji270f"></SPAN></TD>
+    <TD>pencil</TD>
+    <TD>U+270F</TD>
+    <TD>U+E719</TD>
+    <TD>U+E4A1</TD>
+    <TD>U+E301</TD>
+    <TD>U+FE539</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f4ce"></SPAN></TD>
+    <TD>paperclip</TD>
+    <TD>U+1F4CE</TD>
+    <TD>U+E730</TD>
+    <TD>U+E4A0</TD>
+    <TD>-</TD>
+    <TD>U+FE53A</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f4bc"></SPAN></TD>
+    <TD>briefcase</TD>
+    <TD>U+1F4BC</TD>
+    <TD>U+E682</TD>
+    <TD>U+E5CE</TD>
+    <TD>U+E11E</TD>
+    <TD>U+FE53B</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f4bd"></SPAN></TD>
+    <TD>minidisc</TD>
+    <TD>U+1F4BD</TD>
+    <TD>-</TD>
+    <TD>U+E582</TD>
+    <TD>U+E316</TD>
+    <TD>U+FE53C</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f4be"></SPAN></TD>
+    <TD>floppy disk</TD>
+    <TD>U+1F4BE</TD>
+    <TD>-</TD>
+    <TD>U+E562</TD>
+    <TD>U+E316</TD>
+    <TD>U+FE53D</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f4bf"></SPAN></TD>
+    <TD>optical disc</TD>
+    <TD>U+1F4BF</TD>
+    <TD>U+E68C</TD>
+    <TD>U+E50C</TD>
+    <TD>U+E126</TD>
+    <TD>U+FE81D</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f4c0"></SPAN></TD>
+    <TD>dvd</TD>
+    <TD>U+1F4C0</TD>
+    <TD>U+E68C</TD>
+    <TD>U+E50C</TD>
+    <TD>U+E127</TD>
+    <TD>U+FE81E</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji2702"></SPAN></TD>
+    <TD>black scissors</TD>
+    <TD>U+2702</TD>
+    <TD>U+E675</TD>
+    <TD>U+E516</TD>
+    <TD>U+E313</TD>
+    <TD>U+FE53E</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f4cd"></SPAN></TD>
+    <TD>round pushpin</TD>
+    <TD>U+1F4CD</TD>
+    <TD>-</TD>
+    <TD>U+E560</TD>
+    <TD>-</TD>
+    <TD>U+FE53F</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f4c3"></SPAN></TD>
+    <TD>page with curl</TD>
+    <TD>U+1F4C3</TD>
+    <TD>U+E689</TD>
+    <TD>U+E561</TD>
+    <TD>U+E301</TD>
+    <TD>U+FE540</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f4c4"></SPAN></TD>
+    <TD>page facing up</TD>
+    <TD>U+1F4C4</TD>
+    <TD>U+E689</TD>
+    <TD>U+E569</TD>
+    <TD>U+E301</TD>
+    <TD>U+FE541</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f4c5"></SPAN></TD>
+    <TD>calendar</TD>
+    <TD>U+1F4C5</TD>
+    <TD>-</TD>
+    <TD>U+E563</TD>
+    <TD>-</TD>
+    <TD>U+FE542</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f4c1"></SPAN></TD>
+    <TD>file folder</TD>
+    <TD>U+1F4C1</TD>
+    <TD>-</TD>
+    <TD>U+E58F</TD>
+    <TD>-</TD>
+    <TD>U+FE543</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f4c2"></SPAN></TD>
+    <TD>open file folder</TD>
+    <TD>U+1F4C2</TD>
+    <TD>-</TD>
+    <TD>U+E590</TD>
+    <TD>-</TD>
+    <TD>U+FE544</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f4d3"></SPAN></TD>
+    <TD>notebook</TD>
+    <TD>U+1F4D3</TD>
+    <TD>U+E683</TD>
+    <TD>U+E56B</TD>
+    <TD>U+E148</TD>
+    <TD>U+FE545</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f4d6"></SPAN></TD>
+    <TD>open book</TD>
+    <TD>U+1F4D6</TD>
+    <TD>U+E683</TD>
+    <TD>U+E49F</TD>
+    <TD>U+E148</TD>
+    <TD>U+FE546</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f4d4"></SPAN></TD>
+    <TD>notebook with decorative cover</TD>
+    <TD>U+1F4D4</TD>
+    <TD>U+E683</TD>
+    <TD>U+E49D</TD>
+    <TD>U+E148</TD>
+    <TD>U+FE547</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f4d5"></SPAN></TD>
+    <TD>closed book</TD>
+    <TD>U+1F4D5</TD>
+    <TD>U+E683</TD>
+    <TD>U+E568</TD>
+    <TD>U+E148</TD>
+    <TD>U+FE502</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f4d7"></SPAN></TD>
+    <TD>green book</TD>
+    <TD>U+1F4D7</TD>
+    <TD>U+E683</TD>
+    <TD>U+E565</TD>
+    <TD>U+E148</TD>
+    <TD>U+FE4FF</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f4d8"></SPAN></TD>
+    <TD>blue book</TD>
+    <TD>U+1F4D8</TD>
+    <TD>U+E683</TD>
+    <TD>U+E566</TD>
+    <TD>U+E148</TD>
+    <TD>U+FE500</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f4d9"></SPAN></TD>
+    <TD>orange book</TD>
+    <TD>U+1F4D9</TD>
+    <TD>U+E683</TD>
+    <TD>U+E567</TD>
+    <TD>U+E148</TD>
+    <TD>U+FE501</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f4da"></SPAN></TD>
+    <TD>books</TD>
+    <TD>U+1F4DA</TD>
+    <TD>U+E683</TD>
+    <TD>U+E56F</TD>
+    <TD>U+E148</TD>
+    <TD>U+FE503</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f4db"></SPAN></TD>
+    <TD>name badge</TD>
+    <TD>U+1F4DB</TD>
+    <TD>-</TD>
+    <TD>U+E51D</TD>
+    <TD>-</TD>
+    <TD>U+FE504</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f4dc"></SPAN></TD>
+    <TD>scroll</TD>
+    <TD>U+1F4DC</TD>
+    <TD>U+E70A</TD>
+    <TD>U+E55F</TD>
+    <TD>-</TD>
+    <TD>U+FE4FD</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f4cb"></SPAN></TD>
+    <TD>clipboard</TD>
+    <TD>U+1F4CB</TD>
+    <TD>U+E689</TD>
+    <TD>U+E564</TD>
+    <TD>U+E301</TD>
+    <TD>U+FE548</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f4c6"></SPAN></TD>
+    <TD>tear-off calendar</TD>
+    <TD>U+1F4C6</TD>
+    <TD>-</TD>
+    <TD>U+E56A</TD>
+    <TD>-</TD>
+    <TD>U+FE549</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f4ca"></SPAN></TD>
+    <TD>bar chart</TD>
+    <TD>U+1F4CA</TD>
+    <TD>-</TD>
+    <TD>U+E574</TD>
+    <TD>U+E14A</TD>
+    <TD>U+FE54A</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f4c8"></SPAN></TD>
+    <TD>chart with upwards trend</TD>
+    <TD>U+1F4C8</TD>
+    <TD>-</TD>
+    <TD>U+E575</TD>
+    <TD>U+E14A</TD>
+    <TD>U+FE54B</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f4c9"></SPAN></TD>
+    <TD>chart with downwards trend</TD>
+    <TD>U+1F4C9</TD>
+    <TD>-</TD>
+    <TD>U+E576</TD>
+    <TD>-</TD>
+    <TD>U+FE54C</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f4c7"></SPAN></TD>
+    <TD>card index</TD>
+    <TD>U+1F4C7</TD>
+    <TD>U+E683</TD>
+    <TD>U+E56C</TD>
+    <TD>U+E148</TD>
+    <TD>U+FE54D</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f4cc"></SPAN></TD>
+    <TD>pushpin</TD>
+    <TD>U+1F4CC</TD>
+    <TD>-</TD>
+    <TD>U+E56D</TD>
+    <TD>-</TD>
+    <TD>U+FE54E</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f4d2"></SPAN></TD>
+    <TD>ledger</TD>
+    <TD>U+1F4D2</TD>
+    <TD>U+E683</TD>
+    <TD>U+E56E</TD>
+    <TD>U+E148</TD>
+    <TD>U+FE54F</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f4cf"></SPAN></TD>
+    <TD>straight ruler</TD>
+    <TD>U+1F4CF</TD>
+    <TD>-</TD>
+    <TD>U+E570</TD>
+    <TD>-</TD>
+    <TD>U+FE550</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f4d0"></SPAN></TD>
+    <TD>triangular ruler</TD>
+    <TD>U+1F4D0</TD>
+    <TD>-</TD>
+    <TD>U+E4A2</TD>
+    <TD>-</TD>
+    <TD>U+FE551</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f4d1"></SPAN></TD>
+    <TD>bookmark tabs</TD>
+    <TD>U+1F4D1</TD>
+    <TD>U+E689</TD>
+    <TD>U+EB0B</TD>
+    <TD>U+E301</TD>
+    <TD>U+FE552</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f3bd"></SPAN></TD>
+    <TD>running shirt with sash</TD>
+    <TD>U+1F3BD</TD>
+    <TD>U+E652</TD>
+    <TD>-</TD>
+    <TD>-</TD>
+    <TD>U+FE7D0</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji26be"></SPAN></TD>
+    <TD>baseball</TD>
+    <TD>U+26BE</TD>
+    <TD>U+E653</TD>
+    <TD>U+E4BA</TD>
+    <TD>U+E016</TD>
+    <TD>U+FE7D1</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji26f3"></SPAN></TD>
+    <TD>flag in hole</TD>
+    <TD>U+26F3</TD>
+    <TD>U+E654</TD>
+    <TD>U+E599</TD>
+    <TD>U+E014</TD>
+    <TD>U+FE7D2</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f3be"></SPAN></TD>
+    <TD>tennis racquet and ball</TD>
+    <TD>U+1F3BE</TD>
+    <TD>U+E655</TD>
+    <TD>U+E4B7</TD>
+    <TD>U+E015</TD>
+    <TD>U+FE7D3</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji26bd"></SPAN></TD>
+    <TD>soccer ball</TD>
+    <TD>U+26BD</TD>
+    <TD>U+E656</TD>
+    <TD>U+E4B6</TD>
+    <TD>U+E018</TD>
+    <TD>U+FE7D4</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f3bf"></SPAN></TD>
+    <TD>ski and ski boot</TD>
+    <TD>U+1F3BF</TD>
+    <TD>U+E657</TD>
+    <TD>U+EAAC</TD>
+    <TD>U+E013</TD>
+    <TD>U+FE7D5</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f3c0"></SPAN></TD>
+    <TD>basketball and hoop</TD>
+    <TD>U+1F3C0</TD>
+    <TD>U+E658</TD>
+    <TD>U+E59A</TD>
+    <TD>U+E42A</TD>
+    <TD>U+FE7D6</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f3c1"></SPAN></TD>
+    <TD>chequered flag</TD>
+    <TD>U+1F3C1</TD>
+    <TD>U+E659</TD>
+    <TD>U+E4B9</TD>
+    <TD>U+E132</TD>
+    <TD>U+FE7D7</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f3c2"></SPAN></TD>
+    <TD>snowboarder</TD>
+    <TD>U+1F3C2</TD>
+    <TD>U+E712</TD>
+    <TD>U+E4B8</TD>
+    <TD>-</TD>
+    <TD>U+FE7D8</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f3c3"></SPAN></TD>
+    <TD>runner</TD>
+    <TD>U+1F3C3</TD>
+    <TD>U+E733</TD>
+    <TD>U+E46B</TD>
+    <TD>U+E115</TD>
+    <TD>U+FE7D9</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f3c4"></SPAN></TD>
+    <TD>surfer</TD>
+    <TD>U+1F3C4</TD>
+    <TD>U+E712</TD>
+    <TD>U+EB41</TD>
+    <TD>U+E017</TD>
+    <TD>U+FE7DA</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f3c6"></SPAN></TD>
+    <TD>trophy</TD>
+    <TD>U+1F3C6</TD>
+    <TD>-</TD>
+    <TD>U+E5D3</TD>
+    <TD>U+E131</TD>
+    <TD>U+FE7DB</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f3c8"></SPAN></TD>
+    <TD>american football</TD>
+    <TD>U+1F3C8</TD>
+    <TD>-</TD>
+    <TD>U+E4BB</TD>
+    <TD>U+E42B</TD>
+    <TD>U+FE7DD</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f3ca"></SPAN></TD>
+    <TD>swimmer</TD>
+    <TD>U+1F3CA</TD>
+    <TD>-</TD>
+    <TD>U+EADE</TD>
+    <TD>U+E42D</TD>
+    <TD>U+FE7DE</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f683"></SPAN></TD>
+    <TD>railway car</TD>
+    <TD>U+1F683</TD>
+    <TD>U+E65B</TD>
+    <TD>U+E4B5</TD>
+    <TD>U+E01E</TD>
+    <TD>U+FE7DF</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f687"></SPAN></TD>
+    <TD>metro</TD>
+    <TD>U+1F687</TD>
+    <TD>U+E65C</TD>
+    <TD>U+E5BC</TD>
+    <TD>U+E434</TD>
+    <TD>U+FE7E0</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji24c2"></SPAN></TD>
+    <TD>circled latin capital letter m</TD>
+    <TD>U+24C2</TD>
+    <TD>U+E65C</TD>
+    <TD>U+E5BC</TD>
+    <TD>U+E434</TD>
+    <TD>U+FE7E1</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f684"></SPAN></TD>
+    <TD>high-speed train</TD>
+    <TD>U+1F684</TD>
+    <TD>U+E65D</TD>
+    <TD>U+E4B0</TD>
+    <TD>U+E435</TD>
+    <TD>U+FE7E2</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f685"></SPAN></TD>
+    <TD>high-speed train with bullet nose</TD>
+    <TD>U+1F685</TD>
+    <TD>U+E65D</TD>
+    <TD>U+E4B0</TD>
+    <TD>U+E01F</TD>
+    <TD>U+FE7E3</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f697"></SPAN></TD>
+    <TD>automobile</TD>
+    <TD>U+1F697</TD>
+    <TD>U+E65E</TD>
+    <TD>U+E4B1</TD>
+    <TD>U+E01B</TD>
+    <TD>U+FE7E4</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f699"></SPAN></TD>
+    <TD>recreational vehicle</TD>
+    <TD>U+1F699</TD>
+    <TD>U+E65F</TD>
+    <TD>U+E4B1</TD>
+    <TD>U+E42E</TD>
+    <TD>U+FE7E5</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f68c"></SPAN></TD>
+    <TD>bus</TD>
+    <TD>U+1F68C</TD>
+    <TD>U+E660</TD>
+    <TD>U+E4AF</TD>
+    <TD>U+E159</TD>
+    <TD>U+FE7E6</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f68f"></SPAN></TD>
+    <TD>bus stop</TD>
+    <TD>U+1F68F</TD>
+    <TD>-</TD>
+    <TD>U+E4A7</TD>
+    <TD>U+E150</TD>
+    <TD>U+FE7E7</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f6a2"></SPAN></TD>
+    <TD>ship</TD>
+    <TD>U+1F6A2</TD>
+    <TD>U+E661</TD>
+    <TD>U+EA82</TD>
+    <TD>U+E202</TD>
+    <TD>U+FE7E8</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji2708"></SPAN></TD>
+    <TD>airplane</TD>
+    <TD>U+2708</TD>
+    <TD>U+E662</TD>
+    <TD>U+E4B3</TD>
+    <TD>U+E01D</TD>
+    <TD>U+FE7E9</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji26f5"></SPAN></TD>
+    <TD>sailboat</TD>
+    <TD>U+26F5</TD>
+    <TD>U+E6A3</TD>
+    <TD>U+E4B4</TD>
+    <TD>U+E01C</TD>
+    <TD>U+FE7EA</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f689"></SPAN></TD>
+    <TD>station</TD>
+    <TD>U+1F689</TD>
+    <TD>-</TD>
+    <TD>U+EB6D</TD>
+    <TD>U+E039</TD>
+    <TD>U+FE7EC</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f680"></SPAN></TD>
+    <TD>rocket</TD>
+    <TD>U+1F680</TD>
+    <TD>-</TD>
+    <TD>U+E5C8</TD>
+    <TD>U+E10D</TD>
+    <TD>U+FE7ED</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f6a4"></SPAN></TD>
+    <TD>speedboat</TD>
+    <TD>U+1F6A4</TD>
+    <TD>U+E6A3</TD>
+    <TD>U+E4B4</TD>
+    <TD>U+E135</TD>
+    <TD>U+FE7EE</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f695"></SPAN></TD>
+    <TD>taxi</TD>
+    <TD>U+1F695</TD>
+    <TD>U+E65E</TD>
+    <TD>U+E4B1</TD>
+    <TD>U+E15A</TD>
+    <TD>U+FE7EF</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f69a"></SPAN></TD>
+    <TD>delivery truck</TD>
+    <TD>U+1F69A</TD>
+    <TD>-</TD>
+    <TD>U+E4B2</TD>
+    <TD>U+E42F</TD>
+    <TD>U+FE7F1</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f692"></SPAN></TD>
+    <TD>fire engine</TD>
+    <TD>U+1F692</TD>
+    <TD>-</TD>
+    <TD>U+EADF</TD>
+    <TD>U+E430</TD>
+    <TD>U+FE7F2</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f691"></SPAN></TD>
+    <TD>ambulance</TD>
+    <TD>U+1F691</TD>
+    <TD>-</TD>
+    <TD>U+EAE0</TD>
+    <TD>U+E431</TD>
+    <TD>U+FE7F3</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f693"></SPAN></TD>
+    <TD>police car</TD>
+    <TD>U+1F693</TD>
+    <TD>-</TD>
+    <TD>U+EAE1</TD>
+    <TD>U+E432</TD>
+    <TD>U+FE7F4</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji26fd"></SPAN></TD>
+    <TD>fuel pump</TD>
+    <TD>U+26FD</TD>
+    <TD>U+E66B</TD>
+    <TD>U+E571</TD>
+    <TD>U+E03A</TD>
+    <TD>U+FE7F5</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f17f"></SPAN></TD>
+    <TD>negative squared latin capital letter p</TD>
+    <TD>U+1F17F</TD>
+    <TD>U+E66C</TD>
+    <TD>U+E4A6</TD>
+    <TD>U+E14F</TD>
+    <TD>U+FE7F6</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f6a5"></SPAN></TD>
+    <TD>horizontal traffic light</TD>
+    <TD>U+1F6A5</TD>
+    <TD>U+E66D</TD>
+    <TD>U+E46A</TD>
+    <TD>U+E14E</TD>
+    <TD>U+FE7F7</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f6a7"></SPAN></TD>
+    <TD>construction sign</TD>
+    <TD>U+1F6A7</TD>
+    <TD>-</TD>
+    <TD>U+E5D7</TD>
+    <TD>U+E137</TD>
+    <TD>U+FE7F8</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f6a8"></SPAN></TD>
+    <TD>police cars revolving light</TD>
+    <TD>U+1F6A8</TD>
+    <TD>-</TD>
+    <TD>U+EB73</TD>
+    <TD>U+E432</TD>
+    <TD>U+FE7F9</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji2668"></SPAN></TD>
+    <TD>hot springs</TD>
+    <TD>U+2668</TD>
+    <TD>U+E6F7</TD>
+    <TD>U+E4BC</TD>
+    <TD>U+E123</TD>
+    <TD>U+FE7FA</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji26fa"></SPAN></TD>
+    <TD>tent</TD>
+    <TD>U+26FA</TD>
+    <TD>-</TD>
+    <TD>U+E5D0</TD>
+    <TD>U+E122</TD>
+    <TD>U+FE7FB</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f3a0"></SPAN></TD>
+    <TD>carousel horse</TD>
+    <TD>U+1F3A0</TD>
+    <TD>U+E679</TD>
+    <TD>-</TD>
+    <TD>-</TD>
+    <TD>U+FE7FC</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f3a1"></SPAN></TD>
+    <TD>ferris wheel</TD>
+    <TD>U+1F3A1</TD>
+    <TD>-</TD>
+    <TD>U+E46D</TD>
+    <TD>U+E124</TD>
+    <TD>U+FE7FD</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f3a2"></SPAN></TD>
+    <TD>roller coaster</TD>
+    <TD>U+1F3A2</TD>
+    <TD>-</TD>
+    <TD>U+EAE2</TD>
+    <TD>U+E433</TD>
+    <TD>U+FE7FE</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f3a3"></SPAN></TD>
+    <TD>fishing pole and fish</TD>
+    <TD>U+1F3A3</TD>
+    <TD>U+E751</TD>
+    <TD>U+EB42</TD>
+    <TD>U+E019</TD>
+    <TD>U+FE7FF</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f3a4"></SPAN></TD>
+    <TD>microphone</TD>
+    <TD>U+1F3A4</TD>
+    <TD>U+E676</TD>
+    <TD>U+E503</TD>
+    <TD>U+E03C</TD>
+    <TD>U+FE800</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f3a5"></SPAN></TD>
+    <TD>movie camera</TD>
+    <TD>U+1F3A5</TD>
+    <TD>U+E677</TD>
+    <TD>U+E517</TD>
+    <TD>U+E03D</TD>
+    <TD>U+FE801</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f3a6"></SPAN></TD>
+    <TD>cinema</TD>
+    <TD>U+1F3A6</TD>
+    <TD>U+E677</TD>
+    <TD>U+E517</TD>
+    <TD>U+E507</TD>
+    <TD>U+FE802</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f3a7"></SPAN></TD>
+    <TD>headphone</TD>
+    <TD>U+1F3A7</TD>
+    <TD>U+E67A</TD>
+    <TD>U+E508</TD>
+    <TD>U+E30A</TD>
+    <TD>U+FE803</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f3a8"></SPAN></TD>
+    <TD>artist palette</TD>
+    <TD>U+1F3A8</TD>
+    <TD>U+E67B</TD>
+    <TD>U+E59C</TD>
+    <TD>U+E502</TD>
+    <TD>U+FE804</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f3a9"></SPAN></TD>
+    <TD>top hat</TD>
+    <TD>U+1F3A9</TD>
+    <TD>U+E67C</TD>
+    <TD>U+EAF5</TD>
+    <TD>U+E503</TD>
+    <TD>U+FE805</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f3aa"></SPAN></TD>
+    <TD>circus tent</TD>
+    <TD>U+1F3AA</TD>
+    <TD>U+E67D</TD>
+    <TD>U+E59E</TD>
+    <TD>-</TD>
+    <TD>U+FE806</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f3ab"></SPAN></TD>
+    <TD>ticket</TD>
+    <TD>U+1F3AB</TD>
+    <TD>U+E67E</TD>
+    <TD>U+E49E</TD>
+    <TD>U+E125</TD>
+    <TD>U+FE807</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f3ac"></SPAN></TD>
+    <TD>clapper board</TD>
+    <TD>U+1F3AC</TD>
+    <TD>U+E6AC</TD>
+    <TD>U+E4BE</TD>
+    <TD>U+E324</TD>
+    <TD>U+FE808</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f3ad"></SPAN></TD>
+    <TD>performing arts</TD>
+    <TD>U+1F3AD</TD>
+    <TD>-</TD>
+    <TD>U+E59D</TD>
+    <TD>U+E503</TD>
+    <TD>U+FE809</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f3ae"></SPAN></TD>
+    <TD>video game</TD>
+    <TD>U+1F3AE</TD>
+    <TD>U+E68B</TD>
+    <TD>U+E4C6</TD>
+    <TD>-</TD>
+    <TD>U+FE80A</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f004"></SPAN></TD>
+    <TD>mahjong tile red dragon</TD>
+    <TD>U+1F004</TD>
+    <TD>-</TD>
+    <TD>U+E5D1</TD>
+    <TD>U+E12D</TD>
+    <TD>U+FE80B</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f3af"></SPAN></TD>
+    <TD>direct hit</TD>
+    <TD>U+1F3AF</TD>
+    <TD>-</TD>
+    <TD>U+E4C5</TD>
+    <TD>U+E130</TD>
+    <TD>U+FE80C</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f3b0"></SPAN></TD>
+    <TD>slot machine</TD>
+    <TD>U+1F3B0</TD>
+    <TD>-</TD>
+    <TD>U+E46E</TD>
+    <TD>U+E133</TD>
+    <TD>U+FE80D</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f3b1"></SPAN></TD>
+    <TD>billiards</TD>
+    <TD>U+1F3B1</TD>
+    <TD>-</TD>
+    <TD>U+EADD</TD>
+    <TD>U+E42C</TD>
+    <TD>U+FE80E</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f3b2"></SPAN></TD>
+    <TD>game die</TD>
+    <TD>U+1F3B2</TD>
+    <TD>-</TD>
+    <TD>U+E4C8</TD>
+    <TD>-</TD>
+    <TD>U+FE80F</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f3b3"></SPAN></TD>
+    <TD>bowling</TD>
+    <TD>U+1F3B3</TD>
+    <TD>-</TD>
+    <TD>U+EB43</TD>
+    <TD>-</TD>
+    <TD>U+FE810</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f3b4"></SPAN></TD>
+    <TD>flower playing cards</TD>
+    <TD>U+1F3B4</TD>
+    <TD>-</TD>
+    <TD>U+EB6E</TD>
+    <TD>-</TD>
+    <TD>U+FE811</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f0cf"></SPAN></TD>
+    <TD>playing card black joker</TD>
+    <TD>U+1F0CF</TD>
+    <TD>-</TD>
+    <TD>U+EB6F</TD>
+    <TD>-</TD>
+    <TD>U+FE812</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f3b5"></SPAN></TD>
+    <TD>musical note</TD>
+    <TD>U+1F3B5</TD>
+    <TD>U+E6F6</TD>
+    <TD>U+E5BE</TD>
+    <TD>U+E03E</TD>
+    <TD>U+FE813</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f3b6"></SPAN></TD>
+    <TD>multiple musical notes</TD>
+    <TD>U+1F3B6</TD>
+    <TD>U+E6FF</TD>
+    <TD>U+E505</TD>
+    <TD>U+E326</TD>
+    <TD>U+FE814</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f3b7"></SPAN></TD>
+    <TD>saxophone</TD>
+    <TD>U+1F3B7</TD>
+    <TD>-</TD>
+    <TD>-</TD>
+    <TD>U+E040</TD>
+    <TD>U+FE815</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f3b8"></SPAN></TD>
+    <TD>guitar</TD>
+    <TD>U+1F3B8</TD>
+    <TD>-</TD>
+    <TD>U+E506</TD>
+    <TD>U+E041</TD>
+    <TD>U+FE816</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f3b9"></SPAN></TD>
+    <TD>musical keyboard</TD>
+    <TD>U+1F3B9</TD>
+    <TD>-</TD>
+    <TD>U+EB40</TD>
+    <TD>-</TD>
+    <TD>U+FE817</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f3ba"></SPAN></TD>
+    <TD>trumpet</TD>
+    <TD>U+1F3BA</TD>
+    <TD>-</TD>
+    <TD>U+EADC</TD>
+    <TD>U+E042</TD>
+    <TD>U+FE818</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f3bb"></SPAN></TD>
+    <TD>violin</TD>
+    <TD>U+1F3BB</TD>
+    <TD>-</TD>
+    <TD>U+E507</TD>
+    <TD>-</TD>
+    <TD>U+FE819</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f3bc"></SPAN></TD>
+    <TD>musical score</TD>
+    <TD>U+1F3BC</TD>
+    <TD>U+E6FF</TD>
+    <TD>U+EACC</TD>
+    <TD>U+E326</TD>
+    <TD>U+FE81A</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji303d"></SPAN></TD>
+    <TD>part alternation mark</TD>
+    <TD>U+303D</TD>
+    <TD>-</TD>
+    <TD>-</TD>
+    <TD>U+E12C</TD>
+    <TD>U+FE81B</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f4f7"></SPAN></TD>
+    <TD>camera</TD>
+    <TD>U+1F4F7</TD>
+    <TD>U+E681</TD>
+    <TD>U+E515</TD>
+    <TD>U+E008</TD>
+    <TD>U+FE4EF</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f4f9"></SPAN></TD>
+    <TD>video camera</TD>
+    <TD>U+1F4F9</TD>
+    <TD>U+E677</TD>
+    <TD>U+E57E</TD>
+    <TD>U+E03D</TD>
+    <TD>U+FE4F9</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f4fa"></SPAN></TD>
+    <TD>television</TD>
+    <TD>U+1F4FA</TD>
+    <TD>U+E68A</TD>
+    <TD>U+E502</TD>
+    <TD>U+E12A</TD>
+    <TD>U+FE81C</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f4fb"></SPAN></TD>
+    <TD>radio</TD>
+    <TD>U+1F4FB</TD>
+    <TD>-</TD>
+    <TD>U+E5B9</TD>
+    <TD>U+E128</TD>
+    <TD>U+FE81F</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f4fc"></SPAN></TD>
+    <TD>videocassette</TD>
+    <TD>U+1F4FC</TD>
+    <TD>-</TD>
+    <TD>U+E580</TD>
+    <TD>U+E129</TD>
+    <TD>U+FE820</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f48b"></SPAN></TD>
+    <TD>kiss mark</TD>
+    <TD>U+1F48B</TD>
+    <TD>U+E6F9</TD>
+    <TD>U+E4EB</TD>
+    <TD>U+E003</TD>
+    <TD>U+FE823</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f48c"></SPAN></TD>
+    <TD>love letter</TD>
+    <TD>U+1F48C</TD>
+    <TD>U+E717</TD>
+    <TD>U+EB78</TD>
+    <TD>U+E103 U+E328</TD>
+    <TD>U+FE824</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f48d"></SPAN></TD>
+    <TD>ring</TD>
+    <TD>U+1F48D</TD>
+    <TD>U+E71B</TD>
+    <TD>U+E514</TD>
+    <TD>U+E034</TD>
+    <TD>U+FE825</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f48e"></SPAN></TD>
+    <TD>gem stone</TD>
+    <TD>U+1F48E</TD>
+    <TD>U+E71B</TD>
+    <TD>U+E514</TD>
+    <TD>U+E035</TD>
+    <TD>U+FE826</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f48f"></SPAN></TD>
+    <TD>kiss</TD>
+    <TD>U+1F48F</TD>
+    <TD>U+E6F9</TD>
+    <TD>U+E5CA</TD>
+    <TD>U+E111</TD>
+    <TD>U+FE827</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f490"></SPAN></TD>
+    <TD>bouquet</TD>
+    <TD>U+1F490</TD>
+    <TD>-</TD>
+    <TD>U+EA95</TD>
+    <TD>U+E306</TD>
+    <TD>U+FE828</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f491"></SPAN></TD>
+    <TD>couple with heart</TD>
+    <TD>U+1F491</TD>
+    <TD>U+E6ED</TD>
+    <TD>U+EADA</TD>
+    <TD>U+E425</TD>
+    <TD>U+FE829</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f492"></SPAN></TD>
+    <TD>wedding</TD>
+    <TD>U+1F492</TD>
+    <TD>-</TD>
+    <TD>U+E5BB</TD>
+    <TD>U+E43D</TD>
+    <TD>U+FE82A</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f51e"></SPAN></TD>
+    <TD>no one under eighteen symbol</TD>
+    <TD>U+1F51E</TD>
+    <TD>-</TD>
+    <TD>U+EA83</TD>
+    <TD>U+E207</TD>
+    <TD>U+FEB25</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emojia9"></SPAN></TD>
+    <TD>copyright sign</TD>
+    <TD>U+00A9</TD>
+    <TD>U+E731</TD>
+    <TD>U+E558</TD>
+    <TD>U+E24E</TD>
+    <TD>U+FEB29</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emojiae"></SPAN></TD>
+    <TD>registered sign</TD>
+    <TD>U+00AE</TD>
+    <TD>U+E736</TD>
+    <TD>U+E559</TD>
+    <TD>U+E24F</TD>
+    <TD>U+FEB2D</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji2122"></SPAN></TD>
+    <TD>trade mark sign</TD>
+    <TD>U+2122</TD>
+    <TD>U+E732</TD>
+    <TD>U+E54E</TD>
+    <TD>U+E537</TD>
+    <TD>U+FEB2A</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji2139"></SPAN></TD>
+    <TD>information source</TD>
+    <TD>U+2139</TD>
+    <TD>-</TD>
+    <TD>U+E533</TD>
+    <TD>-</TD>
+    <TD>U+FEB47</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji2320e3"></SPAN></TD>
+    <TD>hash key</TD>
+    <TD>U+0023 U+20E3</TD>
+    <TD>U+E6E0</TD>
+    <TD>U+EB84</TD>
+    <TD>U+E210</TD>
+    <TD>U+FE82C</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji3120e3"></SPAN></TD>
+    <TD>keycap 1</TD>
+    <TD>U+0031 U+20E3</TD>
+    <TD>U+E6E2</TD>
+    <TD>U+E522</TD>
+    <TD>U+E21C</TD>
+    <TD>U+FE82E</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji3220e3"></SPAN></TD>
+    <TD>keycap 2</TD>
+    <TD>U+0032 U+20E3</TD>
+    <TD>U+E6E3</TD>
+    <TD>U+E523</TD>
+    <TD>U+E21D</TD>
+    <TD>U+FE82F</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji3320e3"></SPAN></TD>
+    <TD>keycap 3</TD>
+    <TD>U+0033 U+20E3</TD>
+    <TD>U+E6E4</TD>
+    <TD>U+E524</TD>
+    <TD>U+E21E</TD>
+    <TD>U+FE830</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji3420e3"></SPAN></TD>
+    <TD>keycap 4</TD>
+    <TD>U+0034 U+20E3</TD>
+    <TD>U+E6E5</TD>
+    <TD>U+E525</TD>
+    <TD>U+E21F</TD>
+    <TD>U+FE831</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji3520e3"></SPAN></TD>
+    <TD>keycap 5</TD>
+    <TD>U+0035 U+20E3</TD>
+    <TD>U+E6E6</TD>
+    <TD>U+E526</TD>
+    <TD>U+E220</TD>
+    <TD>U+FE832</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji3620e3"></SPAN></TD>
+    <TD>keycap 6</TD>
+    <TD>U+0036 U+20E3</TD>
+    <TD>U+E6E7</TD>
+    <TD>U+E527</TD>
+    <TD>U+E221</TD>
+    <TD>U+FE833</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji3720e3"></SPAN></TD>
+    <TD>keycap 7</TD>
+    <TD>U+0037 U+20E3</TD>
+    <TD>U+E6E8</TD>
+    <TD>U+E528</TD>
+    <TD>U+E222</TD>
+    <TD>U+FE834</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji3820e3"></SPAN></TD>
+    <TD>keycap 8</TD>
+    <TD>U+0038 U+20E3</TD>
+    <TD>U+E6E9</TD>
+    <TD>U+E529</TD>
+    <TD>U+E223</TD>
+    <TD>U+FE835</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji3920e3"></SPAN></TD>
+    <TD>keycap 9</TD>
+    <TD>U+0039 U+20E3</TD>
+    <TD>U+E6EA</TD>
+    <TD>U+E52A</TD>
+    <TD>U+E224</TD>
+    <TD>U+FE836</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji3020e3"></SPAN></TD>
+    <TD>keycap 0</TD>
+    <TD>U+0030 U+20E3</TD>
+    <TD>U+E6EB</TD>
+    <TD>U+E5AC</TD>
+    <TD>U+E225</TD>
+    <TD>U+FE837</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f51f"></SPAN></TD>
+    <TD>keycap ten</TD>
+    <TD>U+1F51F</TD>
+    <TD>-</TD>
+    <TD>U+E52B</TD>
+    <TD>-</TD>
+    <TD>U+FE83B</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f4f6"></SPAN></TD>
+    <TD>antenna with bars</TD>
+    <TD>U+1F4F6</TD>
+    <TD>-</TD>
+    <TD>U+EA84</TD>
+    <TD>U+E20B</TD>
+    <TD>U+FE838</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f4f3"></SPAN></TD>
+    <TD>vibration mode</TD>
+    <TD>U+1F4F3</TD>
+    <TD>-</TD>
+    <TD>U+EA90</TD>
+    <TD>U+E250</TD>
+    <TD>U+FE839</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f4f4"></SPAN></TD>
+    <TD>mobile phone off</TD>
+    <TD>U+1F4F4</TD>
+    <TD>-</TD>
+    <TD>U+EA91</TD>
+    <TD>U+E251</TD>
+    <TD>U+FE83A</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f354"></SPAN></TD>
+    <TD>hamburger</TD>
+    <TD>U+1F354</TD>
+    <TD>U+E673</TD>
+    <TD>U+E4D6</TD>
+    <TD>U+E120</TD>
+    <TD>U+FE960</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f359"></SPAN></TD>
+    <TD>rice ball</TD>
+    <TD>U+1F359</TD>
+    <TD>U+E749</TD>
+    <TD>U+E4D5</TD>
+    <TD>U+E342</TD>
+    <TD>U+FE961</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f370"></SPAN></TD>
+    <TD>shortcake</TD>
+    <TD>U+1F370</TD>
+    <TD>U+E74A</TD>
+    <TD>U+E4D0</TD>
+    <TD>U+E046</TD>
+    <TD>U+FE962</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f35c"></SPAN></TD>
+    <TD>steaming bowl</TD>
+    <TD>U+1F35C</TD>
+    <TD>U+E74C</TD>
+    <TD>U+E5B4</TD>
+    <TD>U+E340</TD>
+    <TD>U+FE963</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f35e"></SPAN></TD>
+    <TD>bread</TD>
+    <TD>U+1F35E</TD>
+    <TD>U+E74D</TD>
+    <TD>U+EAAF</TD>
+    <TD>U+E339</TD>
+    <TD>U+FE964</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f373"></SPAN></TD>
+    <TD>cooking</TD>
+    <TD>U+1F373</TD>
+    <TD>-</TD>
+    <TD>U+E4D1</TD>
+    <TD>U+E147</TD>
+    <TD>U+FE965</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f366"></SPAN></TD>
+    <TD>soft ice cream</TD>
+    <TD>U+1F366</TD>
+    <TD>-</TD>
+    <TD>U+EAB0</TD>
+    <TD>U+E33A</TD>
+    <TD>U+FE966</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f35f"></SPAN></TD>
+    <TD>french fries</TD>
+    <TD>U+1F35F</TD>
+    <TD>-</TD>
+    <TD>U+EAB1</TD>
+    <TD>U+E33B</TD>
+    <TD>U+FE967</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f361"></SPAN></TD>
+    <TD>dango</TD>
+    <TD>U+1F361</TD>
+    <TD>-</TD>
+    <TD>U+EAB2</TD>
+    <TD>U+E33C</TD>
+    <TD>U+FE968</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f358"></SPAN></TD>
+    <TD>rice cracker</TD>
+    <TD>U+1F358</TD>
+    <TD>-</TD>
+    <TD>U+EAB3</TD>
+    <TD>U+E33D</TD>
+    <TD>U+FE969</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f35a"></SPAN></TD>
+    <TD>cooked rice</TD>
+    <TD>U+1F35A</TD>
+    <TD>U+E74C</TD>
+    <TD>U+EAB4</TD>
+    <TD>U+E33E</TD>
+    <TD>U+FE96A</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f35d"></SPAN></TD>
+    <TD>spaghetti</TD>
+    <TD>U+1F35D</TD>
+    <TD>-</TD>
+    <TD>U+EAB5</TD>
+    <TD>U+E33F</TD>
+    <TD>U+FE96B</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f35b"></SPAN></TD>
+    <TD>curry and rice</TD>
+    <TD>U+1F35B</TD>
+    <TD>-</TD>
+    <TD>U+EAB6</TD>
+    <TD>U+E341</TD>
+    <TD>U+FE96C</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f362"></SPAN></TD>
+    <TD>oden</TD>
+    <TD>U+1F362</TD>
+    <TD>-</TD>
+    <TD>U+EAB7</TD>
+    <TD>U+E343</TD>
+    <TD>U+FE96D</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f363"></SPAN></TD>
+    <TD>sushi</TD>
+    <TD>U+1F363</TD>
+    <TD>-</TD>
+    <TD>U+EAB8</TD>
+    <TD>U+E344</TD>
+    <TD>U+FE96E</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f371"></SPAN></TD>
+    <TD>bento box</TD>
+    <TD>U+1F371</TD>
+    <TD>-</TD>
+    <TD>U+EABD</TD>
+    <TD>U+E34C</TD>
+    <TD>U+FE96F</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f372"></SPAN></TD>
+    <TD>pot of food</TD>
+    <TD>U+1F372</TD>
+    <TD>-</TD>
+    <TD>U+EABE</TD>
+    <TD>U+E34D</TD>
+    <TD>U+FE970</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f367"></SPAN></TD>
+    <TD>shaved ice</TD>
+    <TD>U+1F367</TD>
+    <TD>-</TD>
+    <TD>U+EAEA</TD>
+    <TD>U+E43F</TD>
+    <TD>U+FE971</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f356"></SPAN></TD>
+    <TD>meat on bone</TD>
+    <TD>U+1F356</TD>
+    <TD>-</TD>
+    <TD>U+E4C4</TD>
+    <TD>-</TD>
+    <TD>U+FE972</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f365"></SPAN></TD>
+    <TD>fish cake with swirl design</TD>
+    <TD>U+1F365</TD>
+    <TD>U+E643</TD>
+    <TD>U+E4ED</TD>
+    <TD>-</TD>
+    <TD>U+FE973</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f360"></SPAN></TD>
+    <TD>roasted sweet potato</TD>
+    <TD>U+1F360</TD>
+    <TD>-</TD>
+    <TD>U+EB3A</TD>
+    <TD>-</TD>
+    <TD>U+FE974</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f355"></SPAN></TD>
+    <TD>slice of pizza</TD>
+    <TD>U+1F355</TD>
+    <TD>-</TD>
+    <TD>U+EB3B</TD>
+    <TD>-</TD>
+    <TD>U+FE975</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f357"></SPAN></TD>
+    <TD>poultry leg</TD>
+    <TD>U+1F357</TD>
+    <TD>-</TD>
+    <TD>U+EB3C</TD>
+    <TD>-</TD>
+    <TD>U+FE976</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f368"></SPAN></TD>
+    <TD>ice cream</TD>
+    <TD>U+1F368</TD>
+    <TD>-</TD>
+    <TD>U+EB4A</TD>
+    <TD>-</TD>
+    <TD>U+FE977</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f369"></SPAN></TD>
+    <TD>doughnut</TD>
+    <TD>U+1F369</TD>
+    <TD>-</TD>
+    <TD>U+EB4B</TD>
+    <TD>-</TD>
+    <TD>U+FE978</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f36a"></SPAN></TD>
+    <TD>cookie</TD>
+    <TD>U+1F36A</TD>
+    <TD>-</TD>
+    <TD>U+EB4C</TD>
+    <TD>-</TD>
+    <TD>U+FE979</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f36b"></SPAN></TD>
+    <TD>chocolate bar</TD>
+    <TD>U+1F36B</TD>
+    <TD>-</TD>
+    <TD>U+EB4D</TD>
+    <TD>-</TD>
+    <TD>U+FE97A</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f36c"></SPAN></TD>
+    <TD>candy</TD>
+    <TD>U+1F36C</TD>
+    <TD>-</TD>
+    <TD>U+EB4E</TD>
+    <TD>-</TD>
+    <TD>U+FE97B</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f36d"></SPAN></TD>
+    <TD>lollipop</TD>
+    <TD>U+1F36D</TD>
+    <TD>-</TD>
+    <TD>U+EB4F</TD>
+    <TD>-</TD>
+    <TD>U+FE97C</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f36e"></SPAN></TD>
+    <TD>custard</TD>
+    <TD>U+1F36E</TD>
+    <TD>-</TD>
+    <TD>U+EB56</TD>
+    <TD>-</TD>
+    <TD>U+FE97D</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f36f"></SPAN></TD>
+    <TD>honey pot</TD>
+    <TD>U+1F36F</TD>
+    <TD>-</TD>
+    <TD>U+EB59</TD>
+    <TD>-</TD>
+    <TD>U+FE97E</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f364"></SPAN></TD>
+    <TD>fried shrimp</TD>
+    <TD>U+1F364</TD>
+    <TD>-</TD>
+    <TD>U+EB70</TD>
+    <TD>-</TD>
+    <TD>U+FE97F</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f374"></SPAN></TD>
+    <TD>fork and knife</TD>
+    <TD>U+1F374</TD>
+    <TD>U+E66F</TD>
+    <TD>U+E4AC</TD>
+    <TD>U+E043</TD>
+    <TD>U+FE980</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji2615"></SPAN></TD>
+    <TD>hot beverage</TD>
+    <TD>U+2615</TD>
+    <TD>U+E670</TD>
+    <TD>U+E597</TD>
+    <TD>U+E045</TD>
+    <TD>U+FE981</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f378"></SPAN></TD>
+    <TD>cocktail glass</TD>
+    <TD>U+1F378</TD>
+    <TD>U+E671</TD>
+    <TD>U+E4C2</TD>
+    <TD>U+E044</TD>
+    <TD>U+FE982</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f37a"></SPAN></TD>
+    <TD>beer mug</TD>
+    <TD>U+1F37A</TD>
+    <TD>U+E672</TD>
+    <TD>U+E4C3</TD>
+    <TD>U+E047</TD>
+    <TD>U+FE983</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f375"></SPAN></TD>
+    <TD>teacup without handle</TD>
+    <TD>U+1F375</TD>
+    <TD>U+E71E</TD>
+    <TD>U+EAAE</TD>
+    <TD>U+E338</TD>
+    <TD>U+FE984</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f376"></SPAN></TD>
+    <TD>sake bottle and cup</TD>
+    <TD>U+1F376</TD>
+    <TD>U+E74B</TD>
+    <TD>U+EA97</TD>
+    <TD>U+E30B</TD>
+    <TD>U+FE985</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f377"></SPAN></TD>
+    <TD>wine glass</TD>
+    <TD>U+1F377</TD>
+    <TD>U+E756</TD>
+    <TD>U+E4C1</TD>
+    <TD>U+E044</TD>
+    <TD>U+FE986</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f37b"></SPAN></TD>
+    <TD>clinking beer mugs</TD>
+    <TD>U+1F37B</TD>
+    <TD>U+E672</TD>
+    <TD>U+EA98</TD>
+    <TD>U+E30C</TD>
+    <TD>U+FE987</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f379"></SPAN></TD>
+    <TD>tropical drink</TD>
+    <TD>U+1F379</TD>
+    <TD>U+E671</TD>
+    <TD>U+EB3E</TD>
+    <TD>U+E044</TD>
+    <TD>U+FE988</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji2197"></SPAN></TD>
+    <TD>north east arrow</TD>
+    <TD>U+2197</TD>
+    <TD>U+E678</TD>
+    <TD>U+E555</TD>
+    <TD>U+E236</TD>
+    <TD>U+FEAF0</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji2198"></SPAN></TD>
+    <TD>south east arrow</TD>
+    <TD>U+2198</TD>
+    <TD>U+E696</TD>
+    <TD>U+E54D</TD>
+    <TD>U+E238</TD>
+    <TD>U+FEAF1</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji2196"></SPAN></TD>
+    <TD>north west arrow</TD>
+    <TD>U+2196</TD>
+    <TD>U+E697</TD>
+    <TD>U+E54C</TD>
+    <TD>U+E237</TD>
+    <TD>U+FEAF2</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji2199"></SPAN></TD>
+    <TD>south west arrow</TD>
+    <TD>U+2199</TD>
+    <TD>U+E6A5</TD>
+    <TD>U+E556</TD>
+    <TD>U+E239</TD>
+    <TD>U+FEAF3</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji2934"></SPAN></TD>
+    <TD>arrow pointing rightwards then curving upwards</TD>
+    <TD>U+2934</TD>
+    <TD>U+E6F5</TD>
+    <TD>U+EB2D</TD>
+    <TD>U+E236</TD>
+    <TD>U+FEAF4</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji2935"></SPAN></TD>
+    <TD>arrow pointing rightwards then curving downwards</TD>
+    <TD>U+2935</TD>
+    <TD>U+E700</TD>
+    <TD>U+EB2E</TD>
+    <TD>U+E238</TD>
+    <TD>U+FEAF5</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji2194"></SPAN></TD>
+    <TD>left right arrow</TD>
+    <TD>U+2194</TD>
+    <TD>U+E73C</TD>
+    <TD>U+EB7A</TD>
+    <TD>-</TD>
+    <TD>U+FEAF6</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji2195"></SPAN></TD>
+    <TD>up down arrow</TD>
+    <TD>U+2195</TD>
+    <TD>U+E73D</TD>
+    <TD>U+EB7B</TD>
+    <TD>-</TD>
+    <TD>U+FEAF7</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji2b06"></SPAN></TD>
+    <TD>upwards black arrow</TD>
+    <TD>U+2B06</TD>
+    <TD>-</TD>
+    <TD>U+E53F</TD>
+    <TD>U+E232</TD>
+    <TD>U+FEAF8</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji2b07"></SPAN></TD>
+    <TD>downwards black arrow</TD>
+    <TD>U+2B07</TD>
+    <TD>-</TD>
+    <TD>U+E540</TD>
+    <TD>U+E233</TD>
+    <TD>U+FEAF9</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji27a1"></SPAN></TD>
+    <TD>black rightwards arrow</TD>
+    <TD>U+27A1</TD>
+    <TD>-</TD>
+    <TD>U+E552</TD>
+    <TD>U+E234</TD>
+    <TD>U+FEAFA</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji2b05"></SPAN></TD>
+    <TD>leftwards black arrow</TD>
+    <TD>U+2B05</TD>
+    <TD>-</TD>
+    <TD>U+E553</TD>
+    <TD>U+E235</TD>
+    <TD>U+FEAFB</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji25b6"></SPAN></TD>
+    <TD>black right-pointing triangle</TD>
+    <TD>U+25B6</TD>
+    <TD>-</TD>
+    <TD>U+E52E</TD>
+    <TD>U+E23A</TD>
+    <TD>U+FEAFC</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji25c0"></SPAN></TD>
+    <TD>black left-pointing triangle</TD>
+    <TD>U+25C0</TD>
+    <TD>-</TD>
+    <TD>U+E52D</TD>
+    <TD>U+E23B</TD>
+    <TD>U+FEAFD</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji23e9"></SPAN></TD>
+    <TD>black right-pointing double triangle</TD>
+    <TD>U+23E9</TD>
+    <TD>-</TD>
+    <TD>U+E530</TD>
+    <TD>U+E23C</TD>
+    <TD>U+FEAFE</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji23ea"></SPAN></TD>
+    <TD>black left-pointing double triangle</TD>
+    <TD>U+23EA</TD>
+    <TD>-</TD>
+    <TD>U+E52F</TD>
+    <TD>U+E23D</TD>
+    <TD>U+FEAFF</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji23eb"></SPAN></TD>
+    <TD>black up-pointing double triangle</TD>
+    <TD>U+23EB</TD>
+    <TD>-</TD>
+    <TD>U+E545</TD>
+    <TD>-</TD>
+    <TD>U+FEB03</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji23ec"></SPAN></TD>
+    <TD>black down-pointing double triangle</TD>
+    <TD>U+23EC</TD>
+    <TD>-</TD>
+    <TD>U+E544</TD>
+    <TD>-</TD>
+    <TD>U+FEB02</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f53a"></SPAN></TD>
+    <TD>up-pointing red triangle</TD>
+    <TD>U+1F53A</TD>
+    <TD>-</TD>
+    <TD>U+E55A</TD>
+    <TD>-</TD>
+    <TD>U+FEB78</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f53b"></SPAN></TD>
+    <TD>down-pointing red triangle</TD>
+    <TD>U+1F53B</TD>
+    <TD>-</TD>
+    <TD>U+E55B</TD>
+    <TD>-</TD>
+    <TD>U+FEB79</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f53c"></SPAN></TD>
+    <TD>up-pointing small red triangle</TD>
+    <TD>U+1F53C</TD>
+    <TD>-</TD>
+    <TD>U+E543</TD>
+    <TD>-</TD>
+    <TD>U+FEB01</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f53d"></SPAN></TD>
+    <TD>down-pointing small red triangle</TD>
+    <TD>U+1F53D</TD>
+    <TD>-</TD>
+    <TD>U+E542</TD>
+    <TD>-</TD>
+    <TD>U+FEB00</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji2b55"></SPAN></TD>
+    <TD>heavy large circle</TD>
+    <TD>U+2B55</TD>
+    <TD>U+E6A0</TD>
+    <TD>U+EAAD</TD>
+    <TD>U+E332</TD>
+    <TD>U+FEB44</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji274c"></SPAN></TD>
+    <TD>cross mark</TD>
+    <TD>U+274C</TD>
+    <TD>-</TD>
+    <TD>U+E550</TD>
+    <TD>U+E333</TD>
+    <TD>U+FEB45</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji274e"></SPAN></TD>
+    <TD>negative squared cross mark</TD>
+    <TD>U+274E</TD>
+    <TD>-</TD>
+    <TD>U+E551</TD>
+    <TD>U+E333</TD>
+    <TD>U+FEB46</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji2757"></SPAN></TD>
+    <TD>heavy exclamation mark symbol</TD>
+    <TD>U+2757</TD>
+    <TD>U+E702</TD>
+    <TD>U+E482</TD>
+    <TD>U+E021</TD>
+    <TD>U+FEB04</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji2049"></SPAN></TD>
+    <TD>exclamation question mark</TD>
+    <TD>U+2049</TD>
+    <TD>U+E703</TD>
+    <TD>U+EB2F</TD>
+    <TD>-</TD>
+    <TD>U+FEB05</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji203c"></SPAN></TD>
+    <TD>double exclamation mark</TD>
+    <TD>U+203C</TD>
+    <TD>U+E704</TD>
+    <TD>U+EB30</TD>
+    <TD>-</TD>
+    <TD>U+FEB06</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji2753"></SPAN></TD>
+    <TD>black question mark ornament</TD>
+    <TD>U+2753</TD>
+    <TD>-</TD>
+    <TD>U+E483</TD>
+    <TD>U+E020</TD>
+    <TD>U+FEB09</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji2754"></SPAN></TD>
+    <TD>white question mark ornament</TD>
+    <TD>U+2754</TD>
+    <TD>-</TD>
+    <TD>U+E483</TD>
+    <TD>U+E336</TD>
+    <TD>U+FEB0A</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji2755"></SPAN></TD>
+    <TD>white exclamation mark ornament</TD>
+    <TD>U+2755</TD>
+    <TD>U+E702</TD>
+    <TD>U+E482</TD>
+    <TD>U+E337</TD>
+    <TD>U+FEB0B</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji3030"></SPAN></TD>
+    <TD>wavy dash</TD>
+    <TD>U+3030</TD>
+    <TD>U+E709</TD>
+    <TD>-</TD>
+    <TD>-</TD>
+    <TD>U+FEB07</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji27b0"></SPAN></TD>
+    <TD>curly loop</TD>
+    <TD>U+27B0</TD>
+    <TD>U+E70A</TD>
+    <TD>U+EB31</TD>
+    <TD>-</TD>
+    <TD>U+FEB08</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji27bf"></SPAN></TD>
+    <TD>double curly loop</TD>
+    <TD>U+27BF</TD>
+    <TD>U+E6DF</TD>
+    <TD>-</TD>
+    <TD>U+E211</TD>
+    <TD>U+FE82B</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji2764"></SPAN></TD>
+    <TD>heavy black heart</TD>
+    <TD>U+2764</TD>
+    <TD>U+E6EC</TD>
+    <TD>U+E595</TD>
+    <TD>U+E022</TD>
+    <TD>U+FEB0C</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f493"></SPAN></TD>
+    <TD>beating heart</TD>
+    <TD>U+1F493</TD>
+    <TD>U+E6ED</TD>
+    <TD>U+EB75</TD>
+    <TD>U+E327</TD>
+    <TD>U+FEB0D</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f494"></SPAN></TD>
+    <TD>broken heart</TD>
+    <TD>U+1F494</TD>
+    <TD>U+E6EE</TD>
+    <TD>U+E477</TD>
+    <TD>U+E023</TD>
+    <TD>U+FEB0E</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f495"></SPAN></TD>
+    <TD>two hearts</TD>
+    <TD>U+1F495</TD>
+    <TD>U+E6EF</TD>
+    <TD>U+E478</TD>
+    <TD>U+E327</TD>
+    <TD>U+FEB0F</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f496"></SPAN></TD>
+    <TD>sparkling heart</TD>
+    <TD>U+1F496</TD>
+    <TD>U+E6EC</TD>
+    <TD>U+EAA6</TD>
+    <TD>U+E327</TD>
+    <TD>U+FEB10</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f497"></SPAN></TD>
+    <TD>growing heart</TD>
+    <TD>U+1F497</TD>
+    <TD>U+E6ED</TD>
+    <TD>U+EB75</TD>
+    <TD>U+E328</TD>
+    <TD>U+FEB11</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f498"></SPAN></TD>
+    <TD>heart with arrow</TD>
+    <TD>U+1F498</TD>
+    <TD>U+E6EC</TD>
+    <TD>U+E4EA</TD>
+    <TD>U+E329</TD>
+    <TD>U+FEB12</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f499"></SPAN></TD>
+    <TD>blue heart</TD>
+    <TD>U+1F499</TD>
+    <TD>U+E6EC</TD>
+    <TD>U+EAA7</TD>
+    <TD>U+E32A</TD>
+    <TD>U+FEB13</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f49a"></SPAN></TD>
+    <TD>green heart</TD>
+    <TD>U+1F49A</TD>
+    <TD>U+E6EC</TD>
+    <TD>U+EAA8</TD>
+    <TD>U+E32B</TD>
+    <TD>U+FEB14</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f49b"></SPAN></TD>
+    <TD>yellow heart</TD>
+    <TD>U+1F49B</TD>
+    <TD>U+E6EC</TD>
+    <TD>U+EAA9</TD>
+    <TD>U+E32C</TD>
+    <TD>U+FEB15</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f49c"></SPAN></TD>
+    <TD>purple heart</TD>
+    <TD>U+1F49C</TD>
+    <TD>U+E6EC</TD>
+    <TD>U+EAAA</TD>
+    <TD>U+E32D</TD>
+    <TD>U+FEB16</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f49d"></SPAN></TD>
+    <TD>heart with ribbon</TD>
+    <TD>U+1F49D</TD>
+    <TD>U+E6EC</TD>
+    <TD>U+EB54</TD>
+    <TD>U+E437</TD>
+    <TD>U+FEB17</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f49e"></SPAN></TD>
+    <TD>revolving hearts</TD>
+    <TD>U+1F49E</TD>
+    <TD>U+E6ED</TD>
+    <TD>U+E5AF</TD>
+    <TD>U+E327</TD>
+    <TD>U+FEB18</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f49f"></SPAN></TD>
+    <TD>heart decoration</TD>
+    <TD>U+1F49F</TD>
+    <TD>U+E6F8</TD>
+    <TD>U+E595</TD>
+    <TD>U+E204</TD>
+    <TD>U+FEB19</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji2665"></SPAN></TD>
+    <TD>black heart suit</TD>
+    <TD>U+2665</TD>
+    <TD>U+E68D</TD>
+    <TD>U+EAA5</TD>
+    <TD>U+E20C</TD>
+    <TD>U+FEB1A</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji2660"></SPAN></TD>
+    <TD>black spade suit</TD>
+    <TD>U+2660</TD>
+    <TD>U+E68E</TD>
+    <TD>U+E5A1</TD>
+    <TD>U+E20E</TD>
+    <TD>U+FEB1B</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji2666"></SPAN></TD>
+    <TD>black diamond suit</TD>
+    <TD>U+2666</TD>
+    <TD>U+E68F</TD>
+    <TD>U+E5A2</TD>
+    <TD>U+E20D</TD>
+    <TD>U+FEB1C</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji2663"></SPAN></TD>
+    <TD>black club suit</TD>
+    <TD>U+2663</TD>
+    <TD>U+E690</TD>
+    <TD>U+E5A3</TD>
+    <TD>U+E20F</TD>
+    <TD>U+FEB1D</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f6ac"></SPAN></TD>
+    <TD>smoking symbol</TD>
+    <TD>U+1F6AC</TD>
+    <TD>U+E67F</TD>
+    <TD>U+E47D</TD>
+    <TD>U+E30E</TD>
+    <TD>U+FEB1E</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f6ad"></SPAN></TD>
+    <TD>no smoking symbol</TD>
+    <TD>U+1F6AD</TD>
+    <TD>U+E680</TD>
+    <TD>U+E47E</TD>
+    <TD>U+E208</TD>
+    <TD>U+FEB1F</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji267f"></SPAN></TD>
+    <TD>wheelchair symbol</TD>
+    <TD>U+267F</TD>
+    <TD>U+E69B</TD>
+    <TD>U+E47F</TD>
+    <TD>U+E20A</TD>
+    <TD>U+FEB20</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f6a9"></SPAN></TD>
+    <TD>triangular flag on post</TD>
+    <TD>U+1F6A9</TD>
+    <TD>U+E6DE</TD>
+    <TD>U+EB2C</TD>
+    <TD>-</TD>
+    <TD>U+FEB22</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji26a0"></SPAN></TD>
+    <TD>warning sign</TD>
+    <TD>U+26A0</TD>
+    <TD>U+E737</TD>
+    <TD>U+E481</TD>
+    <TD>U+E252</TD>
+    <TD>U+FEB23</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji26d4"></SPAN></TD>
+    <TD>no entry</TD>
+    <TD>U+26D4</TD>
+    <TD>U+E72F</TD>
+    <TD>U+E484</TD>
+    <TD>U+E137</TD>
+    <TD>U+FEB26</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji267b"></SPAN></TD>
+    <TD>black universal recycling symbol</TD>
+    <TD>U+267B</TD>
+    <TD>U+E735</TD>
+    <TD>U+EB79</TD>
+    <TD>-</TD>
+    <TD>U+FEB2C</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f6b2"></SPAN></TD>
+    <TD>bicycle</TD>
+    <TD>U+1F6B2</TD>
+    <TD>U+E71D</TD>
+    <TD>U+E4AE</TD>
+    <TD>U+E136</TD>
+    <TD>U+FE7EB</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f6b6"></SPAN></TD>
+    <TD>pedestrian</TD>
+    <TD>U+1F6B6</TD>
+    <TD>U+E733</TD>
+    <TD>U+EB72</TD>
+    <TD>U+E201</TD>
+    <TD>U+FE7F0</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f6b9"></SPAN></TD>
+    <TD>mens symbol</TD>
+    <TD>U+1F6B9</TD>
+    <TD>-</TD>
+    <TD>-</TD>
+    <TD>U+E138</TD>
+    <TD>U+FEB33</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f6ba"></SPAN></TD>
+    <TD>womens symbol</TD>
+    <TD>U+1F6BA</TD>
+    <TD>-</TD>
+    <TD>-</TD>
+    <TD>U+E139</TD>
+    <TD>U+FEB34</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f6c0"></SPAN></TD>
+    <TD>bath</TD>
+    <TD>U+1F6C0</TD>
+    <TD>U+E6F7</TD>
+    <TD>U+E5D8</TD>
+    <TD>U+E13F</TD>
+    <TD>U+FE505</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f6bb"></SPAN></TD>
+    <TD>restroom</TD>
+    <TD>U+1F6BB</TD>
+    <TD>U+E66E</TD>
+    <TD>U+E4A5</TD>
+    <TD>U+E151</TD>
+    <TD>U+FE506</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f6bd"></SPAN></TD>
+    <TD>toilet</TD>
+    <TD>U+1F6BD</TD>
+    <TD>U+E66E</TD>
+    <TD>U+E4A5</TD>
+    <TD>U+E140</TD>
+    <TD>U+FE507</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f6be"></SPAN></TD>
+    <TD>water closet</TD>
+    <TD>U+1F6BE</TD>
+    <TD>U+E66E</TD>
+    <TD>U+E4A5</TD>
+    <TD>U+E309</TD>
+    <TD>U+FE508</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f6bc"></SPAN></TD>
+    <TD>baby symbol</TD>
+    <TD>U+1F6BC</TD>
+    <TD>-</TD>
+    <TD>U+EB18</TD>
+    <TD>U+E13A</TD>
+    <TD>U+FEB35</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f6aa"></SPAN></TD>
+    <TD>door</TD>
+    <TD>U+1F6AA</TD>
+    <TD>U+E714</TD>
+    <TD>-</TD>
+    <TD>-</TD>
+    <TD>U+FE4F3</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f6ab"></SPAN></TD>
+    <TD>no entry sign</TD>
+    <TD>U+1F6AB</TD>
+    <TD>U+E738</TD>
+    <TD>U+E541</TD>
+    <TD>-</TD>
+    <TD>U+FEB48</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji2714"></SPAN></TD>
+    <TD>heavy check mark</TD>
+    <TD>U+2714</TD>
+    <TD>-</TD>
+    <TD>U+E557</TD>
+    <TD>-</TD>
+    <TD>U+FEB49</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f191"></SPAN></TD>
+    <TD>squared cl</TD>
+    <TD>U+1F191</TD>
+    <TD>U+E6DB</TD>
+    <TD>U+E5AB</TD>
+    <TD>-</TD>
+    <TD>U+FEB84</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f192"></SPAN></TD>
+    <TD>squared cool</TD>
+    <TD>U+1F192</TD>
+    <TD>-</TD>
+    <TD>U+EA85</TD>
+    <TD>U+E214</TD>
+    <TD>U+FEB38</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f193"></SPAN></TD>
+    <TD>squared free</TD>
+    <TD>U+1F193</TD>
+    <TD>U+E6D7</TD>
+    <TD>U+E578</TD>
+    <TD>-</TD>
+    <TD>U+FEB21</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f194"></SPAN></TD>
+    <TD>squared id</TD>
+    <TD>U+1F194</TD>
+    <TD>U+E6D8</TD>
+    <TD>U+EA88</TD>
+    <TD>U+E229</TD>
+    <TD>U+FEB81</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f195"></SPAN></TD>
+    <TD>squared new</TD>
+    <TD>U+1F195</TD>
+    <TD>U+E6DD</TD>
+    <TD>U+E5B5</TD>
+    <TD>U+E212</TD>
+    <TD>U+FEB36</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f196"></SPAN></TD>
+    <TD>squared ng</TD>
+    <TD>U+1F196</TD>
+    <TD>U+E72F</TD>
+    <TD>-</TD>
+    <TD>-</TD>
+    <TD>U+FEB28</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f197"></SPAN></TD>
+    <TD>squared ok</TD>
+    <TD>U+1F197</TD>
+    <TD>U+E70B</TD>
+    <TD>U+E5AD</TD>
+    <TD>U+E24D</TD>
+    <TD>U+FEB27</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f198"></SPAN></TD>
+    <TD>squared sos</TD>
+    <TD>U+1F198</TD>
+    <TD>-</TD>
+    <TD>U+E4E8</TD>
+    <TD>-</TD>
+    <TD>U+FEB4F</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f199"></SPAN></TD>
+    <TD>squared up with exclamation mark</TD>
+    <TD>U+1F199</TD>
+    <TD>-</TD>
+    <TD>U+E50F</TD>
+    <TD>U+E213</TD>
+    <TD>U+FEB37</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f19a"></SPAN></TD>
+    <TD>squared vs</TD>
+    <TD>U+1F19A</TD>
+    <TD>-</TD>
+    <TD>U+E5D2</TD>
+    <TD>U+E12E</TD>
+    <TD>U+FEB32</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f201"></SPAN></TD>
+    <TD>squared katakana koko</TD>
+    <TD>U+1F201</TD>
+    <TD>-</TD>
+    <TD>-</TD>
+    <TD>U+E203</TD>
+    <TD>U+FEB24</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f202"></SPAN></TD>
+    <TD>squared katakana sa</TD>
+    <TD>U+1F202</TD>
+    <TD>-</TD>
+    <TD>U+EA87</TD>
+    <TD>U+E228</TD>
+    <TD>U+FEB3F</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f232"></SPAN></TD>
+    <TD>squared cjk unified ideograph-7981</TD>
+    <TD>U+1F232</TD>
+    <TD>U+E738</TD>
+    <TD>-</TD>
+    <TD>-</TD>
+    <TD>U+FEB2E</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f233"></SPAN></TD>
+    <TD>squared cjk unified ideograph-7a7a</TD>
+    <TD>U+1F233</TD>
+    <TD>U+E739</TD>
+    <TD>U+EA8A</TD>
+    <TD>U+E22B</TD>
+    <TD>U+FEB2F</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f234"></SPAN></TD>
+    <TD>squared cjk unified ideograph-5408</TD>
+    <TD>U+1F234</TD>
+    <TD>U+E73A</TD>
+    <TD>-</TD>
+    <TD>-</TD>
+    <TD>U+FEB30</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f235"></SPAN></TD>
+    <TD>squared cjk unified ideograph-6e80</TD>
+    <TD>U+1F235</TD>
+    <TD>U+E73B</TD>
+    <TD>U+EA89</TD>
+    <TD>U+E22A</TD>
+    <TD>U+FEB31</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f236"></SPAN></TD>
+    <TD>squared cjk unified ideograph-6709</TD>
+    <TD>U+1F236</TD>
+    <TD>-</TD>
+    <TD>-</TD>
+    <TD>U+E215</TD>
+    <TD>U+FEB39</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f21a"></SPAN></TD>
+    <TD>squared cjk unified ideograph-7121</TD>
+    <TD>U+1F21A</TD>
+    <TD>-</TD>
+    <TD>-</TD>
+    <TD>U+E216</TD>
+    <TD>U+FEB3A</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f237"></SPAN></TD>
+    <TD>squared cjk unified ideograph-6708</TD>
+    <TD>U+1F237</TD>
+    <TD>-</TD>
+    <TD>-</TD>
+    <TD>U+E217</TD>
+    <TD>U+FEB3B</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f238"></SPAN></TD>
+    <TD>squared cjk unified ideograph-7533</TD>
+    <TD>U+1F238</TD>
+    <TD>-</TD>
+    <TD>-</TD>
+    <TD>U+E218</TD>
+    <TD>U+FEB3C</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f239"></SPAN></TD>
+    <TD>squared cjk unified ideograph-5272</TD>
+    <TD>U+1F239</TD>
+    <TD>-</TD>
+    <TD>U+EA86</TD>
+    <TD>U+E227</TD>
+    <TD>U+FEB3E</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f22f"></SPAN></TD>
+    <TD>squared cjk unified ideograph-6307</TD>
+    <TD>U+1F22F</TD>
+    <TD>-</TD>
+    <TD>U+EA8B</TD>
+    <TD>U+E22C</TD>
+    <TD>U+FEB40</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f23a"></SPAN></TD>
+    <TD>squared cjk unified ideograph-55b6</TD>
+    <TD>U+1F23A</TD>
+    <TD>-</TD>
+    <TD>U+EA8C</TD>
+    <TD>U+E22D</TD>
+    <TD>U+FEB41</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji3299"></SPAN></TD>
+    <TD>circled ideograph secret</TD>
+    <TD>U+3299</TD>
+    <TD>U+E734</TD>
+    <TD>U+E4F1</TD>
+    <TD>U+E315</TD>
+    <TD>U+FEB2B</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji3297"></SPAN></TD>
+    <TD>circled ideograph congratulation</TD>
+    <TD>U+3297</TD>
+    <TD>-</TD>
+    <TD>U+EA99</TD>
+    <TD>U+E30D</TD>
+    <TD>U+FEB43</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f250"></SPAN></TD>
+    <TD>circled ideograph advantage</TD>
+    <TD>U+1F250</TD>
+    <TD>-</TD>
+    <TD>U+E4F7</TD>
+    <TD>U+E226</TD>
+    <TD>U+FEB3D</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f251"></SPAN></TD>
+    <TD>circled ideograph accept</TD>
+    <TD>U+1F251</TD>
+    <TD>-</TD>
+    <TD>U+EB01</TD>
+    <TD>-</TD>
+    <TD>U+FEB50</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji2795"></SPAN></TD>
+    <TD>heavy plus sign</TD>
+    <TD>U+2795</TD>
+    <TD>-</TD>
+    <TD>U+E53C</TD>
+    <TD>-</TD>
+    <TD>U+FEB51</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji2796"></SPAN></TD>
+    <TD>heavy minus sign</TD>
+    <TD>U+2796</TD>
+    <TD>-</TD>
+    <TD>U+E53D</TD>
+    <TD>-</TD>
+    <TD>U+FEB52</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji2716"></SPAN></TD>
+    <TD>heavy multiplication x</TD>
+    <TD>U+2716</TD>
+    <TD>-</TD>
+    <TD>U+E54F</TD>
+    <TD>U+E333</TD>
+    <TD>U+FEB53</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji2797"></SPAN></TD>
+    <TD>heavy division sign</TD>
+    <TD>U+2797</TD>
+    <TD>-</TD>
+    <TD>U+E554</TD>
+    <TD>-</TD>
+    <TD>U+FEB54</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f4a0"></SPAN></TD>
+    <TD>diamond shape with a dot inside</TD>
+    <TD>U+1F4A0</TD>
+    <TD>U+E6F8</TD>
+    <TD>-</TD>
+    <TD>-</TD>
+    <TD>U+FEB55</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f4a1"></SPAN></TD>
+    <TD>electric light bulb</TD>
+    <TD>U+1F4A1</TD>
+    <TD>U+E6FB</TD>
+    <TD>U+E476</TD>
+    <TD>U+E10F</TD>
+    <TD>U+FEB56</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f4a2"></SPAN></TD>
+    <TD>anger symbol</TD>
+    <TD>U+1F4A2</TD>
+    <TD>U+E6FC</TD>
+    <TD>U+E4E5</TD>
+    <TD>U+E334</TD>
+    <TD>U+FEB57</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f4a3"></SPAN></TD>
+    <TD>bomb</TD>
+    <TD>U+1F4A3</TD>
+    <TD>U+E6FE</TD>
+    <TD>U+E47A</TD>
+    <TD>U+E311</TD>
+    <TD>U+FEB58</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f4a4"></SPAN></TD>
+    <TD>sleeping symbol</TD>
+    <TD>U+1F4A4</TD>
+    <TD>U+E701</TD>
+    <TD>U+E475</TD>
+    <TD>U+E13C</TD>
+    <TD>U+FEB59</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f4a5"></SPAN></TD>
+    <TD>collision symbol</TD>
+    <TD>U+1F4A5</TD>
+    <TD>U+E705</TD>
+    <TD>U+E5B0</TD>
+    <TD>-</TD>
+    <TD>U+FEB5A</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f4a6"></SPAN></TD>
+    <TD>splashing sweat symbol</TD>
+    <TD>U+1F4A6</TD>
+    <TD>U+E706</TD>
+    <TD>U+E5B1</TD>
+    <TD>U+E331</TD>
+    <TD>U+FEB5B</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f4a7"></SPAN></TD>
+    <TD>droplet</TD>
+    <TD>U+1F4A7</TD>
+    <TD>U+E707</TD>
+    <TD>U+E4E6</TD>
+    <TD>U+E331</TD>
+    <TD>U+FEB5C</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f4a8"></SPAN></TD>
+    <TD>dash symbol</TD>
+    <TD>U+1F4A8</TD>
+    <TD>U+E708</TD>
+    <TD>U+E4F4</TD>
+    <TD>U+E330</TD>
+    <TD>U+FEB5D</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f4a9"></SPAN></TD>
+    <TD>pile of poo</TD>
+    <TD>U+1F4A9</TD>
+    <TD>-</TD>
+    <TD>U+E4F5</TD>
+    <TD>U+E05A</TD>
+    <TD>U+FE4F4</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f4aa"></SPAN></TD>
+    <TD>flexed biceps</TD>
+    <TD>U+1F4AA</TD>
+    <TD>-</TD>
+    <TD>U+E4E9</TD>
+    <TD>U+E14C</TD>
+    <TD>U+FEB5E</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f4ab"></SPAN></TD>
+    <TD>dizzy symbol</TD>
+    <TD>U+1F4AB</TD>
+    <TD>-</TD>
+    <TD>U+EB5C</TD>
+    <TD>U+E407</TD>
+    <TD>U+FEB5F</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f4ac"></SPAN></TD>
+    <TD>speech balloon</TD>
+    <TD>U+1F4AC</TD>
+    <TD>-</TD>
+    <TD>U+E4FD</TD>
+    <TD>-</TD>
+    <TD>U+FE532</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji2728"></SPAN></TD>
+    <TD>sparkles</TD>
+    <TD>U+2728</TD>
+    <TD>U+E6FA</TD>
+    <TD>U+EAAB</TD>
+    <TD>U+E32E</TD>
+    <TD>U+FEB60</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji2734"></SPAN></TD>
+    <TD>eight pointed black star</TD>
+    <TD>U+2734</TD>
+    <TD>U+E6F8</TD>
+    <TD>U+E479</TD>
+    <TD>U+E205</TD>
+    <TD>U+FEB61</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji2733"></SPAN></TD>
+    <TD>eight spoked asterisk</TD>
+    <TD>U+2733</TD>
+    <TD>U+E6F8</TD>
+    <TD>U+E53E</TD>
+    <TD>U+E206</TD>
+    <TD>U+FEB62</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji26aa"></SPAN></TD>
+    <TD>medium white circle</TD>
+    <TD>U+26AA</TD>
+    <TD>U+E69C</TD>
+    <TD>U+E53A</TD>
+    <TD>U+E219</TD>
+    <TD>U+FEB65</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji26ab"></SPAN></TD>
+    <TD>medium black circle</TD>
+    <TD>U+26AB</TD>
+    <TD>U+E69C</TD>
+    <TD>U+E53B</TD>
+    <TD>U+E219</TD>
+    <TD>U+FEB66</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f534"></SPAN></TD>
+    <TD>large red circle</TD>
+    <TD>U+1F534</TD>
+    <TD>U+E69C</TD>
+    <TD>U+E54A</TD>
+    <TD>U+E219</TD>
+    <TD>U+FEB63</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f535"></SPAN></TD>
+    <TD>large blue circle</TD>
+    <TD>U+1F535</TD>
+    <TD>U+E69C</TD>
+    <TD>U+E54B</TD>
+    <TD>U+E21A</TD>
+    <TD>U+FEB64</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f532"></SPAN></TD>
+    <TD>black square button</TD>
+    <TD>U+1F532</TD>
+    <TD>U+E69C</TD>
+    <TD>U+E54B</TD>
+    <TD>U+E21A</TD>
+    <TD>U+FEB64</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f533"></SPAN></TD>
+    <TD>white square button</TD>
+    <TD>U+1F533</TD>
+    <TD>U+E69C</TD>
+    <TD>U+E54B</TD>
+    <TD>U+E21B</TD>
+    <TD>U+FEB67</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji2b50"></SPAN></TD>
+    <TD>white medium star</TD>
+    <TD>U+2B50</TD>
+    <TD>-</TD>
+    <TD>U+E48B</TD>
+    <TD>U+E32F</TD>
+    <TD>U+FEB68</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji2b1c"></SPAN></TD>
+    <TD>white large square</TD>
+    <TD>U+2B1C</TD>
+    <TD>-</TD>
+    <TD>U+E548</TD>
+    <TD>U+E21B</TD>
+    <TD>U+FEB6B</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji2b1b"></SPAN></TD>
+    <TD>black large square</TD>
+    <TD>U+2B1B</TD>
+    <TD>-</TD>
+    <TD>U+E549</TD>
+    <TD>U+E21A</TD>
+    <TD>U+FEB6C</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji25ab"></SPAN></TD>
+    <TD>white small square</TD>
+    <TD>U+25AB</TD>
+    <TD>-</TD>
+    <TD>U+E531</TD>
+    <TD>U+E21B</TD>
+    <TD>U+FEB6D</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji25aa"></SPAN></TD>
+    <TD>black small square</TD>
+    <TD>U+25AA</TD>
+    <TD>-</TD>
+    <TD>U+E532</TD>
+    <TD>U+E21A</TD>
+    <TD>U+FEB6E</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji25fd"></SPAN></TD>
+    <TD>white medium small square</TD>
+    <TD>U+25FD</TD>
+    <TD>-</TD>
+    <TD>U+E534</TD>
+    <TD>U+E21B</TD>
+    <TD>U+FEB6F</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji25fe"></SPAN></TD>
+    <TD>black medium small square</TD>
+    <TD>U+25FE</TD>
+    <TD>-</TD>
+    <TD>U+E535</TD>
+    <TD>U+E21A</TD>
+    <TD>U+FEB70</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji25fb"></SPAN></TD>
+    <TD>white medium square</TD>
+    <TD>U+25FB</TD>
+    <TD>-</TD>
+    <TD>U+E538</TD>
+    <TD>U+E21B</TD>
+    <TD>U+FEB71</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji25fc"></SPAN></TD>
+    <TD>black medium square</TD>
+    <TD>U+25FC</TD>
+    <TD>-</TD>
+    <TD>U+E539</TD>
+    <TD>U+E21A</TD>
+    <TD>U+FEB72</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f536"></SPAN></TD>
+    <TD>large orange diamond</TD>
+    <TD>U+1F536</TD>
+    <TD>-</TD>
+    <TD>U+E546</TD>
+    <TD>U+E21B</TD>
+    <TD>U+FEB73</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f537"></SPAN></TD>
+    <TD>large blue diamond</TD>
+    <TD>U+1F537</TD>
+    <TD>-</TD>
+    <TD>U+E547</TD>
+    <TD>U+E21B</TD>
+    <TD>U+FEB74</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f538"></SPAN></TD>
+    <TD>small orange diamond</TD>
+    <TD>U+1F538</TD>
+    <TD>-</TD>
+    <TD>U+E536</TD>
+    <TD>U+E21B</TD>
+    <TD>U+FEB75</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f539"></SPAN></TD>
+    <TD>small blue diamond</TD>
+    <TD>U+1F539</TD>
+    <TD>-</TD>
+    <TD>U+E537</TD>
+    <TD>U+E21B</TD>
+    <TD>U+FEB76</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji2747"></SPAN></TD>
+    <TD>sparkle</TD>
+    <TD>U+2747</TD>
+    <TD>U+E6FA</TD>
+    <TD>U+E46C</TD>
+    <TD>U+E32E</TD>
+    <TD>U+FEB77</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f4ae"></SPAN></TD>
+    <TD>white flower</TD>
+    <TD>U+1F4AE</TD>
+    <TD>-</TD>
+    <TD>U+E4F0</TD>
+    <TD>-</TD>
+    <TD>U+FEB7A</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f4af"></SPAN></TD>
+    <TD>hundred points symbol</TD>
+    <TD>U+1F4AF</TD>
+    <TD>-</TD>
+    <TD>U+E4F2</TD>
+    <TD>-</TD>
+    <TD>U+FEB7B</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji21a9"></SPAN></TD>
+    <TD>leftwards arrow with hook</TD>
+    <TD>U+21A9</TD>
+    <TD>U+E6DA</TD>
+    <TD>U+E55D</TD>
+    <TD>-</TD>
+    <TD>U+FEB83</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji21aa"></SPAN></TD>
+    <TD>rightwards arrow with hook</TD>
+    <TD>U+21AA</TD>
+    <TD>-</TD>
+    <TD>U+E55C</TD>
+    <TD>-</TD>
+    <TD>U+FEB88</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f503"></SPAN></TD>
+    <TD>clockwise downwards and upwards open circle arrows</TD>
+    <TD>U+1F503</TD>
+    <TD>U+E735</TD>
+    <TD>U+EB0D</TD>
+    <TD>-</TD>
+    <TD>U+FEB91</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f50a"></SPAN></TD>
+    <TD>speaker with three sound waves</TD>
+    <TD>U+1F50A</TD>
+    <TD>-</TD>
+    <TD>U+E511</TD>
+    <TD>U+E141</TD>
+    <TD>U+FE821</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f50b"></SPAN></TD>
+    <TD>battery</TD>
+    <TD>U+1F50B</TD>
+    <TD>-</TD>
+    <TD>U+E584</TD>
+    <TD>-</TD>
+    <TD>U+FE4FC</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f50c"></SPAN></TD>
+    <TD>electric plug</TD>
+    <TD>U+1F50C</TD>
+    <TD>-</TD>
+    <TD>U+E589</TD>
+    <TD>-</TD>
+    <TD>U+FE4FE</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f50d"></SPAN></TD>
+    <TD>left-pointing magnifying glass</TD>
+    <TD>U+1F50D</TD>
+    <TD>U+E6DC</TD>
+    <TD>U+E518</TD>
+    <TD>U+E114</TD>
+    <TD>U+FEB85</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f50e"></SPAN></TD>
+    <TD>right-pointing magnifying glass</TD>
+    <TD>U+1F50E</TD>
+    <TD>U+E6DC</TD>
+    <TD>U+EB05</TD>
+    <TD>U+E114</TD>
+    <TD>U+FEB8D</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f512"></SPAN></TD>
+    <TD>lock</TD>
+    <TD>U+1F512</TD>
+    <TD>U+E6D9</TD>
+    <TD>U+E51C</TD>
+    <TD>U+E144</TD>
+    <TD>U+FEB86</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f513"></SPAN></TD>
+    <TD>open lock</TD>
+    <TD>U+1F513</TD>
+    <TD>U+E6D9</TD>
+    <TD>U+E51C</TD>
+    <TD>U+E145</TD>
+    <TD>U+FEB87</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f50f"></SPAN></TD>
+    <TD>lock with ink pen</TD>
+    <TD>U+1F50F</TD>
+    <TD>U+E6D9</TD>
+    <TD>U+EB0C</TD>
+    <TD>U+E144</TD>
+    <TD>U+FEB90</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f510"></SPAN></TD>
+    <TD>closed lock with key</TD>
+    <TD>U+1F510</TD>
+    <TD>U+E6D9</TD>
+    <TD>U+EAFC</TD>
+    <TD>U+E144</TD>
+    <TD>U+FEB8A</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f511"></SPAN></TD>
+    <TD>key</TD>
+    <TD>U+1F511</TD>
+    <TD>U+E6D9</TD>
+    <TD>U+E519</TD>
+    <TD>U+E03F</TD>
+    <TD>U+FEB82</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f514"></SPAN></TD>
+    <TD>bell</TD>
+    <TD>U+1F514</TD>
+    <TD>U+E713</TD>
+    <TD>U+E512</TD>
+    <TD>U+E325</TD>
+    <TD>U+FE4F2</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji2611"></SPAN></TD>
+    <TD>ballot box with check</TD>
+    <TD>U+2611</TD>
+    <TD>-</TD>
+    <TD>U+EB02</TD>
+    <TD>-</TD>
+    <TD>U+FEB8B</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f518"></SPAN></TD>
+    <TD>radio button</TD>
+    <TD>U+1F518</TD>
+    <TD>-</TD>
+    <TD>U+EB04</TD>
+    <TD>-</TD>
+    <TD>U+FEB8C</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f516"></SPAN></TD>
+    <TD>bookmark</TD>
+    <TD>U+1F516</TD>
+    <TD>-</TD>
+    <TD>U+EB07</TD>
+    <TD>-</TD>
+    <TD>U+FEB8F</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f517"></SPAN></TD>
+    <TD>link symbol</TD>
+    <TD>U+1F517</TD>
+    <TD>-</TD>
+    <TD>U+E58A</TD>
+    <TD>-</TD>
+    <TD>U+FEB4B</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f519"></SPAN></TD>
+    <TD>back with leftwards arrow above</TD>
+    <TD>U+1F519</TD>
+    <TD>-</TD>
+    <TD>U+EB06</TD>
+    <TD>U+E235</TD>
+    <TD>U+FEB8E</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f51a"></SPAN></TD>
+    <TD>end with leftwards arrow above</TD>
+    <TD>U+1F51A</TD>
+    <TD>U+E6B9</TD>
+    <TD>-</TD>
+    <TD>-</TD>
+    <TD>U+FE01A</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f51b"></SPAN></TD>
+    <TD>on with exclamation mark with left right arrow above</TD>
+    <TD>U+1F51B</TD>
+    <TD>U+E6B8</TD>
+    <TD>-</TD>
+    <TD>-</TD>
+    <TD>U+FE019</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f51c"></SPAN></TD>
+    <TD>soon with rightwards arrow above</TD>
+    <TD>U+1F51C</TD>
+    <TD>U+E6B7</TD>
+    <TD>-</TD>
+    <TD>-</TD>
+    <TD>U+FE018</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f51d"></SPAN></TD>
+    <TD>top with upwards arrow above</TD>
+    <TD>U+1F51D</TD>
+    <TD>-</TD>
+    <TD>-</TD>
+    <TD>U+E24C</TD>
+    <TD>U+FEB42</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji2705"></SPAN></TD>
+    <TD>white heavy check mark</TD>
+    <TD>U+2705</TD>
+    <TD>-</TD>
+    <TD>U+E55E</TD>
+    <TD>-</TD>
+    <TD>U+FEB4A</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji270a"></SPAN></TD>
+    <TD>raised fist</TD>
+    <TD>U+270A</TD>
+    <TD>U+E693</TD>
+    <TD>U+EB83</TD>
+    <TD>U+E010</TD>
+    <TD>U+FEB93</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji270b"></SPAN></TD>
+    <TD>raised hand</TD>
+    <TD>U+270B</TD>
+    <TD>U+E695</TD>
+    <TD>U+E5A7</TD>
+    <TD>U+E012</TD>
+    <TD>U+FEB95</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji270c"></SPAN></TD>
+    <TD>victory hand</TD>
+    <TD>U+270C</TD>
+    <TD>U+E694</TD>
+    <TD>U+E5A6</TD>
+    <TD>U+E011</TD>
+    <TD>U+FEB94</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f44a"></SPAN></TD>
+    <TD>fisted hand sign</TD>
+    <TD>U+1F44A</TD>
+    <TD>U+E6FD</TD>
+    <TD>U+E4F3</TD>
+    <TD>U+E00D</TD>
+    <TD>U+FEB96</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f44d"></SPAN></TD>
+    <TD>thumbs up sign</TD>
+    <TD>U+1F44D</TD>
+    <TD>U+E727</TD>
+    <TD>U+E4F9</TD>
+    <TD>U+E00E</TD>
+    <TD>U+FEB97</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji261d"></SPAN></TD>
+    <TD>white up pointing index</TD>
+    <TD>U+261D</TD>
+    <TD>-</TD>
+    <TD>U+E4F6</TD>
+    <TD>U+E00F</TD>
+    <TD>U+FEB98</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f446"></SPAN></TD>
+    <TD>white up pointing backhand index</TD>
+    <TD>U+1F446</TD>
+    <TD>-</TD>
+    <TD>U+EA8D</TD>
+    <TD>U+E22E</TD>
+    <TD>U+FEB99</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f447"></SPAN></TD>
+    <TD>white down pointing backhand index</TD>
+    <TD>U+1F447</TD>
+    <TD>-</TD>
+    <TD>U+EA8E</TD>
+    <TD>U+E22F</TD>
+    <TD>U+FEB9A</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f448"></SPAN></TD>
+    <TD>white left pointing backhand index</TD>
+    <TD>U+1F448</TD>
+    <TD>-</TD>
+    <TD>U+E4FF</TD>
+    <TD>U+E230</TD>
+    <TD>U+FEB9B</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f449"></SPAN></TD>
+    <TD>white right pointing backhand index</TD>
+    <TD>U+1F449</TD>
+    <TD>-</TD>
+    <TD>U+E500</TD>
+    <TD>U+E231</TD>
+    <TD>U+FEB9C</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f44b"></SPAN></TD>
+    <TD>waving hand sign</TD>
+    <TD>U+1F44B</TD>
+    <TD>U+E695</TD>
+    <TD>U+EAD6</TD>
+    <TD>U+E41E</TD>
+    <TD>U+FEB9D</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f44f"></SPAN></TD>
+    <TD>clapping hands sign</TD>
+    <TD>U+1F44F</TD>
+    <TD>-</TD>
+    <TD>U+EAD3</TD>
+    <TD>U+E41F</TD>
+    <TD>U+FEB9E</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f44c"></SPAN></TD>
+    <TD>ok hand sign</TD>
+    <TD>U+1F44C</TD>
+    <TD>U+E70B</TD>
+    <TD>U+EAD4</TD>
+    <TD>U+E420</TD>
+    <TD>U+FEB9F</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f44e"></SPAN></TD>
+    <TD>thumbs down sign</TD>
+    <TD>U+1F44E</TD>
+    <TD>U+E700</TD>
+    <TD>U+EAD5</TD>
+    <TD>U+E421</TD>
+    <TD>U+FEBA0</TD></TR>
+  <TR>
+    <TD><SPAN class=3D"emoji emoji1f450"></SPAN></TD>
+    <TD>open hands sign</TD>
+    <TD>U+1F450</TD>
+    <TD>U+E695</TD>
+    <TD>U+EAD6</TD>
+    <TD>U+E422</TD>
+    <TD>U+FEBA1</TD></TR></TBODY></TABLE></DIV>
+<SCRIPT type=3Dtext/javascript>=0A=
+var gaJsHost =3D (("https:" =3D=3D document.location.protocol) ? =
+"https://ssl." : "http://www.");=0A=
+document.write(unescape("%3Cscript src=3D'" + gaJsHost + =
+"google-analytics.com/ga.js' type=3D'text/javascript'%3E%3C/script%3E"));=0A=
+</SCRIPT>
+
+<SCRIPT type=3Dtext/javascript>=0A=
+try {=0A=
+var pageTracker =3D _gat._getTracker("UA-106458-1");=0A=
+pageTracker._setDomainName(".iamcal.com");=0A=
+pageTracker._trackPageview();=0A=
+} catch(err) {}</SCRIPT>
+</BODY></HTML>

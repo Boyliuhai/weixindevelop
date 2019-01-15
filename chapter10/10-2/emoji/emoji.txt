@@ -1,0 +1,37 @@
+ 1 function utf8_bytes($cp)
+ 2 {
+ 3     if ($cp > 0x10000){
+ 4         # 4 bytes
+ 5         return    chr(0xF0 | (($cp & 0x1C0000) >> 18)).
+ 6             chr(0x80 | (($cp & 0x3F000) >> 12)).
+ 7             chr(0x80 | (($cp & 0xFC0) >> 6)).
+ 8             chr(0x80 | ($cp & 0x3F));
+ 9     }else if ($cp > 0x800){
+10         # 3 bytes
+11         return    chr(0xE0 | (($cp & 0xF000) >> 12)).
+12             chr(0x80 | (($cp & 0xFC0) >> 6)).
+13             chr(0x80 | ($cp & 0x3F));
+14     }else if ($cp > 0x80){
+15         # 2 bytes
+16         return    chr(0xC0 | (($cp & 0x7C0) >> 6)).
+17             chr(0x80 | ($cp & 0x3F));
+18     }else{
+19         # 1 byte
+20         return chr($cp);
+21     }
+22 }
+
+
+
+ 1 private function receiveText($object)
+ 2 {
+ 3     $keyword = trim($object->Content);
+ 4     $content = "中国国旗：".utf8_bytes(0x1F1E8).utf8_bytes(0x1F1F3)."\n".
+ 5         "美国国旗：".utf8_bytes(0x1F1FA).utf8_bytes(0x1F1F8)."\n".
+ 6         "男女牵手：".utf8_bytes(0x1F46B)."\n".
+ 7         "仙人掌：".utf8_bytes(0x1F335)."\n".
+ 8         "电话机：".utf8_bytes(0x260E)."\n".
+ 9         "药丸：".utf8_bytes(0x1F48A);
+10     $result = $this->transmitText($object, $content);
+11     return $result;
+12 }
